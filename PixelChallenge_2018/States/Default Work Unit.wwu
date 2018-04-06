@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}" SchemaVersion="85">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="ST_Storm_Phase" ID="{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}">
+					<ChildrenList>
+						<State Name="None" ID="{549CA89D-8D63-4A7E-AB5C-2E0EA2AA75E6}"/>
+						<State Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
+						<State Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+						<State Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\</ProjectRoot>
-		<SourceFilesRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\..\..\PixelChallenge\PixelChallenge18\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<ProjectRoot>D:\PixelChallenge\PixelChallenge_2018\</ProjectRoot>
+		<SourceFilesRoot>D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\PixelChallenge\PixelChallenge_2018\..\..\PixelChallenge\PixelChallenge18\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\PixelChallenge\PixelChallenge_2018\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,12 +21,66 @@
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2623731151" Name="Play_Drone_Test" ObjectPath="\Events\Default Work Unit\Play_Drone_Test"/>
+				<Event Id="810046381" Name="Play_Amb_Storm_2D" ObjectPath="\Events\Default Work Unit\Play_Amb_Storm_2D"/>
+				<Event Id="2844963020" Name="Set_Phase_2" ObjectPath="\Events\Default Work Unit\Set_Phase_2"/>
+				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="1026162047" Language="SFX">
-					<ShortName>SciFi 6056_44_1.wav</ShortName>
-					<Path>SFX\SciFi 6056_44_1_FAB7959A.wem</Path>
+				<File Id="23184774" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_11.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_11_C3CBE9E6.wem</Path>
+				</File>
+				<File Id="30951434" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_05.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_05_6FD7A171.wem</Path>
+				</File>
+				<File Id="196649018" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_02.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_02_8915E9F5.wem</Path>
+				</File>
+				<File Id="222037412" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_01_C405FC9A.wem</Path>
+				</File>
+				<File Id="296098086" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_07.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_07_57E1638D.wem</Path>
+				</File>
+				<File Id="349872485" Language="SFX">
+					<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>
+					<Path>SFX\Amb_Wind_Phase2_lp_CD058AC7.wem</Path>
+				</File>
+				<File Id="470681896" Language="SFX">
+					<ShortName>Amb_Wind_Phase3_lp.wav</ShortName>
+					<Path>SFX\Amb_Wind_Phase3_lp_1027AE9A.wem</Path>
+				</File>
+				<File Id="529259371" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_10.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_10_FC408F25.wem</Path>
+				</File>
+				<File Id="590617343" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_08.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_08_D5AEF5E1.wem</Path>
+				</File>
+				<File Id="811501772" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_09.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_09_CF215569.wem</Path>
+				</File>
+				<File Id="837336748" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_03.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_03_BB16472F.wem</Path>
+				</File>
+				<File Id="842604716" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_06.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_06_A303702F.wem</Path>
+				</File>
+				<File Id="885937118" Language="SFX">
+					<ShortName>Amb_Wind_Phase1_lp.wav</ShortName>
+					<Path>SFX\Amb_Wind_Phase1_lp_F7364A8C.wem</Path>
+				</File>
+				<File Id="892070664" Language="SFX">
+					<ShortName>Amb_Thunder_Roar_04.wav</ShortName>
+					<Path>SFX\Amb_Thunder_Roar_04_FAB7959A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}" SchemaVersion="85">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
