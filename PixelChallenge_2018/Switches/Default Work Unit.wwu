@@ -10,6 +10,14 @@
 						<Switch Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="SW_Player" ID="{7180BD3B-EB92-4D8E-B713-AC8B0A25C987}">
+					<ChildrenList>
+						<Switch Name="SW_Player_01" ID="{648DEBB5-2F18-486B-ACB9-2F605458E4AC}"/>
+						<Switch Name="SW_Player_02" ID="{D163237B-FDD1-4075-9B3F-BB95D3B9C5DB}"/>
+						<Switch Name="SW_Player_03" ID="{BDE8028B-9B22-4AC8-A2DE-80A46E44BD04}"/>
+						<Switch Name="SW_Player_04" ID="{FF14469B-A846-4C98-BCB9-2FD050DD7984}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

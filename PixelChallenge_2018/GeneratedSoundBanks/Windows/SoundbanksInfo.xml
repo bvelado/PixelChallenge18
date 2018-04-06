@@ -58,6 +58,7 @@
 				<Event Id="3329011853" Name="Play_SFX_Thunder_Loading" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Loading"/>
 				<Event Id="1606135503" Name="Play_SFX_Veggi_PickUp" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_PickUp"/>
 				<Event Id="214169128" Name="Play_SFX_Veggi_Success" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_Success"/>
+				<Event Id="1573413394" Name="Play_SFX_Wind_Gust" ObjectPath="\Events\Default Work Unit\Play_SFX_Wind_Gust"/>
 				<Event Id="2844963023" Name="Set_Phase_1" ObjectPath="\Events\Default Work Unit\Set_Phase_1"/>
 				<Event Id="2844963020" Name="Set_Phase_2" ObjectPath="\Events\Default Work Unit\Set_Phase_2"/>
 				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
@@ -92,6 +93,10 @@
 				<File Id="143818233" Language="SFX">
 					<ShortName>God_Start_Phase_3.wav</ShortName>
 					<Path>SFX\God_Start_Phase_3_FAB7959A.wem</Path>
+				</File>
+				<File Id="144928623" Language="SFX">
+					<ShortName>SFX_Wind_Gust_04.wav</ShortName>
+					<Path>SFX\SFX_Wind_Gust_04_FAB7959A.wem</Path>
 				</File>
 				<File Id="196649018" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_02.wav</ShortName>
@@ -169,9 +174,17 @@
 					<ShortName>God_End_Game.wav</ShortName>
 					<Path>SFX\God_End_Game_FAB7959A.wem</Path>
 				</File>
+				<File Id="598769784" Language="SFX">
+					<ShortName>SFX_Wind_Gust_02.wav</ShortName>
+					<Path>SFX\SFX_Wind_Gust_02_FAB7959A.wem</Path>
+				</File>
 				<File Id="666870192" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_04.wav</ShortName>
 					<Path>SFX\SFX_Thunder_Loading_04_803746CA.wem</Path>
+				</File>
+				<File Id="773504479" Language="SFX">
+					<ShortName>SFX_Wind_Gust_01.wav</ShortName>
+					<Path>SFX\SFX_Wind_Gust_01_FAB7959A.wem</Path>
 				</File>
 				<File Id="811501772" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_09.wav</ShortName>
@@ -208,6 +221,10 @@
 				<File Id="937897836" Language="SFX">
 					<ShortName>SFX_Fire_Off_02.wav</ShortName>
 					<Path>SFX\SFX_Fire_Off_02_FAB7959A.wem</Path>
+				</File>
+				<File Id="999106958" Language="SFX">
+					<ShortName>SFX_Wind_Gust_03.wav</ShortName>
+					<Path>SFX\SFX_Wind_Gust_03_FAB7959A.wem</Path>
 				</File>
 				<File Id="1051040488" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_03.wav</ShortName>

@@ -400,6 +400,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SFX_Wind_Gust" ID="{4D285DAD-41A7-4D06-9C4A-29A6D7C9058C}">
+					<ChildrenList>
+						<Action Name="" ID="{C871CBED-863E-459C-9191-5D3773B44F41}" ShortID="893345131">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Wind_Gust" ID="{836DB96B-F5A9-4C2C-9A07-DFA15B9DC5A3}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

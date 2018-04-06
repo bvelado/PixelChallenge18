@@ -1813,7 +1813,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-6</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1906,13 +1906,6 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="SFX_Hit_Bucket" ID="{46B2F8CB-E24C-4625-8DF0-7D7AA55F3499}" ShortID="930894030">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
@@ -1923,6 +1916,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Hit_Bucket_01" ID="{357DDC3F-5225-4B12-97CA-892A90F3112B}" ShortID="342040729">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Hit_Bucket_01.wav</AudioFile>
 								</AudioFileSource>
@@ -1957,6 +1957,129 @@
 								<ActiveSource Name="SFX_God_Sweetener" ID="{610E900D-5B1F-4832-BEB1-AC86EF9687D6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="SFX_Wind_Gust" ID="{836DB96B-F5A9-4C2C-9A07-DFA15B9DC5A3}" ShortID="446542593">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-400</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E1FFD6E9-73FB-4EA6-8EC0-2D0A32217022}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{966CE896-64EF-49B8-868A-6F497FDBB687}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Wind_Gust_01" ID="{8E93919D-73FF-48A2-BC8A-F986BD0BA349}" ShortID="1052339659">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Wind_Gust_01" ID="{7EEA936A-B828-4239-9710-52F7DE007E8D}" ShortID="773504479">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Wind_Gust_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Wind_Gust_01" ID="{7EEA936A-B828-4239-9710-52F7DE007E8D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Wind_Gust_02" ID="{9F6F0554-1D32-4587-AE3E-6BF02DA67E04}" ShortID="84886406">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Wind_Gust_02" ID="{B3721E0B-4A7E-46D8-A2C1-335FB475D20E}" ShortID="598769784">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Wind_Gust_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Wind_Gust_02" ID="{B3721E0B-4A7E-46D8-A2C1-335FB475D20E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Wind_Gust_03" ID="{67DE3CD0-ABC7-4731-B77E-BE312BBBAD3F}" ShortID="94135899">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Wind_Gust_03" ID="{003A8972-7A01-4E4A-8690-23F44B6D46DC}" ShortID="999106958">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Wind_Gust_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Wind_Gust_03" ID="{003A8972-7A01-4E4A-8690-23F44B6D46DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Wind_Gust_04" ID="{FDA76F5C-AE1F-4E7B-AB3B-853853C4E22C}" ShortID="52648528">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Wind_Gust_04" ID="{6B43680B-0F8F-40C4-BC17-8BD16149D6D8}" ShortID="144928623">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Wind_Gust_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Wind_Gust_04" ID="{6B43680B-0F8F-40C4-BC17-8BD16149D6D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{F16775EF-122C-479B-B202-12AD740ABF0F}" ShortID="939217485">

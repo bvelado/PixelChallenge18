@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	214169128	Play_SFX_Veggi_Success			\Default Work Unit\Play_SFX_Veggi_Success	
 	247285626	Play_End_Game			\Default Work Unit\Play_End_Game	
 	1114964412	START_GAME			\Default Work Unit\START_GAME	
+	1573413394	Play_SFX_Wind_Gust			\Default Work Unit\Play_SFX_Wind_Gust	
 	1606135503	Play_SFX_Veggi_PickUp			\Default Work Unit\Play_SFX_Veggi_PickUp	
 	1961944926	Play_SFX_Hit_Bucket			\Default Work Unit\Play_SFX_Hit_Bucket	
 	2244152443	Play_SFX_Thunder_Crack			\Default Work Unit\Play_SFX_Thunder_Crack	
@@ -30,11 +31,12 @@ State	ID	Name	State Group			Notes
 	3547523042	ST_Storm_Phase_1	ST_Storm_Phase			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	16489025	SFX_Veggi_Success	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_Success_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_Success		16118
+	16489025	SFX_Veggi_Success	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_Success_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_Success		20147
 	23184774	Amb_Thunder_Roar_11	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_11_089B868F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_11		11202
 	30951434	Amb_Thunder_Roar_05	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_05_99882E38.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_05		28541
-	130509793	SFX_Veggi_PickUp_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_01		2785
+	130509793	SFX_Veggi_PickUp_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_01		3258
 	143818233	God_Start_Phase_3	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\God_Start_Phase_3_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\God\God_Start_Phase_3		58341
+	144928623	SFX_Wind_Gust_04	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Wind_Gust_04_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Wind_Gust\SFX_Wind_Gust_04		35411
 	196649018	Amb_Thunder_Roar_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_02_F5C0C469.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_02		8177
 	206401840	SFX_God_Sweetener	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_God_Sweetener_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_God_Sweetener		10600
 	222037412	Amb_Thunder_Roar_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_01_072F86BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_01		11146
@@ -44,19 +46,21 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	298242952	SFX_Thunder_Crack_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_03_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_03		31253
 	321987922	SFX_Thunder_Crack_04	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_04_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_04		40102
 	327588924	God_Start_Game	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\God_Start_Game_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\God\God_Start_Game		62106
-	342040729	SFX_Hit_Bucket	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Hit_Bucket_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Hit_Bucket		11267
+	342040729	SFX_Hit_Bucket	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Hit_Bucket_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Hit_Bucket		8835
 	349872485	Amb_Wind_Phase2_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase2_lp_760B809C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase2_lp		780525
 	423954894	SFX_Thunder_Crack_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_02		26709
-	465255943	SFX_Veggi_PickUp_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_02		3076
+	465255943	SFX_Veggi_PickUp_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_02		4839
 	470681896	Amb_Wind_Phase3_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase3_lp_19735EC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase3_lp		648531
 	493142140	SFX_Thunder_Loading_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_01_F8B8646E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_01		9749
 	502360231	SFX_Fire_Off_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Fire_Off_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Fire_Off\SFX_Fire_Off_01		21931
 	529259371	Amb_Thunder_Roar_10	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_10_2BF9F96B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_10		17161
 	590617343	Amb_Thunder_Roar_08	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_08_DE5D9E57.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_08		16659
 	590874931	God_End_Game	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\God_End_Game_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\God\God_End_Game		46686
+	598769784	SFX_Wind_Gust_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Wind_Gust_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Wind_Gust\SFX_Wind_Gust_02		42906
 	666870192	SFX_Thunder_Loading_04	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_04_803746CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_04		10720
+	773504479	SFX_Wind_Gust_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Wind_Gust_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Wind_Gust\SFX_Wind_Gust_01		37639
 	811501772	Amb_Thunder_Roar_09	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_09_FFAF6F44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_09		36833
-	813419052	SFX_Veggi_PickUp_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_03_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_03		3691
+	813419052	SFX_Veggi_PickUp_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_03_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_03		3811
 	826150858	SFX_Thunder_Crack_05	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_05_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_05		34435
 	837336748	Amb_Thunder_Roar_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_03_48F47559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_03		15444
 	842604716	Amb_Thunder_Roar_06	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_06_53BC8E69.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_06		9853
@@ -64,6 +68,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	885937118	Amb_Wind_Phase1_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase1_lp_AF76FE5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase1_lp		496305
 	892070664	Amb_Thunder_Roar_04	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_04_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_04		13944
 	937897836	SFX_Fire_Off_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Fire_Off_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Fire_Off\SFX_Fire_Off_02		20072
+	999106958	SFX_Wind_Gust_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Wind_Gust_03_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Wind_Gust\SFX_Wind_Gust_03		38733
 	1051040488	SFX_Thunder_Loading_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_03_CA6F84BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_03		9539
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes

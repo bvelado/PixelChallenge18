@@ -6,4 +6,9 @@ public class Player : MonoBehaviour {
 
     public PlayerData Data { get { return _playerData; } }
 
+
+    public void Initialize (PlayerData playerData)
+    {
+        _playerData = playerData;
+    }
 }
