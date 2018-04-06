@@ -1,6 +1,46 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2623731151	Play_Drone_Test			\Default Work Unit\Play_Drone_Test	
+	810046381	Play_Amb_Storm_2D			\Default Work Unit\Play_Amb_Storm_2D	
+	2844963020	Set_Phase_2			\Default Work Unit\Set_Phase_2	
+	2844963021	Set_Phase_3			\Default Work Unit\Set_Phase_3	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1754733041	SW_Storm_Phase			\Default Work Unit\SW_Storm_Phase	
+
+Switch	ID	Name	Switch Group			Notes
+	3141025861	SW_Storm_Phase_1	SW_Storm_Phase			
+	3141025862	SW_Storm_Phase_2	SW_Storm_Phase			
+	3141025863	SW_Storm_Phase_3	SW_Storm_Phase			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1341083562	ST_Storm_Phase			\Default Work Unit\ST_Storm_Phase	
+
+State	ID	Name	State Group			Notes
+	748895195	None	ST_Storm_Phase			
+	3547523040	ST_Storm_Phase_3	ST_Storm_Phase			
+	3547523041	ST_Storm_Phase_2	ST_Storm_Phase			
+	3547523042	ST_Storm_Phase_1	ST_Storm_Phase			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	322861477	ST_Storm_Phase_1	ST_Storm_Phase	\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar		
+	615274144	ST_Storm_Phase_2	ST_Storm_Phase	\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar		
+	856572299	ST_Storm_Phase_3	ST_Storm_Phase	\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2879077714	RTPC_Storm_Phase			\Default Work Unit\RTPC_Storm_Phase	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1026162047	Drone_Test	D:\Unreal_Unity Projects\PixelChallenge_2018\.cache\Windows\SFX\SciFi 6056_44_1_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Drone_Test		104692
+	23184774	Amb_Thunder_Roar_11	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_11_C3CBE9E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_11		11202
+	30951434	Amb_Thunder_Roar_05	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_05_6FD7A171.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_05		28541
+	196649018	Amb_Thunder_Roar_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_02_8915E9F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_02		8177
+	222037412	Amb_Thunder_Roar_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_01_C405FC9A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_01		11146
+	296098086	Amb_Thunder_Roar_07	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_07_57E1638D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_07		10177
+	349872485	Amb_Wind_Phase2_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase2_lp_CD058AC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase2_lp		780525
+	470681896	Amb_Wind_Phase3_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase3_lp_1027AE9A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase3_lp		648531
+	529259371	Amb_Thunder_Roar_10	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_10_FC408F25.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_10		17161
+	590617343	Amb_Thunder_Roar_08	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_08_D5AEF5E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_08		16659
+	811501772	Amb_Thunder_Roar_09	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_09_CF215569.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_09		36833
+	837336748	Amb_Thunder_Roar_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_03_BB16472F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_03		15444
+	842604716	Amb_Thunder_Roar_06	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_06_A303702F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_06		9853
+	885937118	Amb_Wind_Phase1_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase1_lp_F7364A8C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase1_lp		496305
+	892070664	Amb_Thunder_Roar_04	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_04_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_04		13944
 
