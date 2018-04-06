@@ -8,7 +8,10 @@ public class CharacterMotor : MonoBehaviour {
 
     private Rigidbody _rigidbody;
     private CharacterInputs _inputs;
-    
+
+    private Vector2 _velocity;
+    private bool _hasInputToProcess;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -24,6 +27,18 @@ public class CharacterMotor : MonoBehaviour {
 
     public void Move(Vector2 velocity)
     {
-        _rigidbody.velocity = (Vector3.right * velocity.x) + (Vector3.forward * velocity.y);
+        _velocity = velocity;
+        _hasInputToProcess = true;
+        _rigidbody.transform.rotation = Quaternion.LookRotation(new Vector3(_velocity.x, 0f, _velocity.y), Vector3.up);
+    }
+
+    private void FixedUpdate()
+    {
+        if (_hasInputToProcess)
+        {
+            _rigidbody.velocity = (Vector3.right * _velocity.x) + (Vector3.forward * _velocity.y);
+            _hasInputToProcess = false;
+        }
+              
     }
 }
