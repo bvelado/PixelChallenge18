@@ -6,8 +6,7 @@ public class CharacterHolder : MonoBehaviour
     public Transform HoldRoot { get { return _holdRoot; } }
 
     [SerializeField] private LayerMask _holdableLayerMask;
-    [SerializeField] private Transform _raycastOrigin;
-    [SerializeField] private float _raycastDistance = 0.5f;
+    [SerializeField] private Bounds _overlapBounds;
 
     private CharacterInputs _inputs;
     private CharacterMotor _motor;
@@ -68,16 +67,39 @@ public class CharacterHolder : MonoBehaviour
 
     private IHoldable FindClosestHoldable()
     {
-        if(Physics.Raycast(_raycastOrigin.position, _raycastOrigin.forward, out _hit, _raycastDistance, _holdableLayerMask.value)) {
-            return _hit.collider.GetComponentInParent<IHoldable>();
+        GameObject closest = null;
+        IHoldable closestHoldable = null;
+        foreach (var collider in Physics.OverlapBox(transform.position + transform.rotation*_overlapBounds.center, _overlapBounds.extents, transform.rotation, _holdableLayerMask.value))
+        {
+            var holdable = collider.GetComponentInParent<IHoldable>();
+            if (holdable != null)
+            {
+                if(closest != null)
+                {
+                    if(Vector3.Distance(transform.position, collider.transform.position) < Vector3.Distance(transform.position, closest.transform.position)){
+                        closest = collider.gameObject;
+                        closestHoldable = holdable;
+                    }
+                } else
+                {
+                    closest = collider.gameObject;
+                    closestHoldable = holdable;
+                }
+            }
         }
 
-        return null;
+        //if(Physics.Raycast(_raycastOrigin.position, _raycastOrigin.forward, out _hit, _raycastDistance, _holdableLayerMask.value)) {
+        //    return _hit.collider.GetComponentInParent<IHoldable>();
+        //}
+
+        return closestHoldable;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawLine(_raycastOrigin.position, _raycastOrigin.position + _raycastOrigin.forward * _raycastDistance);
+
+        Gizmos.matrix = transform.localToWorldMatrix;
+        Gizmos.DrawWireCube(_overlapBounds.center, _overlapBounds.size);
     }
 }
