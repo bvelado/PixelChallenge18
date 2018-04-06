@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4BBAA461-E23D-4C72-9656-0E1186F84853}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{4BBAA461-E23D-4C72-9656-0E1186F84853}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Drone_Test" ID="{8F489C5A-3F85-41BF-9A42-137E64950B73}">
+					<ChildrenList>
+						<Action Name="" ID="{DAAE481D-949A-46A4-9075-DA5B580106ED}" ShortID="753171337">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drone_Test" ID="{2E79C11B-67FE-4553-8E37-A35CCF0890C0}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

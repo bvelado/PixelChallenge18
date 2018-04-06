@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E98DCFF4-602F-4283-9131-52037A65BD46}" SchemaVersion="85">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{E98DCFF4-602F-4283-9131-52037A65BD46}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{EBD426EF-7CE0-41FF-A278-2AF41CF245C0}" WorkUnitID="{47FD3585-0081-44B6-9FDE-160D0A78D9A1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}"/>
+						<Bus Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}"/>
+						<Bus Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}"/>
+						<Bus Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}"/>
+						<Bus Name="REVERB" ID="{7E8654D3-137E-4E01-B5B1-B153F03CD164}">
+							<ChildrenList>
+								<AuxBus Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}"/>
+								<AuxBus Name="Reverb_02" ID="{1401557C-560B-40AE-B65C-E22B14A665CE}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
