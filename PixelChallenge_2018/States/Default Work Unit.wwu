@@ -11,6 +11,17 @@
 						<State Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="ST_Music" ID="{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}">
+					<ChildrenList>
+						<State Name="None" ID="{5323A463-6FAB-4655-9E75-789CEB0664DE}"/>
+						<State Name="MUS_Silence" ID="{82AF71BD-EDE6-4A4B-BFF6-3067CD44A036}"/>
+						<State Name="MUS_Menu" ID="{9971A420-D296-406E-971F-2070B88812DA}"/>
+						<State Name="MUS_End_Game" ID="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
+						<State Name="MUS_Phase_2" ID="{97EC0733-D394-4D00-AE1A-000B1B55709E}"/>
+						<State Name="MUS_Phase_3" ID="{B91796E3-FDAA-4BD4-88D9-588442C70D61}"/>
+						<State Name="MUS_Phase_1" ID="{58D15A7E-D7E4-4E37-A270-BA95E10A9CEF}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

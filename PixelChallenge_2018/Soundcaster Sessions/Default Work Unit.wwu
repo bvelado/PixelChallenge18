@@ -46,16 +46,24 @@
 							<Position X="4" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_SFX_Veggi_PickUp" ID="{3A6E24D8-7304-4089-8394-2E19A1D8896E}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Hit_Bucket" ID="{2BC8697C-FB73-4AC9-B4AF-C850FE442D38}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SFX_Veggi_Success" ID="{90A145C9-AA1F-48E5-B981-EFBC064DDFBC}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
-							<Position X="4" Y="3"/>
+							<Position X="5" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+						<CurrentStateRef Name="MUS_End_Game" ID="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Start_Game" ID="{BCC6780E-6A36-437B-919E-845D8256F3C8}"/>
 						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
