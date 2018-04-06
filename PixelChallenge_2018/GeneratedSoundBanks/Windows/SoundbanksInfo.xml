@@ -9,6 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="68904710" Language="SFX">
+			<ShortName>Music_Gong.wav</ShortName>
+			<Path>SFX\Music_Gong_AC3051B4.wem</Path>
+		</File>
 		<File Id="116054403" Language="SFX">
 			<ShortName>Music_Menu_Loop_Percu.wav</ShortName>
 			<Path>SFX\Music_Menu_Loop_Percu_AC3051B4.wem</Path>
@@ -20,6 +24,10 @@
 		<File Id="333133432" Language="SFX">
 			<ShortName>Music_Menu_Loop_Flute.wav</ShortName>
 			<Path>SFX\Music_Menu_Loop_Flute_AC3051B4.wem</Path>
+		</File>
+		<File Id="396368631" Language="SFX">
+			<ShortName>Music_Menu_Loop_Voice.wav</ShortName>
+			<Path>SFX\Music_Menu_Loop_Voice_AC3051B4.wem</Path>
 		</File>
 		<File Id="418601459" Language="SFX">
 			<ShortName>Music_Start_Transition.wav</ShortName>
@@ -45,6 +53,7 @@
 				<Event Id="247285626" Name="Play_End_Game" ObjectPath="\Events\Default Work Unit\Play_End_Game"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="3180029768" Name="Play_SFX_Fire_Off" ObjectPath="\Events\Default Work Unit\Play_SFX_Fire_Off"/>
+				<Event Id="1961944926" Name="Play_SFX_Hit_Bucket" ObjectPath="\Events\Default Work Unit\Play_SFX_Hit_Bucket"/>
 				<Event Id="2244152443" Name="Play_SFX_Thunder_Crack" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Crack"/>
 				<Event Id="3329011853" Name="Play_SFX_Thunder_Loading" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Loading"/>
 				<Event Id="214169128" Name="Play_SFX_Veggi_Success" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_Success"/>
@@ -54,9 +63,11 @@
 				<Event Id="1114964412" Name="START_GAME" ObjectPath="\Events\Default Work Unit\START_GAME"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
+				<File Id="68904710"/>
 				<File Id="116054403"/>
 				<File Id="247703123"/>
 				<File Id="333133432"/>
+				<File Id="396368631"/>
 				<File Id="418601459"/>
 				<File Id="630596723"/>
 			</ReferencedStreamedFiles>
@@ -108,6 +119,10 @@
 				<File Id="327588924" Language="SFX">
 					<ShortName>God_Start_Game.wav</ShortName>
 					<Path>SFX\God_Start_Game_FAB7959A.wem</Path>
+				</File>
+				<File Id="342040729" Language="SFX">
+					<ShortName>SFX_Hit_Bucket_01.wav</ShortName>
+					<Path>SFX\SFX_Hit_Bucket_01_FAB7959A.wem</Path>
 				</File>
 				<File Id="349872485" Language="SFX">
 					<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>

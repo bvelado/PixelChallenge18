@@ -296,13 +296,38 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{22187DB3-7CC1-47FB-AF3F-77ED0E5D28D0}" ShortID="988740857">
+						<Action Name="" ID="{04C68C9F-8875-4BBF-8CC6-8FA17188454A}" ShortID="740483301">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Music_End_Game" ID="{3DF23205-36B9-4164-A0F1-294313AF821A}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{14FA7420-A02B-4AC0-9B6A-24FC9E3865D9}" ShortID="669546525">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="23"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SW_Start_Game" ID="{BCC6780E-6A36-437B-919E-845D8256F3C8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Hit_Bucket" ID="{2BC8697C-FB73-4AC9-B4AF-C850FE442D38}">
+					<ChildrenList>
+						<Action Name="" ID="{20266C71-283B-44D7-8FEA-704589D7E176}" ShortID="725273422">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Hit_Bucket" ID="{46B2F8CB-E24C-4625-8DF0-7D7AA55F3499}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

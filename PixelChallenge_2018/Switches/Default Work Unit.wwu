@@ -17,6 +17,7 @@
 						<Switch Name="SILENCE" ID="{B61D10DA-2C8C-4F0B-A92F-50CFAD64B080}"/>
 						<Switch Name="SW_Phase3_Music" ID="{71DFEE8E-FFCE-49EF-8789-02814966E6C6}"/>
 						<Switch Name="SW_Phase2_Music" ID="{695B4890-5FB1-441E-9450-3BDC6A5E542E}"/>
+						<Switch Name="SW_Music_End_Game" ID="{3DF23205-36B9-4164-A0F1-294313AF821A}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
