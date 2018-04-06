@@ -8274,6 +8274,21 @@ Prefab:
       propertyPath: _overlapBounds.m_Center.y
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 54783483239462350, guid: 8cd067364100eb84a95b8d6250066f6c,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54783483239462350, guid: 8cd067364100eb84a95b8d6250066f6c,
+        type: 2}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54783483239462350, guid: 8cd067364100eb84a95b8d6250066f6c,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8cd067364100eb84a95b8d6250066f6c, type: 2}
   m_IsPrefabParent: 0
