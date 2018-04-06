@@ -19,6 +19,9 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	367239025	Reverb_01			\Default Work Unit\Master Audio Bus\REVERB\Reverb_01	
 	367239026	Reverb_02			\Default Work Unit\Master Audio Bus\REVERB\Reverb_02	
 
+Effect plug-ins	ID	Name	Type				Notes
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+
 Audio Devices	ID	Name	Type				Notes
 	530303819	Communication	Communication			
 	2317455096	No_Output	No Output			
