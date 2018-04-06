@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: -1357897412
-    m_lastTimePart2: -1999266821
+    m_lastTimePsrt1: 2015843349
+    m_lastTimePart2: -1999266809
     List:
     - Name: Play_End_Game
       Path: Default Work Unit\Play_End_Game
@@ -88,6 +88,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -965955443
       Guid: 2d14975180b0b447ae84aa723181d714
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Veggi_PickUp
+      Path: Default Work Unit\Play_SFX_Veggi_PickUp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Veggi_PickUp
+        ObjectType: 3
+      ID: 1606135503
+      Guid: d8246e3a0473894083942e19a1d8896e
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -188,9 +200,50 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}'
-    m_lastTimePsrt1: 472306502
-    m_lastTimePart2: -1999266948
+    m_lastTimePsrt1: 2016194120
+    m_lastTimePart2: -1999266809
     List:
+    - Name: ST_Music
+      Path: Default Work Unit\ST_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ST_Music
+        ObjectType: 9
+      ID: 1645386324
+      Guid: 124010ed7fa6594dbf4ac7af67ddaeaa
+      values:
+      - MUS_End_Game
+      - MUS_Menu
+      - MUS_Phase_1
+      - MUS_Phase_2
+      - MUS_Phase_3
+      - MUS_Silence
+      - None
+      ValueIcons:
+      - ElementName: MUS_End_Game
+        ObjectType: 8
+      - ElementName: MUS_Menu
+        ObjectType: 8
+      - ElementName: MUS_Phase_1
+        ObjectType: 8
+      - ElementName: MUS_Phase_2
+        ObjectType: 8
+      - ElementName: MUS_Phase_3
+        ObjectType: 8
+      - ElementName: MUS_Silence
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: e5392a5a2cbdbbbb02230e8601230e8600230e868eb3ad91db3ba32c
+      ValueGuids:
+      - bytes: 20bb70add3f5cf41b27fea613be89d85
+      - bytes: 20a4719996d26e40971f2070b88812da
+      - bytes: 7e5ad158e4d7374ea270ba95e10a9cef
+      - bytes: 3307ec9794d3004dae1a000b1b55709e
+      - bytes: e39617b9aafdd44b88d9588442c70d61
+      - bytes: bd71af82e6ed4b4abff63067cd44a036
+      - bytes: 63a42353ab6f55469e75789ceb0664de
     - Name: ST_Storm_Phase
       Path: Default Work Unit\ST_Storm_Phase
       PathAndIcons:
@@ -224,46 +277,9 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CF3F1732-78F5-4598-BE17-5B51174B16CF}'
-    m_lastTimePsrt1: -1764850626
-    m_lastTimePart2: -1999266823
+    m_lastTimePsrt1: 2016199134
+    m_lastTimePart2: -1999266809
     List:
-    - Name: SW_Music
-      Path: Default Work Unit\SW_Music
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SW_Music
-        ObjectType: 11
-      ID: -1416409205
-      Guid: 74f78c3affe8a648b21dacd334fb2600
-      values:
-      - SILENCE
-      - SW_Menu
-      - SW_Music_End_Game
-      - SW_Phase2_Music
-      - SW_Phase3_Music
-      - SW_Start_Game
-      ValueIcons:
-      - ElementName: SILENCE
-        ObjectType: 10
-      - ElementName: SW_Menu
-        ObjectType: 10
-      - ElementName: SW_Music_End_Game
-        ObjectType: 10
-      - ElementName: SW_Phase2_Music
-        ObjectType: 10
-      - ElementName: SW_Phase3_Music
-        ObjectType: 10
-      - ElementName: SW_Start_Game
-        ObjectType: 10
-      valueIDs: 5a924ab507eff1a7ae5f39e4e351e2a0ea68a25237f33c9b
-      ValueGuids:
-      - bytes: da101db68c2c0b4fa92f50cfad64b080
-      - bytes: 882d7db780b4d847adbb52ad824ac3f0
-      - bytes: 0532f23db9366441a0f1294313af821a
-      - bytes: 90485b69b15f1e4494503bdc6a5e542e
-      - bytes: 8eeedf71ceffef49878902814966e6c6
-      - bytes: 0e78c6bc366a7b43919e845d8256f3c8
     - Name: SW_Storm_Phase
       Path: Default Work Unit\SW_Storm_Phase
       PathAndIcons:

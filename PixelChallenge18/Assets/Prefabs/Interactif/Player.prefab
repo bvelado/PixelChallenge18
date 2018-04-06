@@ -3423,6 +3423,8 @@ MonoBehaviour:
   _crouchedAnimatorParameter: crouched
   _idleAnimatorParameter: Idle
   _runAnimatorParameter: Run
+  _pickAnimatorParameter: Pick
+  _holdAnimatorParameter: Carry
 --- !u!114 &114655314039934650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3438,8 +3440,9 @@ MonoBehaviour:
   _holdableLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  _raycastOrigin: {fileID: 4011599213249468}
-  _raycastDistance: 1.75
+  _overlapBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!114 &114998098907060960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3451,7 +3454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd519ac4322f1ba46b7868cef0ec90b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 1000
+  _moveSpeed: 1300
 --- !u!136 &136499203132831966
 CapsuleCollider:
   m_ObjectHideFlags: 1
