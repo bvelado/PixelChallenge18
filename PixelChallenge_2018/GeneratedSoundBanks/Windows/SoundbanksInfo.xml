@@ -64,6 +64,13 @@
 			<IncludedEvents>
 				<Event Id="247285626" Name="Play_End_Game" ObjectPath="\Events\Default Work Unit\Play_End_Game"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="2402816769" Name="Play_Ono_Crouch" ObjectPath="\Events\Default Work Unit\Play_Ono_Crouch"/>
+				<Event Id="1982566496" Name="Play_Ono_Falling" ObjectPath="\Events\Default Work Unit\Play_Ono_Falling"/>
+				<Event Id="552788742" Name="Play_Ono_GrabVeggie" ObjectPath="\Events\Default Work Unit\Play_Ono_GrabVeggie"/>
+				<Event Id="2886324594" Name="Play_Ono_isKicked" ObjectPath="\Events\Default Work Unit\Play_Ono_isKicked"/>
+				<Event Id="1421661965" Name="Play_Ono_Kick" ObjectPath="\Events\Default Work Unit\Play_Ono_Kick"/>
+				<Event Id="647168308" Name="Play_Ono_Ready" ObjectPath="\Events\Default Work Unit\Play_Ono_Ready"/>
+				<Event Id="1714662894" Name="Play_OnoPushedByWind" ObjectPath="\Events\Default Work Unit\Play_OnoPushedByWind"/>
 				<Event Id="3180029768" Name="Play_SFX_Fire_Off" ObjectPath="\Events\Default Work Unit\Play_SFX_Fire_Off"/>
 				<Event Id="1961944926" Name="Play_SFX_Hit_Bucket" ObjectPath="\Events\Default Work Unit\Play_SFX_Hit_Bucket"/>
 				<Event Id="1994371699" Name="Play_SFX_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_SFX_Hit_Player"/>
@@ -72,6 +79,8 @@
 				<Event Id="1606135503" Name="Play_SFX_Veggi_PickUp" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_PickUp"/>
 				<Event Id="214169128" Name="Play_SFX_Veggi_Success" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_Success"/>
 				<Event Id="1573413394" Name="Play_SFX_Wind_Gust" ObjectPath="\Events\Default Work Unit\Play_SFX_Wind_Gust"/>
+				<Event Id="1749424733" Name="Play_UI_Click" ObjectPath="\Events\Default Work Unit\Play_UI_Click"/>
+				<Event Id="2671607925" Name="Play_UI_Highlight" ObjectPath="\Events\Default Work Unit\Play_UI_Highlight"/>
 				<Event Id="2844963023" Name="Set_Phase_1" ObjectPath="\Events\Default Work Unit\Set_Phase_1"/>
 				<Event Id="2844963020" Name="Set_Phase_2" ObjectPath="\Events\Default Work Unit\Set_Phase_2"/>
 				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
@@ -102,6 +111,10 @@
 					<ShortName>Amb_Thunder_Roar_05.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_05_D39ECB56.wem</Path>
 				</File>
+				<File Id="60776324" Language="SFX">
+					<ShortName>UI_Highlight.wav</ShortName>
+					<Path>SFX\UI_Highlight_515932F0.wem</Path>
+				</File>
 				<File Id="130509793" Language="SFX">
 					<ShortName>SFX_Veggi_PickUp_01.wav</ShortName>
 					<Path>SFX\SFX_Veggi_PickUp_01_515932F0.wem</Path>
@@ -125,6 +138,10 @@
 				<File Id="206401840" Language="SFX">
 					<ShortName>SFX_God_Sweetener.wav</ShortName>
 					<Path>SFX\SFX_God_Sweetener_515932F0.wem</Path>
+				</File>
+				<File Id="218337981" Language="SFX">
+					<ShortName>UI_Click.wav</ShortName>
+					<Path>SFX\UI_Click_515932F0.wem</Path>
 				</File>
 				<File Id="222037412" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>

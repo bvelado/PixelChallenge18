@@ -438,6 +438,132 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Ono_Crouch" ID="{D178CF93-3C43-44C9-B312-9518D3F3356F}">
+					<ChildrenList>
+						<Action Name="" ID="{49354404-CFB4-459E-9AD8-E7DAF5D067A8}" ShortID="881632906">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ono_Crouch" ID="{EB790A12-C7D9-4582-8A96-5C5408693B98}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ono_Falling" ID="{677B23FF-8F5E-40FB-B189-A53C16AF69A4}">
+					<ChildrenList>
+						<Action Name="" ID="{FB730A58-5488-4B16-BC37-A7302CC4DB9F}" ShortID="723922634">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ono_Falling" ID="{0C216A1A-0596-4E23-97C4-7358201284D2}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ono_GrabVeggie" ID="{32A37D6C-C90B-4569-8E97-4B03F1E75125}">
+					<ChildrenList>
+						<Action Name="" ID="{30E41239-22C3-4E76-A9E4-15D371854DF3}" ShortID="634445211">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ono_GrabVeggie" ID="{E0991DE6-D6C2-4F6C-BA87-7C6C6FBA455D}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ono_isKicked" ID="{BAF92975-24EE-4A13-9517-78DA1BA321BF}">
+					<ChildrenList>
+						<Action Name="" ID="{B25557C8-4126-44EB-8220-424C2B385FD0}" ShortID="422727250">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ono_isKicked" ID="{81706E3F-CAB2-446F-9CC1-553321730BCF}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ono_Kick" ID="{66DB4CE0-2865-4B15-916D-698C0E054E50}">
+					<ChildrenList>
+						<Action Name="" ID="{98C5FC50-2FC5-47C9-A5CE-99F52FA2FCF7}" ShortID="125621000">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ono_Kick" ID="{6320B27A-785B-4A5F-BD09-2A2788B650A6}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ono_Ready" ID="{868D95C9-D140-48C5-919C-BD603EB3D7C0}">
+					<ChildrenList>
+						<Action Name="" ID="{69349C0A-C353-42EF-B803-6FDD6FDB97A3}" ShortID="914364897">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ono_Ready" ID="{2614A1C5-5654-4B51-9F77-1BD0BB174C1D}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OnoPushedByWind" ID="{5349DF80-98F8-4EC8-9640-643C5112DCF0}">
+					<ChildrenList>
+						<Action Name="" ID="{6D08A6C3-06AF-4797-BA7F-E12D5A1EA508}" ShortID="996306155">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OnoPushedByWind" ID="{47275F4C-D1F1-4094-BC9D-6F272FA8CF73}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Click" ID="{3097A6E9-5784-437C-AE85-41D388531342}">
+					<ChildrenList>
+						<Action Name="" ID="{8D5C9529-6FA6-4EE1-A722-1DF5DE52DD9D}" ShortID="680212717">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Click" ID="{AB1773B0-C1CF-49C3-BB22-308AF6CC3644}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Highlight" ID="{4038591B-1CC7-4F39-9B38-41DB0A819B11}">
+					<ChildrenList>
+						<Action Name="" ID="{F1207186-D211-490E-AF34-CCA65BD37ABB}" ShortID="988798696">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Highlight" ID="{B535603B-1102-4E0A-A237-D63A94CFB9D6}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
