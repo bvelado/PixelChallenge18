@@ -1,0 +1,17 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	348963605	REVERB			\Default Work Unit\Master Audio Bus\REVERB	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	3170124113	VOICE			\Default Work Unit\Master Audio Bus\VOICE	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	MUSIC			\Default Work Unit\Master Audio Bus\MUSIC	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	367239025	Reverb_01			\Default Work Unit\Master Audio Bus\REVERB\Reverb_01	
+	367239026	Reverb_02			\Default Work Unit\Master Audio Bus\REVERB\Reverb_02	
+
+Audio Devices	ID	Name	Type				Notes
+	530303819	Communication	Communication			
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
