@@ -98,15 +98,16 @@ public sealed class CharacterInputs : MonoBehaviour {
         if(_leftJoystickInput.x != 0 || _leftJoystickInput.y != 0)
         {
             //Debug.Log(string.Format("{0} emitted joystick input", _playerId));
-            if(LeftJoystickInputEmitted != null)
-            {
-                LeftJoystickInputEmitted.Invoke(_leftJoystickInput);
-            }
             _model.SetRun();
         }
         else
         {
             _model.SetIdle();
+        }
+
+        if (LeftJoystickInputEmitted != null)
+        {
+            LeftJoystickInputEmitted.Invoke(_leftJoystickInput);
         }
 
         // KICK

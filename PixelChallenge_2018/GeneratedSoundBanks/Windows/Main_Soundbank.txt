@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	214169128	Play_SFX_Veggi_Success			\Default Work Unit\Play_SFX_Veggi_Success	
 	247285626	Play_End_Game			\Default Work Unit\Play_End_Game	
 	1114964412	START_GAME			\Default Work Unit\START_GAME	
+	1606135503	Play_SFX_Veggi_PickUp			\Default Work Unit\Play_SFX_Veggi_PickUp	
 	1961944926	Play_SFX_Hit_Bucket			\Default Work Unit\Play_SFX_Hit_Bucket	
 	2244152443	Play_SFX_Thunder_Crack			\Default Work Unit\Play_SFX_Thunder_Crack	
 	2844963020	Set_Phase_2			\Default Work Unit\Set_Phase_2	
@@ -32,8 +33,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16489025	SFX_Veggi_Success	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_Success_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_Success		16118
 	23184774	Amb_Thunder_Roar_11	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_11_089B868F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_11		11202
 	30951434	Amb_Thunder_Roar_05	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_05_99882E38.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_05		28541
+	130509793	SFX_Veggi_PickUp_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_01		2785
 	143818233	God_Start_Phase_3	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\God_Start_Phase_3_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\God\God_Start_Phase_3		58341
 	196649018	Amb_Thunder_Roar_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_02_F5C0C469.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_02		8177
+	206401840	SFX_God_Sweetener	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_God_Sweetener_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_God_Sweetener		10600
 	222037412	Amb_Thunder_Roar_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_01_072F86BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_01		11146
 	269551509	SFX_Thunder_Loading_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_02_DE3756CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_02		9281
 	287759630	SFX_Thunder_Crack_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_01		27696
@@ -44,6 +47,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	342040729	SFX_Hit_Bucket	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Hit_Bucket_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Hit_Bucket		11267
 	349872485	Amb_Wind_Phase2_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase2_lp_760B809C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase2_lp		780525
 	423954894	SFX_Thunder_Crack_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_02		26709
+	465255943	SFX_Veggi_PickUp_02	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_02_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_02		3076
 	470681896	Amb_Wind_Phase3_lp	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Wind_Phase3_lp_19735EC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Storm_2D\Amb_Wind_Phase3_lp		648531
 	493142140	SFX_Thunder_Loading_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_01_F8B8646E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_01		9749
 	502360231	SFX_Fire_Off_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Fire_Off_01_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Fire_Off\SFX_Fire_Off_01		21931
@@ -52,6 +56,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	590874931	God_End_Game	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\God_End_Game_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\God\God_End_Game		46686
 	666870192	SFX_Thunder_Loading_04	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_04_803746CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_04		10720
 	811501772	Amb_Thunder_Roar_09	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_09_FFAF6F44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_09		36833
+	813419052	SFX_Veggi_PickUp_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Veggi_PickUp_03_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Veggi_PickUp\SFX_Veggi_PickUp_03		3691
 	826150858	SFX_Thunder_Crack_05	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Crack_05_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Crack\SFX_Thunder_Crack_05		34435
 	837336748	Amb_Thunder_Roar_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_03_48F47559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_03		15444
 	842604716	Amb_Thunder_Roar_06	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Amb_Thunder_Roar_06_53BC8E69.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Thunder_Roar\Amb_Thunder_Roar_1\Amb_Thunder_Roar_06		9853
@@ -62,11 +67,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1051040488	SFX_Thunder_Loading_03	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\SFX_Thunder_Loading_03_CA6F84BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Thunder_Loading\SFX_Thunder_Loading_03		9539
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	68904710	Music_Gong	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Gong_AC3051B4.wem	68904710.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Menu_Loop\Music_Menu_Loop\Music_Gong	
+	68904710	Music_Gong	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Gong_AC3051B4.wem	68904710.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Music_End_Game\Music_Menu_Loop_Voice\Music_Gong	
 	116054403	Music_Menu_Loop_Percu	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Menu_Loop_Percu_AC3051B4.wem	116054403.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Menu_Loop\Music_Menu_Loop\Music_Menu_Loop_Percu	
 	247703123	Music_Menu_Loop	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Menu_Loop_AC3051B4.wem	247703123.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Menu_Loop\Music_Menu_Loop\Music_Menu_Loop	
 	333133432	Music_Menu_Loop_Flute	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Menu_Loop_Flute_AC3051B4.wem	333133432.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Phase2_Loop\Phase2\Music_Menu_Loop_Flute	
 	396368631	Music_Menu_Loop_Voice	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Menu_Loop_Voice_AC3051B4.wem	396368631.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Music_End_Game\Music_Menu_Loop_Voice\Music_Menu_Loop_Voice	
-	418601459	Music_Start_Transition	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Start_Transition_AC3051B4.wem	418601459.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Music_Start_Transition\Music_Start_Transition	
-	630596723	Music_Menu_Loop_Bass	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Menu_Loop_Bass_AC3051B4.wem	630596723.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Phase3_Loop\Phase3\Music_Menu_Loop_Bass	
+	418601459	Music_Start_Transition	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Start_Transition_AC3051B4.wem	418601459.wem	\Interactive Music Hierarchy\Default Work Unit\Music\SILENCE\Music_Start_Transition	
+	630596723	Music_Menu_Loop_Bass	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Music_Menu_Loop_Bass_AC3051B4.wem	630596723.wem	\Interactive Music Hierarchy\Default Work Unit\Music\Music_End_Game\Music_Menu_Loop_Voice\Music_Menu_Loop_Bass	
 
