@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour {
     public GameObject gameScreen;
     public List<Transform> pZones;
     private Animator myAnim;
+    public List<GameObject> stormFX;
 
     private bool onCredits = false;
     private bool onSelection = false;
@@ -154,8 +155,26 @@ public class UIManager : MonoBehaviour {
 
     void StartGame ()
     {
+        onSelection = false;
         selectionScreen.SetActive(false);
         gameScreen.SetActive(true);
         myAnim.SetTrigger("ReadyGo");
+        ActivateStormFX();
+    }
+
+    void ActivateStormFX()
+    {
+        foreach (var fx in stormFX)
+        {
+            fx.SetActive(true);
+        }
+    }
+
+    void DectivateStormFX ()
+    {
+        foreach (var fx in stormFX)
+        {
+            fx.SetActive(false);
+        }
     }
 }
