@@ -1933,6 +1933,96 @@
 							<ObjectRef Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="God" ID="{2B5C635B-DFE4-4C2B-99D8-4BEC6D6F272B}" ShortID="403647303">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="God_Start_Game" ID="{F921FBD1-E5BD-4DCE-88C6-BB6EF236ADFC}" ShortID="514361499">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="God_Start_Game" ID="{BF02F355-7513-4541-88DC-B190DCD3C406}" ShortID="327588924">
+											<Language>SFX</Language>
+											<AudioFile>God_Start_Game.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="God_Start_Game" ID="{BF02F355-7513-4541-88DC-B190DCD3C406}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="God_End_Game" ID="{99BA046D-A3F0-4582-8E3B-500CA9EDAD7A}" ShortID="207455802">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="God_End_Game" ID="{B38BF5FA-6210-4BBC-8FDC-1DD7711F217D}" ShortID="590874931">
+											<Language>SFX</Language>
+											<AudioFile>God_End_Game.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="God_End_Game" ID="{B38BF5FA-6210-4BBC-8FDC-1DD7711F217D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="God_Start_Phase_2" ID="{89938843-2955-4AE5-AA68-4A64D12380F4}" ShortID="857444947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="God_Start_Phase_2" ID="{D07BA837-E500-4B50-94E3-EF9C397FE1EE}" ShortID="885195723">
+											<Language>SFX</Language>
+											<AudioFile>God_Start_Phase_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="God_Start_Phase_2" ID="{D07BA837-E500-4B50-94E3-EF9C397FE1EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="God_Start_Phase_3" ID="{DC38CA89-C92C-4C19-9843-D3C37E4DB31B}" ShortID="432378147">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="God_Start_Phase_3" ID="{5FE5687F-7374-4042-A77E-7AAADDA07E0C}" ShortID="143818233">
+											<Language>SFX</Language>
+											<AudioFile>God_Start_Phase_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="God_Start_Phase_3" ID="{5FE5687F-7374-4042-A77E-7AAADDA07E0C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Other" ID="{790B6090-88DA-4F47-89AE-F51282DD2209}" ShortID="678440996">
 					<ReferenceList>

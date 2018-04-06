@@ -8,7 +8,28 @@
 		<ExternalSourcesOutputRoot>D:\PixelChallenge\PixelChallenge_2018\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="116054403" Language="SFX">
+			<ShortName>Music_Menu_Loop_Percu.wav</ShortName>
+			<Path>SFX\Music_Menu_Loop_Percu_AC3051B4.wem</Path>
+		</File>
+		<File Id="247703123" Language="SFX">
+			<ShortName>Music_Menu_Loop.wav</ShortName>
+			<Path>SFX\Music_Menu_Loop_AC3051B4.wem</Path>
+		</File>
+		<File Id="333133432" Language="SFX">
+			<ShortName>Music_Menu_Loop_Flute.wav</ShortName>
+			<Path>SFX\Music_Menu_Loop_Flute_AC3051B4.wem</Path>
+		</File>
+		<File Id="418601459" Language="SFX">
+			<ShortName>Music_Start_Transition.wav</ShortName>
+			<Path>SFX\Music_Start_Transition_AC3051B4.wem</Path>
+		</File>
+		<File Id="630596723" Language="SFX">
+			<ShortName>Music_Menu_Loop_Bass.wav</ShortName>
+			<Path>SFX\Music_Menu_Loop_Bass_AC3051B4.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -21,15 +42,23 @@
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="810046381" Name="Play_Amb_Storm_2D" ObjectPath="\Events\Default Work Unit\Play_Amb_Storm_2D"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="750390071" Name="Play_Ready" ObjectPath="\Events\Default Work Unit\Play_Ready"/>
 				<Event Id="3180029768" Name="Play_SFX_Fire_Off" ObjectPath="\Events\Default Work Unit\Play_SFX_Fire_Off"/>
 				<Event Id="2244152443" Name="Play_SFX_Thunder_Crack" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Crack"/>
 				<Event Id="3329011853" Name="Play_SFX_Thunder_Loading" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Loading"/>
 				<Event Id="214169128" Name="Play_SFX_Veggi_Success" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_Success"/>
 				<Event Id="2844963020" Name="Set_Phase_2" ObjectPath="\Events\Default Work Unit\Set_Phase_2"/>
 				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
+				<Event Id="1114964412" Name="START_GAME" ObjectPath="\Events\Default Work Unit\START_GAME"/>
 			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="116054403"/>
+				<File Id="247703123"/>
+				<File Id="333133432"/>
+				<File Id="418601459"/>
+				<File Id="630596723"/>
+			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="16489025" Language="SFX">
 					<ShortName>SFX_Veggi_Success_01.wav</ShortName>
@@ -50,10 +79,6 @@
 				<File Id="222037412" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_01_072F86BC.wem</Path>
-				</File>
-				<File Id="247703123" Language="SFX">
-					<ShortName>Music_Menu_Loop.wav</ShortName>
-					<Path>SFX\Music_Menu_Loop_AC3051B4.wem</Path>
 				</File>
 				<File Id="269551509" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_02.wav</ShortName>
@@ -78,10 +103,6 @@
 				<File Id="349872485" Language="SFX">
 					<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>
 					<Path>SFX\Amb_Wind_Phase2_lp_760B809C.wem</Path>
-				</File>
-				<File Id="418601459" Language="SFX">
-					<ShortName>Music_Start_Transition.wav</ShortName>
-					<Path>SFX\Music_Start_Transition_AC3051B4.wem</Path>
 				</File>
 				<File Id="423954894" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_02.wav</ShortName>
