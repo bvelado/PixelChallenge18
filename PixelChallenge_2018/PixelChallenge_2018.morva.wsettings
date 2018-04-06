@@ -11,6 +11,7 @@
 				<Property Name="Event Action List\{497E0D79-C77A-4B03-832A-EA2BC8EFDB80}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4D285DAD-41A7-4D06-9C4A-29A6D7C9058C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5197142D-B080-47B4-AE84-AA723181D714}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6349EC93-B52D-4901-A0BD-D2471E3F69FA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{68F1745F-ECFE-4018-910F-1B7AA2022FF5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8F489C5A-3F85-41BF-9A42-137E64950B73}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{90A145C9-AA1F-48E5-B981-EFBC064DDFBC}\x64_Expand States" Type="string" Value=""/>
@@ -29,6 +30,15 @@
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
+				<Property Name="Game Profiler\Capture List\Filters\Scope - Game Object" Type="bool" Value="True"/>
+				<Property Name="Game Profiler\Capture List\Filters\Scope - Global" Type="bool" Value="True"/>
+				<Property Name="Game Profiler\Capture List\Filters\Sub Type - Mask" Type="int32" Value="8191"/>
+				<Property Name="Game Profiler\Capture List\Filters\Type - Mask" Type="int32" Value="2788"/>
+				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Game Objects" Type="bool" Value="False"/>
+				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Hierarchy" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Parents" Type="bool" Value="False"/>
+				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - PlayingID" Type="bool" Value="False"/>
+				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Use Hierarchy" Type="bool" Value="False"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
@@ -50,7 +60,7 @@
 				<Property Name="Interactive Music\x64_{EBDA2109-1407-498F-908D-CFE298455B09} - SegmentEditorZoomInfo" Type="string" Value="VVVVVVVV5T8AAAAAAADwP+zKyhBRvEBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
-				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
 				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>

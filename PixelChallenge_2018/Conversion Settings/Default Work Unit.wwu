@@ -27,7 +27,7 @@
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Windows">3</Value>
+								<Value Platform="Windows">0</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
