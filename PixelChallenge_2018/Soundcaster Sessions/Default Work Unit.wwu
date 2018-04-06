@@ -61,14 +61,18 @@
 							<ObjectRef Name="Play_SFX_Veggi_Success" ID="{90A145C9-AA1F-48E5-B981-EFBC064DDFBC}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="5" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Hit_Player" ID="{6349EC93-B52D-4901-A0BD-D2471E3F69FA}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="5" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
+						<CurrentStateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
 						<CurrentStateRef Name="MUS_End_Game" ID="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

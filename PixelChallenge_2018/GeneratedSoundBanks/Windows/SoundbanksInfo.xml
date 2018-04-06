@@ -11,31 +11,43 @@
 	<StreamedFiles>
 		<File Id="68904710" Language="SFX">
 			<ShortName>Music_Gong.wav</ShortName>
-			<Path>SFX\Music_Gong_AC3051B4.wem</Path>
+			<Path>SFX\Music_Gong_81B2982A.wem</Path>
 		</File>
 		<File Id="116054403" Language="SFX">
 			<ShortName>Music_Menu_Loop_Percu.wav</ShortName>
-			<Path>SFX\Music_Menu_Loop_Percu_AC3051B4.wem</Path>
+			<Path>SFX\Music_Menu_Loop_Percu_81B2982A.wem</Path>
 		</File>
 		<File Id="247703123" Language="SFX">
 			<ShortName>Music_Menu_Loop.wav</ShortName>
-			<Path>SFX\Music_Menu_Loop_AC3051B4.wem</Path>
+			<Path>SFX\Music_Menu_Loop_81B2982A.wem</Path>
 		</File>
 		<File Id="333133432" Language="SFX">
 			<ShortName>Music_Menu_Loop_Flute.wav</ShortName>
-			<Path>SFX\Music_Menu_Loop_Flute_AC3051B4.wem</Path>
+			<Path>SFX\Music_Menu_Loop_Flute_81B2982A.wem</Path>
+		</File>
+		<File Id="349872485" Language="SFX">
+			<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>
+			<Path>SFX\Amb_Wind_Phase2_lp_48E237BA.wem</Path>
 		</File>
 		<File Id="396368631" Language="SFX">
 			<ShortName>Music_Menu_Loop_Voice.wav</ShortName>
-			<Path>SFX\Music_Menu_Loop_Voice_AC3051B4.wem</Path>
+			<Path>SFX\Music_Menu_Loop_Voice_81B2982A.wem</Path>
 		</File>
 		<File Id="418601459" Language="SFX">
 			<ShortName>Music_Start_Transition.wav</ShortName>
-			<Path>SFX\Music_Start_Transition_AC3051B4.wem</Path>
+			<Path>SFX\Music_Start_Transition_81B2982A.wem</Path>
+		</File>
+		<File Id="470681896" Language="SFX">
+			<ShortName>Amb_Wind_Phase3_lp.wav</ShortName>
+			<Path>SFX\Amb_Wind_Phase3_lp_1F6EB61F.wem</Path>
 		</File>
 		<File Id="630596723" Language="SFX">
 			<ShortName>Music_Menu_Loop_Bass.wav</ShortName>
-			<Path>SFX\Music_Menu_Loop_Bass_AC3051B4.wem</Path>
+			<Path>SFX\Music_Menu_Loop_Bass_81B2982A.wem</Path>
+		</File>
+		<File Id="885937118" Language="SFX">
+			<ShortName>Amb_Wind_Phase1_lp.wav</ShortName>
+			<Path>SFX\Amb_Wind_Phase1_lp_2B5EE58E.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -54,6 +66,7 @@
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="3180029768" Name="Play_SFX_Fire_Off" ObjectPath="\Events\Default Work Unit\Play_SFX_Fire_Off"/>
 				<Event Id="1961944926" Name="Play_SFX_Hit_Bucket" ObjectPath="\Events\Default Work Unit\Play_SFX_Hit_Bucket"/>
+				<Event Id="1994371699" Name="Play_SFX_Hit_Player" ObjectPath="\Events\Default Work Unit\Play_SFX_Hit_Player"/>
 				<Event Id="2244152443" Name="Play_SFX_Thunder_Crack" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Crack"/>
 				<Event Id="3329011853" Name="Play_SFX_Thunder_Loading" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Loading"/>
 				<Event Id="1606135503" Name="Play_SFX_Veggi_PickUp" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_PickUp"/>
@@ -69,166 +82,185 @@
 				<File Id="116054403"/>
 				<File Id="247703123"/>
 				<File Id="333133432"/>
+				<File Id="349872485"/>
 				<File Id="396368631"/>
 				<File Id="418601459"/>
+				<File Id="470681896"/>
 				<File Id="630596723"/>
+				<File Id="885937118"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="16489025" Language="SFX">
 					<ShortName>SFX_Veggi_Success_01.wav</ShortName>
-					<Path>SFX\SFX_Veggi_Success_01_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Veggi_Success_01_515932F0.wem</Path>
 				</File>
 				<File Id="23184774" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_11.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_11_089B868F.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_11_2DE19A61.wem</Path>
 				</File>
 				<File Id="30951434" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_05.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_05_99882E38.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_05_D39ECB56.wem</Path>
 				</File>
 				<File Id="130509793" Language="SFX">
 					<ShortName>SFX_Veggi_PickUp_01.wav</ShortName>
-					<Path>SFX\SFX_Veggi_PickUp_01_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Veggi_PickUp_01_515932F0.wem</Path>
 				</File>
 				<File Id="143818233" Language="SFX">
 					<ShortName>God_Start_Phase_3.wav</ShortName>
-					<Path>SFX\God_Start_Phase_3_FAB7959A.wem</Path>
+					<Path>SFX\God_Start_Phase_3_515932F0.wem</Path>
 				</File>
 				<File Id="144928623" Language="SFX">
 					<ShortName>SFX_Wind_Gust_04.wav</ShortName>
-					<Path>SFX\SFX_Wind_Gust_04_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Wind_Gust_04_515932F0.wem</Path>
+				</File>
+				<File Id="180643626" Language="SFX">
+					<ShortName>SFX_Hit_Player_01.wav</ShortName>
+					<Path>SFX\SFX_Hit_Player_01_515932F0.wem</Path>
 				</File>
 				<File Id="196649018" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_02.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_02_F5C0C469.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_02_D8FE7447.wem</Path>
 				</File>
 				<File Id="206401840" Language="SFX">
 					<ShortName>SFX_God_Sweetener.wav</ShortName>
-					<Path>SFX\SFX_God_Sweetener_FAB7959A.wem</Path>
+					<Path>SFX\SFX_God_Sweetener_515932F0.wem</Path>
 				</File>
 				<File Id="222037412" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_01_072F86BC.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_01_5E9B1D6E.wem</Path>
 				</File>
 				<File Id="269551509" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_02.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_02_DE3756CF.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_02_96256A95.wem</Path>
 				</File>
 				<File Id="287759630" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_01.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Crack_01_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Thunder_Crack_01_515932F0.wem</Path>
 				</File>
 				<File Id="296098086" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_07.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_07_0EB94D01.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_07_E45AFFB3.wem</Path>
 				</File>
 				<File Id="298242952" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_03.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Crack_03_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Thunder_Crack_03_515932F0.wem</Path>
 				</File>
 				<File Id="321987922" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_04.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Crack_04_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Thunder_Crack_04_515932F0.wem</Path>
 				</File>
 				<File Id="327588924" Language="SFX">
 					<ShortName>God_Start_Game.wav</ShortName>
-					<Path>SFX\God_Start_Game_FAB7959A.wem</Path>
+					<Path>SFX\God_Start_Game_515932F0.wem</Path>
 				</File>
 				<File Id="342040729" Language="SFX">
 					<ShortName>SFX_Hit_Bucket_01.wav</ShortName>
-					<Path>SFX\SFX_Hit_Bucket_01_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Hit_Bucket_01_515932F0.wem</Path>
 				</File>
-				<File Id="349872485" Language="SFX">
-					<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>
-					<Path>SFX\Amb_Wind_Phase2_lp_760B809C.wem</Path>
+				<File Id="353527571" Language="SFX">
+					<ShortName>SFX_Wind_Eagle_01.wav</ShortName>
+					<Path>SFX\SFX_Wind_Eagle_01_515932F0.wem</Path>
+				</File>
+				<File Id="382492137" Language="SFX">
+					<ShortName>SFX_Wind_Eagle_03.wav</ShortName>
+					<Path>SFX\SFX_Wind_Eagle_03_515932F0.wem</Path>
 				</File>
 				<File Id="423954894" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_02.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Crack_02_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Thunder_Crack_02_515932F0.wem</Path>
 				</File>
 				<File Id="465255943" Language="SFX">
 					<ShortName>SFX_Veggi_PickUp_02.wav</ShortName>
-					<Path>SFX\SFX_Veggi_PickUp_02_FAB7959A.wem</Path>
-				</File>
-				<File Id="470681896" Language="SFX">
-					<ShortName>Amb_Wind_Phase3_lp.wav</ShortName>
-					<Path>SFX\Amb_Wind_Phase3_lp_19735EC9.wem</Path>
+					<Path>SFX\SFX_Veggi_PickUp_02_515932F0.wem</Path>
 				</File>
 				<File Id="493142140" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_01.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_01_F8B8646E.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_01_9AA66F10.wem</Path>
 				</File>
 				<File Id="502360231" Language="SFX">
 					<ShortName>SFX_Fire_Off_01.wav</ShortName>
-					<Path>SFX\SFX_Fire_Off_01_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Fire_Off_01_515932F0.wem</Path>
 				</File>
 				<File Id="529259371" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_10.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_10_2BF9F96B.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_10_1560F3A1.wem</Path>
+				</File>
+				<File Id="578660987" Language="SFX">
+					<ShortName>SFX_Hit_Player_04.wav</ShortName>
+					<Path>SFX\SFX_Hit_Player_04_515932F0.wem</Path>
 				</File>
 				<File Id="590617343" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_08.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_08_DE5D9E57.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_08_0A3B57DD.wem</Path>
 				</File>
 				<File Id="590874931" Language="SFX">
 					<ShortName>God_End_Game.wav</ShortName>
-					<Path>SFX\God_End_Game_FAB7959A.wem</Path>
+					<Path>SFX\God_End_Game_515932F0.wem</Path>
 				</File>
 				<File Id="598769784" Language="SFX">
 					<ShortName>SFX_Wind_Gust_02.wav</ShortName>
-					<Path>SFX\SFX_Wind_Gust_02_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Wind_Gust_02_515932F0.wem</Path>
 				</File>
 				<File Id="666870192" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_04.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_04_803746CA.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_04_D9AAAF50.wem</Path>
 				</File>
 				<File Id="773504479" Language="SFX">
 					<ShortName>SFX_Wind_Gust_01.wav</ShortName>
-					<Path>SFX\SFX_Wind_Gust_01_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Wind_Gust_01_515932F0.wem</Path>
 				</File>
 				<File Id="811501772" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_09.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_09_FFAF6F44.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_09_1B2932CE.wem</Path>
 				</File>
 				<File Id="813419052" Language="SFX">
 					<ShortName>SFX_Veggi_PickUp_03.wav</ShortName>
-					<Path>SFX\SFX_Veggi_PickUp_03_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Veggi_PickUp_03_515932F0.wem</Path>
 				</File>
 				<File Id="826150858" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_05.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Crack_05_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Thunder_Crack_05_515932F0.wem</Path>
 				</File>
 				<File Id="837336748" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_03.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_03_48F47559.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_03_665EA9DB.wem</Path>
 				</File>
 				<File Id="842604716" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_06.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_06_53BC8E69.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_06_D4CDA73B.wem</Path>
 				</File>
 				<File Id="885195723" Language="SFX">
 					<ShortName>God_Start_Phase_2.wav</ShortName>
-					<Path>SFX\God_Start_Phase_2_FAB7959A.wem</Path>
-				</File>
-				<File Id="885937118" Language="SFX">
-					<ShortName>Amb_Wind_Phase1_lp.wav</ShortName>
-					<Path>SFX\Amb_Wind_Phase1_lp_AF76FE5C.wem</Path>
+					<Path>SFX\God_Start_Phase_2_515932F0.wem</Path>
 				</File>
 				<File Id="892070664" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_04.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_04_FAB7959A.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_04_515932F0.wem</Path>
+				</File>
+				<File Id="924574119" Language="SFX">
+					<ShortName>SFX_Wind_Eagle_02.wav</ShortName>
+					<Path>SFX\SFX_Wind_Eagle_02_515932F0.wem</Path>
+				</File>
+				<File Id="933062479" Language="SFX">
+					<ShortName>SFX_Hit_Player_02.wav</ShortName>
+					<Path>SFX\SFX_Hit_Player_02_515932F0.wem</Path>
 				</File>
 				<File Id="937897836" Language="SFX">
 					<ShortName>SFX_Fire_Off_02.wav</ShortName>
-					<Path>SFX\SFX_Fire_Off_02_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Fire_Off_02_515932F0.wem</Path>
 				</File>
 				<File Id="999106958" Language="SFX">
 					<ShortName>SFX_Wind_Gust_03.wav</ShortName>
-					<Path>SFX\SFX_Wind_Gust_03_FAB7959A.wem</Path>
+					<Path>SFX\SFX_Wind_Gust_03_515932F0.wem</Path>
 				</File>
 				<File Id="1051040488" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_03.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_03_CA6F84BA.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_03_5BDD2284.wem</Path>
+				</File>
+				<File Id="1073573200" Language="SFX">
+					<ShortName>SFX_Hit_Player_03.wav</ShortName>
+					<Path>SFX\SFX_Hit_Player_03_515932F0.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
