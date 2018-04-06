@@ -64,6 +64,7 @@ public class CharacterHolder : MonoBehaviour
         _isHolding = false;
         _heldObject = null;
         holdable.OnEndHold(this);
+        _model.SetLoose();
     }
 
     private IHoldable FindClosestHoldable()
