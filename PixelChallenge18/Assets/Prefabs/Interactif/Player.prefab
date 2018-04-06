@@ -3441,8 +3441,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _overlapBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0, y: -2, z: 1.25}
+    m_Extent: {x: 1, y: 1, z: 1.37}
 --- !u!114 &114998098907060960
 MonoBehaviour:
   m_ObjectHideFlags: 1
