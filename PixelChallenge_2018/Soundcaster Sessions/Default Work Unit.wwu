@@ -6,32 +6,48 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{0576EAC4-3F5F-4F1E-84FC-8022AA895491}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Music" ID="{13C60BDF-BBE6-4353-813A-B0977F06E08E}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<ObjectRef Name="START_GAME" ID="{E325F9C9-29B2-4050-AE12-BFBFE9BC68D0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Ready" ID="{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<ObjectRef Name="Set_Phase_1" ID="{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_Thunder_Crack" ID="{497E0D79-C77A-4B03-832A-EA2BC8EFDB80}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
-							<Position X="0" Y="2"/>
+							<ObjectRef Name="Play_End_Game" ID="{0A9ABA85-F450-4262-B0F2-4923B4C2C200}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_Phase_2" ID="{C208808F-6B71-4BFC-A627-15ADF20996B0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_Thunder_Loading" ID="{5197142D-B080-47B4-AE84-AA723181D714}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
-							<Position X="1" Y="2"/>
+							<ObjectRef Name="Play_Music" ID="{13C60BDF-BBE6-4353-813A-B0977F06E08E}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_Phase_3" ID="{68F1745F-ECFE-4018-910F-1B7AA2022FF5}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_End_Game" ID="{0A9ABA85-F450-4262-B0F2-4923B4C2C200}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Thunder_Loading" ID="{5197142D-B080-47B4-AE84-AA723181D714}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Thunder_Crack" ID="{497E0D79-C77A-4B03-832A-EA2BC8EFDB80}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SFX_Fire_Off" ID="{E3409F28-2748-40C2-8B91-D24163C624C9}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
-							<Position X="2" Y="3"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Veggi_Success" ID="{90A145C9-AA1F-48E5-B981-EFBC064DDFBC}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="4" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
@@ -39,7 +55,7 @@
 						<CurrentStateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SILENCE" ID="{B61D10DA-2C8C-4F0B-A92F-50CFAD64B080}"/>
+						<CurrentSwitchRef Name="SW_Start_Game" ID="{BCC6780E-6A36-437B-919E-845D8256F3C8}"/>
 						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
