@@ -51,8 +51,13 @@ public sealed class CharacterInputs : MonoBehaviour {
     /// Hold trigger input refreshed every Update frame
     /// </summary>
     private float _holdInput;
+    /// <summary>
+    /// Hold trigger input refreshed every Update frame
+    /// </summary>
+    private float _crouchInput;
 
     private float _lastHoldInput;
+    private float _lastCrouchInput;
 
     #region Input Events
     public event Action<Vector2> LeftJoystickInputEmitted;
@@ -90,7 +95,7 @@ public sealed class CharacterInputs : MonoBehaviour {
 
         if(_leftJoystickInput.x != 0 || _leftJoystickInput.y != 0)
         {
-            Debug.Log(string.Format("{0} emitted joystick input"));
+            Debug.Log(string.Format("{0} emitted joystick input", _playerId));
             if(LeftJoystickInputEmitted != null)
             {
                 LeftJoystickInputEmitted.Invoke(_leftJoystickInput);
@@ -100,7 +105,7 @@ public sealed class CharacterInputs : MonoBehaviour {
         // KICK
         if (Input.GetButton(_kickButtonName))
         {
-            Debug.Log(string.Format("{0} emitted kick input"));
+            Debug.Log(string.Format("{0} emitted kick input", _playerId));
             if(KickEventEmitted != null)
             {
                 KickEventEmitted.Invoke();
@@ -109,7 +114,25 @@ public sealed class CharacterInputs : MonoBehaviour {
 
         // HOLD
         _holdInput = Input.GetAxis(_holdAxisName);
-        //if(_holdInput)
+        if (_holdInput > 0.5f && _lastHoldInput <= 0.5f || _holdInput <= 0.5f && _lastHoldInput > 0.5f)
+        {
+            Debug.Log(string.Format("{0} emitted hold input : {1}", _playerId, _holdInput > 0.5f));
+            if (HoldInputEmitted != null)
+            {
+                HoldInputEmitted.Invoke(_holdInput > 0.5f);
+            }
+        }
+
+        // CROUCH
+        _crouchInput = Input.GetAxis(_crouchAxisName);
+        if (_crouchInput > 0.5f && _lastCrouchInput <= 0.5f || _crouchInput <= 0.5f && _lastCrouchInput > 0.5f)
+        {
+            Debug.Log(string.Format("{0} emitted crouch input : {1}", _playerId, _crouchInput > 0.5f));
+            if (HoldInputEmitted != null)
+            {
+                HoldInputEmitted.Invoke(_crouchInput > 0.5f);
+            }
+        }
     }
 
 }

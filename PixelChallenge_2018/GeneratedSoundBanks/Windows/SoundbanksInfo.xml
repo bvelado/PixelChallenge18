@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\</ProjectRoot>
+		<SourceFilesRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Unreal_Unity Projects\PixelChallenge_2018\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2228651116" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
+			<ShortName>Main_Soundbank</ShortName>
+			<Path>Main_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2623731151" Name="Play_Drone_Test" ObjectPath="\Events\Default Work Unit\Play_Drone_Test"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="1026162047" Language="SFX">
+					<ShortName>SciFi 6056_44_1.wav</ShortName>
+					<Path>SFX\SciFi 6056_44_1_FAB7959A.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

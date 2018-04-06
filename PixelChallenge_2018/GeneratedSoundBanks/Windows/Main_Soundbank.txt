@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2623731151	Play_Drone_Test			\Default Work Unit\Play_Drone_Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1026162047	Drone_Test	D:\Unreal_Unity Projects\PixelChallenge_2018\.cache\Windows\SFX\SciFi 6056_44_1_FAB7959A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Drone_Test		104692
+
