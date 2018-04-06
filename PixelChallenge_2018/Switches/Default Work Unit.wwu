@@ -10,16 +10,6 @@
 						<Switch Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="SW_Music" ID="{3A8CF774-E8FF-48A6-B21D-ACD334FB2600}">
-					<ChildrenList>
-						<Switch Name="SW_Menu" ID="{B77D2D88-B480-47D8-ADBB-52AD824AC3F0}"/>
-						<Switch Name="SW_Start_Game" ID="{BCC6780E-6A36-437B-919E-845D8256F3C8}"/>
-						<Switch Name="SILENCE" ID="{B61D10DA-2C8C-4F0B-A92F-50CFAD64B080}"/>
-						<Switch Name="SW_Phase3_Music" ID="{71DFEE8E-FFCE-49EF-8789-02814966E6C6}"/>
-						<Switch Name="SW_Phase2_Music" ID="{695B4890-5FB1-441E-9450-3BDC6A5E542E}"/>
-						<Switch Name="SW_Music_End_Game" ID="{3DF23205-36B9-4164-A0F1-294313AF821A}"/>
-					</ChildrenList>
-				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

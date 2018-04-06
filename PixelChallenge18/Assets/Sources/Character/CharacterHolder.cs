@@ -17,11 +17,13 @@ public class CharacterHolder : MonoBehaviour
 
     private RaycastHit _hit;
 
+    private CharacterModel _model;
+
     private void Awake()
     {
         _inputs = GetComponent<CharacterInputs>();
         _motor = GetComponent<CharacterMotor>();
-
+        _model = GetComponent<CharacterModel>();
         _inputs.HoldInputEmitted += OnHoldInputEmitted;
     }
 
@@ -52,6 +54,7 @@ public class CharacterHolder : MonoBehaviour
             _isHolding = true;
             _heldObject = holdable;
             holdable.OnBeginHold(this);
+            _model.SetPick();
         }
     }
 

@@ -961,17 +961,7 @@
 									<PropertyList>
 										<Property Name="3DPositionSource" Type="int16" Value="0"/>
 										<Property Name="EnablePanner" Type="bool" Value="True"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>3</Value>
@@ -995,7 +985,7 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3.5"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -1005,7 +995,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-6</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1421,6 +1411,9 @@
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{4DC3CDC0-0FD5-4433-B017-0B16D2F44F7B}">
@@ -1773,6 +1766,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="SFX_Veggi_Success" ID="{A8795A15-DB76-4837-8F8B-54DEFCC50C81}" ShortID="861225181">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
@@ -1813,7 +1813,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-9</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1909,7 +1909,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1929,6 +1929,32 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SFX_Hit_Bucket_01" ID="{357DDC3F-5225-4B12-97CA-892A90F3112B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_God_Sweetener" ID="{A5D561A8-1C1D-41B3-ABE3-367897449982}" ShortID="400830935">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_God_Sweetener" ID="{610E900D-5B1F-4832-BEB1-AC86EF9687D6}" ShortID="206401840">
+									<Language>SFX</Language>
+									<AudioFile>SFX_God_Sweetener.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_God_Sweetener" ID="{610E900D-5B1F-4832-BEB1-AC86EF9687D6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1983,6 +2009,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="God_End_Game" ID="{99BA046D-A3F0-4582-8E3B-500CA9EDAD7A}" ShortID="207455802">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>

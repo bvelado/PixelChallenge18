@@ -12,11 +12,13 @@ public class CharacterMotor : MonoBehaviour {
     private Vector2 _velocity;
     private bool _hasInputToProcess;
 
+    
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
         _inputs = GetComponent<CharacterInputs>();
-
+        
         _inputs.LeftJoystickInputEmitted += HandleLeftJoystickInput;
     }
 
@@ -39,6 +41,5 @@ public class CharacterMotor : MonoBehaviour {
             _rigidbody.velocity = (Vector3.right * _velocity.x) + (Vector3.forward * _velocity.y);
             _hasInputToProcess = false;
         }
-              
     }
 }
