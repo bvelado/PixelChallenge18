@@ -1793,11 +1793,125 @@
 									<Language>SFX</Language>
 									<AudioFile>SFX_Veggi_Success.wav</AudioFile>
 								</AudioFileSource>
+								<AudioFileSource Name="SFX_Veggi_Success_01" ID="{8FAB02D7-C51B-4A8B-96D7-AE400445A046}" ShortID="16489025">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Veggi_Success_01.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="SFX_Veggi_Success" ID="{0280C340-8C35-43C4-BDA3-B1982D98CCF3}" Platform="Linked"/>
+								<ActiveSource Name="SFX_Veggi_Success_01" ID="{8FAB02D7-C51B-4A8B-96D7-AE400445A046}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="SFX_Veggi_PickUp" ID="{771D47C4-26F9-496B-AE5F-C9131C9A3383}" ShortID="92005453">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{72D0E60D-085A-44D7-A989-5BD43E1D5118}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{717FEC07-37F6-4EC3-A2E2-3F026414FFD7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Veggi_PickUp_02" ID="{F4470AA4-CA09-431E-B279-0C0CABC4820F}" ShortID="784134732">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Veggi_PickUp_02" ID="{D03D594C-DF60-49F1-AFE9-37B7464102B3}" ShortID="465255943">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Veggi_PickUp_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Veggi_PickUp_02" ID="{D03D594C-DF60-49F1-AFE9-37B7464102B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Veggi_PickUp_03" ID="{19C251E3-C625-4D58-8A13-F068D77B40D6}" ShortID="113033703">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Veggi_PickUp_03" ID="{6D39ABDE-132A-45CC-810E-B7D860687C5B}" ShortID="813419052">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Veggi_PickUp_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Veggi_PickUp_03" ID="{6D39ABDE-132A-45CC-810E-B7D860687C5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Veggi_PickUp_01" ID="{550ACD3B-B62C-4302-AC10-C7A8E39CC372}" ShortID="76015831">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Veggi_PickUp_01" ID="{4C2D0684-A622-4461-869D-3F0395180E49}" ShortID="130509793">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Veggi_PickUp_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Veggi_PickUp_01" ID="{4C2D0684-A622-4461-869D-3F0395180E49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{F16775EF-122C-479B-B202-12AD740ABF0F}" ShortID="939217485">

@@ -30,6 +30,10 @@
 				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="16489025" Language="SFX">
+					<ShortName>SFX_Veggi_Success_01.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_01_FAB7959A.wem</Path>
+				</File>
 				<File Id="23184774" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_11.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_11_089B868F.wem</Path>
@@ -89,10 +93,6 @@
 				<File Id="529259371" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_10.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_10_2BF9F96B.wem</Path>
-				</File>
-				<File Id="548274742" Language="SFX">
-					<ShortName>SFX_Veggi_Success.wav</ShortName>
-					<Path>SFX\SFX_Veggi_Success_FAB7959A.wem</Path>
 				</File>
 				<File Id="590617343" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_08.wav</ShortName>
