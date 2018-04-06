@@ -57,6 +57,8 @@ public sealed class CharacterInputs : MonoBehaviour {
     private float _lastHoldInput;
     private float _lastCrouchInput;
 
+    private CharacterModel _model;
+
     #region Input Events
     public event Action<Vector2> LeftJoystickInputEmitted;
     public event Action<bool> HoldInputEmitted;
@@ -71,6 +73,7 @@ public sealed class CharacterInputs : MonoBehaviour {
     private void Start()
     {
         Initialize(GetComponent<Player>().Data);
+        _model = GetComponent<CharacterModel>();
     }
 #endif
 
@@ -99,6 +102,11 @@ public sealed class CharacterInputs : MonoBehaviour {
             {
                 LeftJoystickInputEmitted.Invoke(_leftJoystickInput);
             }
+            _model.SetRun();
+        }
+        else
+        {
+            _model.SetIdle();
         }
 
         // KICK

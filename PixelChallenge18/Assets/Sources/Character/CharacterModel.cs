@@ -9,9 +9,24 @@ public class CharacterModel : MonoBehaviour {
 
     [Header("Animator parameters")]
     [SerializeField] private string _crouchedAnimatorParameter;
+    [SerializeField] private string _idleAnimatorParameter;
+    [SerializeField] private string _runAnimatorParameter;
 
-    internal void SetCrouched(bool crouch)
+    public void SetCrouched(bool crouch)
     {
-        _animator.SetBool(_crouchedAnimatorParameter, crouch);
+        //_animator.SetBool(_crouchedAnimatorParameter, crouch);
+        //_animator.SetBool(_idleAnimatorParameter, false);
+    }
+
+    public void SetIdle()
+    {
+        _animator.SetBool(_idleAnimatorParameter, true);
+        _animator.SetBool(_runAnimatorParameter, false);
+    }
+
+    public void SetRun()
+    {
+        _animator.SetBool(_idleAnimatorParameter, false);
+        _animator.SetBool(_runAnimatorParameter, true);
     }
 }
