@@ -384,6 +384,10 @@ Prefab:
       propertyPath: readyAnim
       value: 
       objectReference: {fileID: 522223398}
+    - target: {fileID: 1663803304657772, guid: 90b25a4fcbed4a74c89eee386e6dee36, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90b25a4fcbed4a74c89eee386e6dee36, type: 2}
   m_IsPrefabParent: 0
