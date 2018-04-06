@@ -14,13 +14,6 @@
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="Amb" ID="{E417ED52-BF32-4049-A941-511B3E026AEA}" ShortID="636066350">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-3</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>

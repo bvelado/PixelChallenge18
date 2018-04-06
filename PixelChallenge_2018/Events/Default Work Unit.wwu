@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{4BBAA461-E23D-4C72-9656-0E1186F84853}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Ready" ID="{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}">
+				<Event Name="Set_Phase_1" ID="{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}">
 					<ChildrenList>
 						<Action Name="" ID="{D9105258-4FA8-4B15-821D-4CF6AC40F9AF}" ShortID="1041939919">
 							<PropertyList>
@@ -56,6 +56,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{92D24090-0500-479C-99BD-8C40E860EDF8}" ShortID="886644000">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="God_Start_Game" ID="{F921FBD1-E5BD-4DCE-88C6-BB6EF236ADFC}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Set_Phase_2" ID="{C208808F-6B71-4BFC-A627-15ADF20996B0}">
@@ -83,10 +93,21 @@
 						<Action Name="" ID="{2EB1DE79-FD09-4824-8845-63B22B4B8E29}" ShortID="85020552">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="23"/>
+								<Property Name="Delay" Type="Real64" Value="1.3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SW_Phase2_Music" ID="{695B4890-5FB1-441E-9450-3BDC6A5E542E}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6581210D-F653-48EA-B902-7981E6F0B8E9}" ShortID="407373865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="God_Start_Phase_2" ID="{89938843-2955-4AE5-AA68-4A64D12380F4}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -121,6 +142,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SW_Phase3_Music" ID="{71DFEE8E-FFCE-49EF-8789-02814966E6C6}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{04C4BB05-D944-4977-820E-D3AA0A4B1844}" ShortID="76788891">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="God_Start_Phase_3" ID="{DC38CA89-C92C-4C19-9843-D3C37E4DB31B}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -248,6 +279,30 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music" ID="{58DD546B-2611-4B08-A7CB-884D37ABD436}" WorkUnitID="{64B17717-D6E4-47F2-91C8-6F09B803ECE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_End_Game" ID="{0A9ABA85-F450-4262-B0F2-4923B4C2C200}">
+					<ChildrenList>
+						<Action Name="" ID="{D5F365DE-92C2-4D37-9243-D790C155465E}" ShortID="1012264303">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="God_End_Game" ID="{99BA046D-A3F0-4582-8E3B-500CA9EDAD7A}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{22187DB3-7CC1-47FB-AF3F-77ED0E5D28D0}" ShortID="988740857">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Start_Game" ID="{BCC6780E-6A36-437B-919E-845D8256F3C8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
