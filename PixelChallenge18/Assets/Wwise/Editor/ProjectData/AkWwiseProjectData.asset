@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: -799082602
-    m_lastTimePart2: -1999266939
+    m_lastTimePsrt1: -183384628
+    m_lastTimePart2: -1999266934
     List:
     - Name: Play_Amb_Storm_2D
       Path: Default Work Unit\Play_Amb_Storm_2D
@@ -28,6 +28,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 810046381
       Guid: 844af8b4938bd94bb5f25a788801cc6a
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Fire_Off
+      Path: Default Work Unit\Play_SFX_Fire_Off
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Fire_Off
+        ObjectType: 3
+      ID: -1114937528
+      Guid: 289f40e34827c2408b91d24163c624c9
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -52,6 +64,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -965955443
       Guid: 2d14975180b0b447ae84aa723181d714
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Veggi_Success
+      Path: Default Work Unit\Play_SFX_Veggi_Success
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Veggi_Success
+        ObjectType: 3
+      ID: 214169128
+      Guid: c945a1901faae548b981efbc064ddfbc
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0

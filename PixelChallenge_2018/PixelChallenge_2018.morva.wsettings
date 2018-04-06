@@ -64,13 +64,14 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8/TPjekvYINCkTFSA3plvUY="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="Uu0X5DK/SUCpQVEbPgJq6n/W8p84tDRBhYtFR/mF7eYd/kepApLTSKBA78Hh9bTh"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="Uu0X5DK/SUCpQVEbPgJq6n/W8p84tDRBhYtFR/mF7eZ3Vu/jlJGuR7fOdinrzYf0Hf5HqQKS00igQO/B4fW04Q=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="YaS6Sz3ickyWVg4RhvhIUw=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="Mhc/z/V4mEW+F1tRF0sWzz2oeOa0gBZLueDjrBiK47Y="/>
+				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="kEHVveARR0a7GMqNyanT0lrwQLKdbfFPoljG6+Odosc="/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="C25VICWzhUqm14rrBGUfUQ=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="Z8r2/Lojvk+sirDBiM3Kwg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="RTPC\GameParameterSimValue\{01D76567-B8F5-4087-9FDB-619E165114A6}" Type="Real64" Value="90.8882854926299"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="C25VICWzhUqm14rrBGUfUQ=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
@@ -98,6 +99,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{0576EAC4-3F5F-4F1E-84FC-8022AA895491}"/>
 			</PropertyList>
 			<PluginInnerObjectList>
 				<List Name="BatchRenameSettings">
