@@ -288,8 +288,8 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 0
+    snap: 1
+    invert: 1
     type: 2
     axis: 2
     joyNum: 1
@@ -304,8 +304,8 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 0
+    snap: 1
+    invert: 1
     type: 2
     axis: 2
     joyNum: 2
@@ -320,10 +320,10 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 0
+    snap: 1
+    invert: 1
     type: 2
-    axis: 2
+    axis: 9
     joyNum: 3
   - serializedVersion: 3
     m_Name: p4_hold
@@ -336,10 +336,10 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 0
+    snap: 1
+    invert: 1
     type: 2
-    axis: 2
+    axis: 9
     joyNum: 4
   - serializedVersion: 3
     m_Name: p1_crouch
@@ -352,8 +352,8 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 1
+    snap: 1
+    invert: 0
     type: 2
     axis: 2
     joyNum: 1
@@ -368,10 +368,10 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 1
+    snap: 1
+    invert: 0
     type: 2
-    axis: 2
+    axis: 8
     joyNum: 2
   - serializedVersion: 3
     m_Name: p3_crouch
@@ -384,10 +384,10 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 1
+    snap: 1
+    invert: 0
     type: 2
-    axis: 2
+    axis: 8
     joyNum: 3
   - serializedVersion: 3
     m_Name: p4_crouch
@@ -400,8 +400,8 @@ InputManager:
     gravity: 0
     dead: 0.1
     sensitivity: 1
-    snap: 0
-    invert: 1
+    snap: 1
+    invert: 0
     type: 2
-    axis: 2
+    axis: 8
     joyNum: 4

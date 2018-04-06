@@ -121,10 +121,10 @@ public sealed class CharacterInputs : MonoBehaviour {
         }
 
         // HOLD
-        _holdInput = Input.GetAxis(_holdAxisName);
+        _holdInput = Input.GetAxisRaw(_holdAxisName);
         if (_holdInput > 0.5f && _lastHoldInput <= 0.5f || _holdInput <= 0.5f && _lastHoldInput > 0.5f)
         {
-            //Debug.Log(string.Format("{0} emitted hold input : {1}", _playerId, _holdInput > 0.5f));
+            Debug.Log(string.Format("{0} emitted hold input : {1}", name, _holdInput > 0.5f));
             if (HoldInputEmitted != null)
             {
                 HoldInputEmitted.Invoke(_holdInput > 0.5f);
@@ -133,13 +133,13 @@ public sealed class CharacterInputs : MonoBehaviour {
         _lastHoldInput = _holdInput;
 
         // CROUCH
-        _crouchInput = Input.GetAxis(_crouchAxisName);
+        _crouchInput = Input.GetAxisRaw(_crouchAxisName);
         if (_crouchInput > 0.5f && _lastCrouchInput <= 0.5f || _crouchInput <= 0.5f && _lastCrouchInput > 0.5f)
         {
-            //Debug.Log(string.Format("{0} emitted crouch input : {1}", _playerId, _crouchInput > 0.5f));
-            if (HoldInputEmitted != null)
+            Debug.Log(string.Format("{0} emitted crouch input : {1}", name, _crouchInput > 0.5f));
+            if (CrouchInputEmitted != null)
             {
-                HoldInputEmitted.Invoke(_crouchInput > 0.5f);
+                CrouchInputEmitted.Invoke(_crouchInput > 0.5f);
             }
         }
         _lastCrouchInput = _crouchInput;
