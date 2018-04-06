@@ -7746,6 +7746,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114633090311558024, guid: 8cd067364100eb84a95b8d6250066f6c,
+        type: 2}
+      propertyPath: _pickAnimatorParameter
+      value: Pick
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8cd067364100eb84a95b8d6250066f6c, type: 2}
   m_IsPrefabParent: 0
