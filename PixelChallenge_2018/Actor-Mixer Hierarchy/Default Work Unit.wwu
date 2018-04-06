@@ -219,437 +219,1175 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<RandomSequenceContainer Name="Amb_Thunder_Roar" ID="{723FE102-34EB-4ED7-8CE9-2617B6597909}" ShortID="49869452">
-							<PropertyList>
-								<Property Name="3DPositionSource" Type="int16" Value="0"/>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
-								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{AFF7D923-ED4C-48FF-985D-13BD53198ACC}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="100"/>
-													<Property Name="Min" Type="Real64" Value="-100"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B3D42DD6-82FB-4ADA-A70D-463D136ECF5A}"/>
-										</ModifierInfo>
-									</ModifierList>
-									<RTPCList>
-										<RTPC Name="" ID="{4241B0D8-8D8E-4D96-929D-A6F21EAF898C}" ShortID="230335016">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{A9E59069-695E-4DE2-9894-8A8FF97BD153}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="1"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>7</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>42.0742</XPos>
-														<YPos>7</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>49.32546</XPos>
-														<YPos>4</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>85.16021</XPos>
-														<YPos>4</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>87.6054</XPos>
-														<YPos>2</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>2</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-11</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{EF4329A1-ADD5-42A7-9831-67623B8E4C8F}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="1"/>
-													<Property Name="Min" Type="Real64" Value="-1"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
+						<SwitchContainer Name="Amb_Thunder_Roar" ID="{A8188266-5273-4E77-9ABF-BF7B0E6B24F2}" ShortID="165788689">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SW_Storm_Phase" ID="{E678A83D-80B4-4B16-B9E0-E3AC188AE3B6}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Amb_Thunder_Roar_08" ID="{ECD0C622-28CC-4F24-B5E7-42CFBAA19108}" ShortID="510296588">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_08" ID="{3B631421-7355-4BB7-BA2D-EF8095D69197}" ShortID="590617343">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.591461609192627"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_08.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_08" ID="{3B631421-7355-4BB7-BA2D-EF8095D69197}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_07" ID="{9393EF99-C797-49E7-BE0D-60D17B420D64}" ShortID="464536264">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_07" ID="{D8EA27F4-D884-4E49-8151-152BCE1E1502}" ShortID="296098086">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.855659216067379"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_07.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_07" ID="{D8EA27F4-D884-4E49-8151-152BCE1E1502}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_10" ID="{D502183D-2214-4B73-9993-DBF1B11B5902}" ShortID="900545480">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_10" ID="{9298F9B3-C2FD-47DC-8F05-4AC46E5B5633}" ShortID="529259371">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.06680133277801"/>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_10.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_10" ID="{9298F9B3-C2FD-47DC-8F05-4AC46E5B5633}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_09" ID="{9FA5F068-216D-47AD-A50B-EEE61AF7A08C}" ShortID="90068012">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_09" ID="{95E6D13E-AD97-41EE-A36D-3BC654A1A663}" ShortID="811501772">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.10495978929874"/>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_09.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_09" ID="{95E6D13E-AD97-41EE-A36D-3BC654A1A663}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_06" ID="{49E8301C-7669-4539-B340-588A54B07687}" ShortID="203219401">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_06" ID="{E9B8E230-CC89-4E7D-9A16-02C2615835DE}" ShortID="842604716">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.470053439891189"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_06.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_06" ID="{E9B8E230-CC89-4E7D-9A16-02C2615835DE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_04" ID="{4662AE92-EE63-4A99-A14B-40CDFE03877F}" ShortID="1071363694">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_04" ID="{5F48F275-3570-4D43-B785-4EE2F4042495}" ShortID="892070664">
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_04.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_04" ID="{5F48F275-3570-4D43-B785-4EE2F4042495}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_02" ID="{0AF5B5F7-8764-46EC-AFDE-8BC916F76BF8}" ShortID="827177552">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_02" ID="{87C42B84-D549-4905-8D72-D81CB82F4974}" ShortID="196649018">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.517559893522626"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_02.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_02" ID="{87C42B84-D549-4905-8D72-D81CB82F4974}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_11" ID="{93440C5F-A957-4010-A4F1-F9B4343A88E3}" ShortID="17631507">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_11" ID="{ED86C470-E5B5-480F-B405-A63E7F9F9A26}" ShortID="23184774">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.328557485105843"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_11.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_11" ID="{ED86C470-E5B5-480F-B405-A63E7F9F9A26}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_05" ID="{9F027ACE-31FF-4AB9-9792-23211376756F}" ShortID="39188004">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_05" ID="{E075C8AA-A147-4AD7-BA00-AA3ED7E428FD}" ShortID="30951434">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.40679427050323"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_05.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_05" ID="{E075C8AA-A147-4AD7-BA00-AA3ED7E428FD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_03" ID="{D3095E85-C33D-4797-9602-BE08862C2B9D}" ShortID="140259536">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_03" ID="{E971C717-BE0E-4498-9CC6-BF2E1A77693D}" ShortID="837336748">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.738236322627247"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_03.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_03" ID="{E971C717-BE0E-4498-9CC6-BF2E1A77693D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Amb_Thunder_Roar_01" ID="{27803F35-12E3-40EB-86C6-5494A038C453}" ShortID="263883081">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Amb_Thunder_Roar_01" ID="{BF2B0BAA-B7CF-49C4-808C-20ECD39C3B4B}" ShortID="222037412">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.983856766604897"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Amb_Thunder_Roar_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Thunder_Roar_01" ID="{BF2B0BAA-B7CF-49C4-808C-20ECD39C3B4B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<PositioningInfo>
-								<Panner Name="" ID="{29B6F207-BFA9-419C-9943-974EA281D425}"/>
-								<Position Name="" ID="{F1056266-D53F-421F-A03A-C616C90B513F}">
+								<RandomSequenceContainer Name="Amb_Thunder_Roar_1" ID="{723FE102-34EB-4ED7-8CE9-2617B6597909}" ShortID="49869452">
 									<PropertyList>
-										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4"/>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="EnablePanner" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>13</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>13</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AFF7D923-ED4C-48FF-985D-13BD53198ACC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B3D42DD6-82FB-4ADA-A70D-463D136ECF5A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EF4329A1-ADD5-42A7-9831-67623B8E4C8F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<Path2D Name="Amb_Thunder_Roar_Path" ID="{9039B5B2-330F-4058-B201-8174BF3787AA}">
-											<PropertyList>
-												<Property Name="RandomX" Type="Real64" Value="45"/>
-												<Property Name="RandomY" Type="Real64" Value="18"/>
-												<Property Name="RandomZ" Type="Real64" Value="55"/>
-											</PropertyList>
-											<PointList>
-												<Point>
-													<XPos>0</XPos>
-													<YPos>50</YPos>
-													<Flags>12</Flags>
-													<Time>0</Time>
-												</Point>
-											</PointList>
-										</Path2D>
+										<Sound Name="Amb_Thunder_Roar_08" ID="{ECD0C622-28CC-4F24-B5E7-42CFBAA19108}" ShortID="510296588">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_08" ID="{3B631421-7355-4BB7-BA2D-EF8095D69197}" ShortID="590617343">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.591461609192627"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_08" ID="{3B631421-7355-4BB7-BA2D-EF8095D69197}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_07" ID="{9393EF99-C797-49E7-BE0D-60D17B420D64}" ShortID="464536264">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_07" ID="{D8EA27F4-D884-4E49-8151-152BCE1E1502}" ShortID="296098086">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.855659216067379"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_07" ID="{D8EA27F4-D884-4E49-8151-152BCE1E1502}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_10" ID="{D502183D-2214-4B73-9993-DBF1B11B5902}" ShortID="900545480">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_10" ID="{9298F9B3-C2FD-47DC-8F05-4AC46E5B5633}" ShortID="529259371">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.06680133277801"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_10" ID="{9298F9B3-C2FD-47DC-8F05-4AC46E5B5633}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_09" ID="{9FA5F068-216D-47AD-A50B-EEE61AF7A08C}" ShortID="90068012">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_09" ID="{95E6D13E-AD97-41EE-A36D-3BC654A1A663}" ShortID="811501772">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.10495978929874"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_09" ID="{95E6D13E-AD97-41EE-A36D-3BC654A1A663}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_06" ID="{49E8301C-7669-4539-B340-588A54B07687}" ShortID="203219401">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_06" ID="{E9B8E230-CC89-4E7D-9A16-02C2615835DE}" ShortID="842604716">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.470053439891189"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_06" ID="{E9B8E230-CC89-4E7D-9A16-02C2615835DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_04" ID="{4662AE92-EE63-4A99-A14B-40CDFE03877F}" ShortID="1071363694">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_04" ID="{5F48F275-3570-4D43-B785-4EE2F4042495}" ShortID="892070664">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_04" ID="{5F48F275-3570-4D43-B785-4EE2F4042495}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_02" ID="{0AF5B5F7-8764-46EC-AFDE-8BC916F76BF8}" ShortID="827177552">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_02" ID="{87C42B84-D549-4905-8D72-D81CB82F4974}" ShortID="196649018">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.517559893522626"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_02" ID="{87C42B84-D549-4905-8D72-D81CB82F4974}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_11" ID="{93440C5F-A957-4010-A4F1-F9B4343A88E3}" ShortID="17631507">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_11" ID="{ED86C470-E5B5-480F-B405-A63E7F9F9A26}" ShortID="23184774">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.328557485105843"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_11" ID="{ED86C470-E5B5-480F-B405-A63E7F9F9A26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_05" ID="{9F027ACE-31FF-4AB9-9792-23211376756F}" ShortID="39188004">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_05" ID="{E075C8AA-A147-4AD7-BA00-AA3ED7E428FD}" ShortID="30951434">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.40679427050323"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_05" ID="{E075C8AA-A147-4AD7-BA00-AA3ED7E428FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_03" ID="{D3095E85-C33D-4797-9602-BE08862C2B9D}" ShortID="140259536">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_03" ID="{E971C717-BE0E-4498-9CC6-BF2E1A77693D}" ShortID="837336748">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.738236322627247"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_03" ID="{E971C717-BE0E-4498-9CC6-BF2E1A77693D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_01" ID="{27803F35-12E3-40EB-86C6-5494A038C453}" ShortID="263883081">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_01" ID="{BF2B0BAA-B7CF-49C4-808C-20ECD39C3B4B}" ShortID="222037412">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.983856766604897"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_01" ID="{BF2B0BAA-B7CF-49C4-808C-20ECD39C3B4B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-								</Position>
-							</PositioningInfo>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="ST_Storm_Phase" ID="{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
-										<State Name="" ID="{16080EE0-9894-4B9C-98B4-272BD0F7C2B5}" ShortID="856572299">
+									<PositioningInfo>
+										<Panner Name="" ID="{29B6F207-BFA9-419C-9943-974EA281D425}"/>
+										<Position Name="" ID="{F1056266-D53F-421F-A03A-C616C90B513F}">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="2"/>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4"/>
 											</PropertyList>
-										</State>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
-										<State Name="" ID="{F9A49CA5-9481-491F-8944-7427695DEA73}" ShortID="615274144">
+											<ChildrenList>
+												<Path2D Name="Amb_Thunder_Roar_Path" ID="{9039B5B2-330F-4058-B201-8174BF3787AA}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="45"/>
+														<Property Name="RandomY" Type="Real64" Value="18"/>
+														<Property Name="RandomZ" Type="Real64" Value="55"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Amb_Thunder_Roar_3" ID="{491251CD-EB8E-42C9-87C0-B764F7899481}" ShortID="5453612">
+									<PropertyList>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="EnablePanner" Type="bool" Value="True"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F5118DA7-9D77-455D-B9DB-88150CA1D875}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0D04CC5E-457B-4590-81DD-E7CF38E715F1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Amb_Thunder_Roar_08" ID="{071A07C5-A086-4EAB-ABEA-F12AF87B73A2}" ShortID="721608040">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_08" ID="{1A8D5605-C9B0-4341-9162-0296A3384060}" ShortID="668552475">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.591461609192627"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_08.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="590617343"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_08" ID="{1A8D5605-C9B0-4341-9162-0296A3384060}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_07" ID="{AA1733D3-350D-4BA3-85FD-C07B23C73E82}" ShortID="106303480">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_07" ID="{8946DB0F-1877-4773-A1A7-8703FFAE4267}" ShortID="429313074">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.855659216067379"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_07.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="296098086"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_07" ID="{8946DB0F-1877-4773-A1A7-8703FFAE4267}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_10" ID="{A2AA7881-2FF5-4D73-81AE-C9BD8B41CD0E}" ShortID="242282074">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_10" ID="{AC75299E-4B48-4CC1-B030-853228CC71CA}" ShortID="28270888">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.06680133277801"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_10.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="529259371"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_10" ID="{AC75299E-4B48-4CC1-B030-853228CC71CA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_09" ID="{8F68829C-D294-47BB-8BB9-6722D8D9682D}" ShortID="622437002">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_09" ID="{53E9C335-A82F-4454-88FB-A8938BC384FA}" ShortID="183945200">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.10495978929874"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_09.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="811501772"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_09" ID="{53E9C335-A82F-4454-88FB-A8938BC384FA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_06" ID="{3CDC6C2D-378A-435A-A0BA-07EF0F03A65E}" ShortID="285761237">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_06" ID="{97274930-A068-46DD-B93B-6E409BB91199}" ShortID="789169355">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.470053439891189"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_06.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="842604716"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_06" ID="{97274930-A068-46DD-B93B-6E409BB91199}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_04" ID="{9CFCD1BC-B825-4CDF-90AF-76C0384C3F72}" ShortID="823327172">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_04" ID="{91D811B1-9082-4816-8167-4DF854798F85}" ShortID="396476969">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="892070664"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_04" ID="{91D811B1-9082-4816-8167-4DF854798F85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_02" ID="{FFEC2E95-E0DA-4020-BDB4-1881472D3032}" ShortID="711578952">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_02" ID="{F8F7A5A6-9745-41BF-A9F1-9C1DB17F0EB8}" ShortID="894226504">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.517559893522626"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="196649018"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_02" ID="{F8F7A5A6-9745-41BF-A9F1-9C1DB17F0EB8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_11" ID="{4BA6DB3B-6333-4FEE-A43B-092D81A52C3E}" ShortID="918146065">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_11" ID="{F15190E4-B765-499F-A1CF-010099CD7556}" ShortID="52434427">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.328557485105843"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_11.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="23184774"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_11" ID="{F15190E4-B765-499F-A1CF-010099CD7556}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_05" ID="{103A9191-6F63-41B1-85D2-B60BA9B9F10C}" ShortID="262472340">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_05" ID="{C333DA36-A880-49CB-A806-3062BD985387}" ShortID="811192651">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.40679427050323"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_05.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="30951434"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_05" ID="{C333DA36-A880-49CB-A806-3062BD985387}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_03" ID="{E2EC95BB-E13E-4F9F-9D7A-AEDA9A3026EB}" ShortID="476584233">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_03" ID="{4A332420-BD2C-4FA3-9EA5-367E070B922C}" ShortID="772625548">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.738236322627247"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="837336748"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_03" ID="{4A332420-BD2C-4FA3-9EA5-367E070B922C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_01" ID="{ABEECFAB-27E2-4960-AD6F-423749DA7120}" ShortID="960894669">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_01" ID="{B3C40E6E-1F8F-4F3C-8533-4132392C8598}" ShortID="836320592">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.983856766604897"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="222037412"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_01" ID="{B3C40E6E-1F8F-4F3C-8533-4132392C8598}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{CB4B23B7-A7AC-4760-B24A-DFD2EFE06234}"/>
+										<Position Name="" ID="{D286D558-6BBA-4B7E-AEA6-9A5F3B784467}">
 											<PropertyList>
-												<Property Name="Highpass" Type="int16" Value="10"/>
-												<Property Name="Lowpass" Type="int16" Value="10"/>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4"/>
 											</PropertyList>
-										</State>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
-										<State Name="" ID="{7A042C83-6037-4400-B6E6-BC885869AD31}" ShortID="322861477">
+											<ChildrenList>
+												<Path2D Name="Amb_Thunder_Roar_Path" ID="{55D6D5D0-9C4B-4D6C-AAE1-C9FA10FAFD40}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="45"/>
+														<Property Name="RandomY" Type="Real64" Value="18"/>
+														<Property Name="RandomZ" Type="Real64" Value="55"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Amb_Thunder_Roar_2" ID="{FA715220-77BF-47CE-9FB0-A0AAF00F06AC}" ShortID="93867701">
+									<PropertyList>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="EnablePanner" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E019B516-2F43-453D-95B5-60F2239D555D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{627B9973-908E-47CE-910D-E24B18ED36D0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Amb_Thunder_Roar_08" ID="{998A1B24-4540-42DE-B3ED-6F526BF0C936}" ShortID="548747932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_08" ID="{1CC1BAE1-4AD3-4173-802D-C1C735BAF3BF}" ShortID="614381704">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.591461609192627"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_08.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="590617343"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_08" ID="{1CC1BAE1-4AD3-4173-802D-C1C735BAF3BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_07" ID="{5B7A8C9C-14E7-406C-8EC3-CD27D5EF734E}" ShortID="1001808408">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_07" ID="{6B2F9CB0-34E4-43C3-AAED-A6FD304CDCA5}" ShortID="339526614">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.855659216067379"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_07.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="296098086"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_07" ID="{6B2F9CB0-34E4-43C3-AAED-A6FD304CDCA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_10" ID="{FFD29C1F-16A1-4E52-A50C-906C14422E20}" ShortID="268421811">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_10" ID="{DDAE676C-8D33-4BF7-8883-2816AC968E96}" ShortID="486285736">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.06680133277801"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_10.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="529259371"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_10" ID="{DDAE676C-8D33-4BF7-8883-2816AC968E96}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_09" ID="{CC97FA7F-DB0B-4B61-AC05-49F5ECE996F5}" ShortID="464267559">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_09" ID="{5F4A8702-4FA5-4AF2-BD63-7C8B3A98AE39}" ShortID="685769732">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.10495978929874"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_09.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="811501772"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_09" ID="{5F4A8702-4FA5-4AF2-BD63-7C8B3A98AE39}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_06" ID="{1E2BE0B6-E69D-4EC4-957B-16EA0CFC0A80}" ShortID="418692362">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_06" ID="{0E2986A0-B133-44A7-81D0-C11451164179}" ShortID="129050338">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.470053439891189"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_06.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="842604716"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_06" ID="{0E2986A0-B133-44A7-81D0-C11451164179}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_04" ID="{1C877C30-0CAE-4819-BCFD-F2A1DCB89782}" ShortID="751689808">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_04" ID="{8E496FCD-A7B9-4330-BEEA-A21E44894D01}" ShortID="118297401">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="892070664"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_04" ID="{8E496FCD-A7B9-4330-BEEA-A21E44894D01}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_02" ID="{CCF34EE2-F574-4D3E-800F-B20283D8F859}" ShortID="893278721">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_02" ID="{E8D84279-0A67-4DBF-BB44-FC34269E79D4}" ShortID="40643229">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.517559893522626"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="196649018"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_02" ID="{E8D84279-0A67-4DBF-BB44-FC34269E79D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_11" ID="{3B8AAF02-13B8-49AC-B6B8-4B348EA94756}" ShortID="10560172">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_11" ID="{18529679-5F91-472B-A410-097EA94CEAEB}" ShortID="669752685">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.328557485105843"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_11.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="23184774"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_11" ID="{18529679-5F91-472B-A410-097EA94CEAEB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_05" ID="{103EAE50-044C-40B7-8D6A-817A7FE5211E}" ShortID="1001752942">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_05" ID="{FD4F4EBF-66F4-42B2-8EEE-9D749CD87857}" ShortID="560018538">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.40679427050323"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_05.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="30951434"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_05" ID="{FD4F4EBF-66F4-42B2-8EEE-9D749CD87857}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_03" ID="{F1DCAF99-3BB1-4301-989D-3FA6E4D7398E}" ShortID="166375943">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_03" ID="{8C5397F4-E8C9-4E5C-9F3B-9AD2CA6C823E}" ShortID="104432144">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.738236322627247"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="837336748"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_03" ID="{8C5397F4-E8C9-4E5C-9F3B-9AD2CA6C823E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Thunder_Roar_01" ID="{9047C8F6-E0F5-4018-BB93-0D235507A541}" ShortID="58621024">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Thunder_Roar_01" ID="{305CB72F-9279-42D0-B6F4-8BFB3C7FD5F8}" ShortID="358113951">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.983856766604897"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Amb_Thunder_Roar_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="222037412"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Thunder_Roar_01" ID="{305CB72F-9279-42D0-B6F4-8BFB3C7FD5F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0E17C0D8-ECC2-4891-A887-87FC5CE41AD5}"/>
+										<Position Name="" ID="{51361CF9-7185-4206-B5CA-0AA5D82E0C7B}">
 											<PropertyList>
-												<Property Name="Highpass" Type="int16" Value="15"/>
-												<Property Name="Lowpass" Type="int16" Value="15"/>
-												<Property Name="Volume" Type="Real64" Value="-4"/>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4"/>
 											</PropertyList>
-										</State>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-						</RandomSequenceContainer>
+											<ChildrenList>
+												<Path2D Name="Amb_Thunder_Roar_Path" ID="{9DFD0444-CB2D-487E-84BC-0F1E43633871}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="45"/>
+														<Property Name="RandomY" Type="Real64" Value="18"/>
+														<Property Name="RandomZ" Type="Real64" Value="55"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Amb_Thunder_Roar_1" ID="{723FE102-34EB-4ED7-8CE9-2617B6597909}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Amb_Thunder_Roar_2" ID="{FA715220-77BF-47CE-9FB0-A0AAF00F06AC}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Amb_Thunder_Roar_3" ID="{491251CD-EB8E-42C9-87C0-B764F7899481}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+										<ItemList>
+											<ItemRef Name="Amb_Thunder_Roar_1" ID="{723FE102-34EB-4ED7-8CE9-2617B6597909}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+										<ItemList>
+											<ItemRef Name="Amb_Thunder_Roar_2" ID="{FA715220-77BF-47CE-9FB0-A0AAF00F06AC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
+										<ItemList>
+											<ItemRef Name="Amb_Thunder_Roar_3" ID="{491251CD-EB8E-42C9-87C0-B764F7899481}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="SFX" ID="{E3EF5677-9194-47AE-B7CE-7629EBCD87F4}" ShortID="592792642">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
@@ -670,7 +1408,7 @@
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>400</Value>
+										<Value>180</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -858,7 +1596,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Thunder_Loading_01" ID="{F27E201B-A9C2-4987-9D4B-A578A8D127A9}" ShortID="493142140">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.24898729380618E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.9497358186102"/>
+												<Property Name="FadeInShape" Type="int16" Value="8"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.63614194568691E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.188156323753991"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.29332562720445"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Thunder_Loading_01.wav</AudioFile>
@@ -880,7 +1623,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Thunder_Loading_02" ID="{1E28B50A-BC95-43E3-AE8B-EC52A01BAAA7}" ShortID="269551509">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="6.01454771913446E-03"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.85195759818272"/>
+												<Property Name="FadeInShape" Type="int16" Value="8"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.12070051327242E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.151294569291781"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.14333973163356"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Thunder_Loading_02.wav</AudioFile>
@@ -902,7 +1650,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Thunder_Loading_03" ID="{6503D985-F7BA-4614-966A-347428491E75}" ShortID="1051040488">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.63018902204839E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.84694481164249"/>
+												<Property Name="FadeInShape" Type="int16" Value="8"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.61534013662021E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.25356986923725E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.09768156182911"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Thunder_Loading_03.wav</AudioFile>
@@ -924,7 +1677,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Thunder_Loading_04" ID="{61A5C5FB-4D66-4779-8937-1F02A55E7726}" ShortID="666870192">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.84082162985071E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.81274690296113"/>
+												<Property Name="FadeInShape" Type="int16" Value="8"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.14385310468463E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.290611198635029"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.32012547106982"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Thunder_Loading_04.wav</AudioFile>
@@ -932,6 +1690,224 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SFX_Thunder_Loading_04" ID="{61A5C5FB-4D66-4779-8937-1F02A55E7726}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SFX_Fire_Off" ID="{1347B0A7-F10E-434A-A189-54D269AC62D4}" ShortID="905367131">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>300</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7B9CED2B-997F-4134-BE66-E21C8AAC7444}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C2CB52A7-78AB-41B6-93C1-1EC96CDBA3E1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Fire_Off_01" ID="{438B99AB-090E-4D55-9C00-0451753176A7}" ShortID="893921508">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Fire_Off_01" ID="{15EAD208-302A-4089-BC0F-84BDA879482E}" ShortID="502360231">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Fire_Off_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Fire_Off_01" ID="{15EAD208-302A-4089-BC0F-84BDA879482E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Fire_Off_02" ID="{35CBB170-862D-4E68-9B67-794EE0A2E189}" ShortID="272757056">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Fire_Off_02" ID="{EE16CC3E-6CBB-4EF5-802F-BF29FC778715}" ShortID="937897836">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Fire_Off_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Fire_Off_02" ID="{EE16CC3E-6CBB-4EF5-802F-BF29FC778715}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="SFX_Veggi_Success" ID="{A8795A15-DB76-4837-8F8B-54DEFCC50C81}" ShortID="861225181">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Veggi_Success" ID="{0280C340-8C35-43C4-BDA3-B1982D98CCF3}" ShortID="548274742">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Veggi_Success.wav</AudioFile>
+								</AudioFileSource>
+								<AudioFileSource Name="SFX_Veggi_Success_01" ID="{8FAB02D7-C51B-4A8B-96D7-AE400445A046}" ShortID="16489025">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Veggi_Success_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Veggi_Success_01" ID="{8FAB02D7-C51B-4A8B-96D7-AE400445A046}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="SFX_Veggi_PickUp" ID="{771D47C4-26F9-496B-AE5F-C9131C9A3383}" ShortID="92005453">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{72D0E60D-085A-44D7-A989-5BD43E1D5118}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{717FEC07-37F6-4EC3-A2E2-3F026414FFD7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Veggi_PickUp_02" ID="{F4470AA4-CA09-431E-B279-0C0CABC4820F}" ShortID="784134732">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Veggi_PickUp_02" ID="{D03D594C-DF60-49F1-AFE9-37B7464102B3}" ShortID="465255943">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Veggi_PickUp_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Veggi_PickUp_02" ID="{D03D594C-DF60-49F1-AFE9-37B7464102B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Veggi_PickUp_03" ID="{19C251E3-C625-4D58-8A13-F068D77B40D6}" ShortID="113033703">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Veggi_PickUp_03" ID="{6D39ABDE-132A-45CC-810E-B7D860687C5B}" ShortID="813419052">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Veggi_PickUp_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Veggi_PickUp_03" ID="{6D39ABDE-132A-45CC-810E-B7D860687C5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Veggi_PickUp_01" ID="{550ACD3B-B62C-4302-AC10-C7A8E39CC372}" ShortID="76015831">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Veggi_PickUp_01" ID="{4C2D0684-A622-4461-869D-3F0395180E49}" ShortID="130509793">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Veggi_PickUp_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Veggi_PickUp_01" ID="{4C2D0684-A622-4461-869D-3F0395180E49}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
