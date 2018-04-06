@@ -35,6 +35,7 @@
 						<CurrentStateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Start_Game" ID="{BCC6780E-6A36-437B-919E-845D8256F3C8}"/>
 						<CurrentSwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

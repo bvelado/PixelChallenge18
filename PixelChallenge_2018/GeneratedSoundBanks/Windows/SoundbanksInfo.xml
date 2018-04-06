@@ -22,6 +22,7 @@
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="810046381" Name="Play_Amb_Storm_2D" ObjectPath="\Events\Default Work Unit\Play_Amb_Storm_2D"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="3180029768" Name="Play_SFX_Fire_Off" ObjectPath="\Events\Default Work Unit\Play_SFX_Fire_Off"/>
 				<Event Id="2244152443" Name="Play_SFX_Thunder_Crack" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Crack"/>
 				<Event Id="3329011853" Name="Play_SFX_Thunder_Loading" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Loading"/>
@@ -50,6 +51,10 @@
 					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_01_072F86BC.wem</Path>
 				</File>
+				<File Id="247703123" Language="SFX">
+					<ShortName>Music_Menu_Loop.wav</ShortName>
+					<Path>SFX\Music_Menu_Loop_AC3051B4.wem</Path>
+				</File>
 				<File Id="269551509" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_02.wav</ShortName>
 					<Path>SFX\SFX_Thunder_Loading_02_DE3756CF.wem</Path>
@@ -73,6 +78,10 @@
 				<File Id="349872485" Language="SFX">
 					<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>
 					<Path>SFX\Amb_Wind_Phase2_lp_760B809C.wem</Path>
+				</File>
+				<File Id="418601459" Language="SFX">
+					<ShortName>Music_Start_Transition.wav</ShortName>
+					<Path>SFX\Music_Start_Transition_AC3051B4.wem</Path>
 				</File>
 				<File Id="423954894" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_02.wav</ShortName>
