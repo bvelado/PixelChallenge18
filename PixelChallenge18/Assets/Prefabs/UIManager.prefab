@@ -2235,7 +2235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224220971514310734}
   m_Layer: 5
-  m_Name: PlayerZones_Images
+  m_Name: PlayerZones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3282,7 +3282,11 @@ MonoBehaviour:
   creditsScreen: {fileID: 1016529771998194}
   selectionScreen: {fileID: 1575027297482246}
   gameScreen: {fileID: 1611432382260356}
-  playAnim: {fileID: 0}
+  pZones:
+  - {fileID: 224626344714723056}
+  - {fileID: 224236728123870020}
+  - {fileID: 224785902772414702}
+  - {fileID: 224782936598811540}
 --- !u!114 &114327157749930636
 MonoBehaviour:
   m_ObjectHideFlags: 1
