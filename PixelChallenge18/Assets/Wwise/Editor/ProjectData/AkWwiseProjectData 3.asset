@@ -20,7 +20,10 @@ MonoBehaviour:
   RtpcWwu: []
   TriggerWwu: []
   AcousticTextureWwu: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /PixelChallenge_2018
+  - /PixelChallenge_2018/Events
+  - /PixelChallenge_2018/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

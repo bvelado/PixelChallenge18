@@ -10,9 +10,7 @@ public class CharacterMotor : MonoBehaviour {
     private CharacterInputs _inputs;
 
     private Vector2 _velocity;
-    private bool _hasInputToProcess;
-
-    
+    private bool _hasInputToProcess;    
 
     private void Awake()
     {
@@ -40,13 +38,13 @@ public class CharacterMotor : MonoBehaviour {
     {
         if (_hasInputToProcess)
         {
-            _rigidbody.velocity = (Vector3.right * _velocity.x) + (Vector3.forward * _velocity.y);
+            _rigidbody.velocity = new Vector3(_velocity.x, _rigidbody.velocity.y, _velocity.y);
             _hasInputToProcess = false;
         }
     }
 
     private void UpdateOrientation(Vector2 orientation)
     {
-        _rigidbody.transform.rotation = Quaternion.LookRotation(new Vector3(_velocity.x, 0f, _velocity.y), Vector3.up);
+        _rigidbody.transform.rotation = Quaternion.LookRotation(new Vector3(orientation.x, 0f, orientation.y), Vector3.up);
     }
 }
