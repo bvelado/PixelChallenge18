@@ -10,8 +10,16 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_SFX_Thunder_Crack" ID="{497E0D79-C77A-4B03-832A-EA2BC8EFDB80}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Set_Phase_2" ID="{C208808F-6B71-4BFC-A627-15ADF20996B0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Thunder_Loading" ID="{5197142D-B080-47B4-AE84-AA723181D714}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_Phase_3" ID="{68F1745F-ECFE-4018-910F-1B7AA2022FF5}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>

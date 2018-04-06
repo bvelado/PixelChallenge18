@@ -132,6 +132,46 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SFX_Thunder_Crack" ID="{497E0D79-C77A-4B03-832A-EA2BC8EFDB80}">
+					<ChildrenList>
+						<Action Name="" ID="{7CC0802F-8D8A-45B9-9536-7AB53B711B24}" ShortID="255478745">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thunder_Crack" ID="{6D898843-D1AC-4AAA-AC5C-21C7AD95923E}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E72A3719-7574-4C45-B590-5092538F3ADD}" ShortID="718648217">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thunder_Loading" ID="{7AD0C5A9-CED4-475F-AE14-912B30B04EDA}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Thunder_Loading" ID="{5197142D-B080-47B4-AE84-AA723181D714}">
+					<ChildrenList>
+						<Action Name="" ID="{6A66E707-2388-46C5-9E2E-FE2499D9CED2}" ShortID="409746679">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thunder_Loading" ID="{7AD0C5A9-CED4-475F-AE14-912B30B04EDA}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
