@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}" SchemaVersion="85">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="SW_Storm_Phase" ID="{E678A83D-80B4-4B16-B9E0-E3AC188AE3B6}">
+					<ChildrenList>
+						<Switch Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+						<Switch Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+						<Switch Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

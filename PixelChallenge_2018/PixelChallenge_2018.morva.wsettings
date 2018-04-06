@@ -4,7 +4,10 @@
 		<UserProjectSettings Name="" ID="{DFD804A5-8C83-4266-8CDD-C017D64808C2}">
 			<PropertyList>
 				<Property Name="Event Action List\{442FA588-21B3-44E6-9BB6-B1D70453643D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{68F1745F-ECFE-4018-910F-1B7AA2022FF5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8F489C5A-3F85-41BF-9A42-137E64950B73}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C208808F-6B71-4BFC-A627-15ADF20996B0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -26,6 +29,7 @@
 				<Property Name="Interactive Music\x64_{AFE2BBED-E130-4D10-8845-D6BDCDBEBE4F} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwqkxokeDjtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
+				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
@@ -91,6 +95,17 @@
 					</ValueList>
 				</Property>
 			</PropertyList>
+			<PluginInnerObjectList>
+				<List Name="BatchRenameSettings">
+					<PluginInnerObject Name="" ID="{D9519E3B-C9D8-4A65-86EC-109F0628A2FD}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
+						<PropertyList>
+							<Property Name="EnableInsert" Type="bool" Value="True"/>
+							<Property Name="InsertToInsert" Type="string" Value="ST_"/>
+							<Property Name="insertFrom" Type="int16" Value="0"/>
+						</PropertyList>
+					</PluginInnerObject>
+				</List>
+			</PluginInnerObjectList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>
 </WwiseDocument>

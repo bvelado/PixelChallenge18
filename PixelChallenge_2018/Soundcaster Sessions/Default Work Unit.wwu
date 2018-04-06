@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{298368F8-7D50-4557-A353-A9BEF28A6084}" SchemaVersion="85">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{298368F8-7D50-4557-A353-A9BEF28A6084}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{298368F8-7D50-4557-A353-A9BEF28A6084}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{0576EAC4-3F5F-4F1E-84FC-8022AA895491}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Amb_Storm_2D" ID="{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Phase_2" ID="{C208808F-6B71-4BFC-A627-15ADF20996B0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Phase_3" ID="{68F1745F-ECFE-4018-910F-1B7AA2022FF5}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}"/>
+							<Value>95</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -3,15 +3,130 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{4BBAA461-E23D-4C72-9656-0E1186F84853}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Drone_Test" ID="{8F489C5A-3F85-41BF-9A42-137E64950B73}">
+				<Event Name="Play_Amb_Storm_2D" ID="{B4F84A84-8B93-4BD9-B5F2-5A788801CC6A}">
 					<ChildrenList>
-						<Action Name="" ID="{DAAE481D-949A-46A4-9075-DA5B580106ED}" ShortID="753171337">
+						<Action Name="" ID="{6077A7CE-921E-4D1E-84E5-143B4CB85A23}" ShortID="600723753">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D9105258-4FA8-4B15-821D-4CF6AC40F9AF}" ShortID="1041939919">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D191C247-785B-4614-9766-B98562BFF911}" ShortID="209639558">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="15"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4F3D9881-BD62-4DBA-9D63-CD5F094E8708}" ShortID="997205071">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Drone_Test" ID="{2E79C11B-67FE-4553-8E37-A35CCF0890C0}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+									<ObjectRef Name="Amb_Thunder_Roar" ID="{723FE102-34EB-4ED7-8CE9-2617B6597909}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9A1CAC74-18F0-4385-8F88-FDACBA44E983}" ShortID="632975079">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amb_Storm_2D" ID="{5E090C68-95DC-4016-B545-7A8777E159F7}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Phase_2" ID="{C208808F-6B71-4BFC-A627-15ADF20996B0}">
+					<ChildrenList>
+						<Action Name="" ID="{EE390604-7122-4058-8A67-92FFCF973940}" ShortID="900976337">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4E86B923-EE76-4E77-84D2-F3392C251597}" ShortID="64049180">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{714E53DA-2EB3-4FD2-8023-2E1CF1D473ED}" ShortID="606723199">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="60"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Phase_3" ID="{68F1745F-ECFE-4018-910F-1B7AA2022FF5}">
+					<ChildrenList>
+						<Action Name="" ID="{84203267-9B22-4261-9005-B31E960C768D}" ShortID="317622925">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{02D06B93-4B75-4E4F-BFCA-B51A4AF0C077}" ShortID="819738422">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8043F454-F010-49A1-97C0-06282C554BF6}" ShortID="811040767">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="95"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
