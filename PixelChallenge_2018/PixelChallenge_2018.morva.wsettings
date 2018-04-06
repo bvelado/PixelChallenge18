@@ -33,7 +33,7 @@
 				<Property Name="Interactive Music\x64_{AFE2BBED-E130-4D10-8845-D6BDCDBEBE4F} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwqkxokeDjtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
-				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
@@ -71,7 +71,6 @@
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="C25VICWzhUqm14rrBGUfUQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="Z8r2/Lojvk+sirDBiM3Kwg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
-				<Property Name="RTPC\GameParameterSimValue\{01D76567-B8F5-4087-9FDB-619E165114A6}" Type="Real64" Value="90.8882854926299"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="C25VICWzhUqm14rrBGUfUQ=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">

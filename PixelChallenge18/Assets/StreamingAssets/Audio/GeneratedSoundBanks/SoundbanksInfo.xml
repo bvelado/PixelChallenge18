@@ -3,7 +3,7 @@
 	<RootPaths>
 		<ProjectRoot>D:\PixelChallenge\PixelChallenge_2018\</ProjectRoot>
 		<SourceFilesRoot>D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\PixelChallenge\PixelChallenge_2018\..\..\PixelChallenge\PixelChallenge18\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<SoundBanksRoot>D:\PixelChallenge\PixelChallenge_2018\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>D:\PixelChallenge\PixelChallenge_2018\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
@@ -32,23 +32,23 @@
 			<IncludedMemoryFiles>
 				<File Id="23184774" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_11.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_11_C3CBE9E6.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_11_089B868F.wem</Path>
 				</File>
 				<File Id="30951434" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_05.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_05_6FD7A171.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_05_99882E38.wem</Path>
 				</File>
 				<File Id="196649018" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_02.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_02_8915E9F5.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_02_F5C0C469.wem</Path>
 				</File>
 				<File Id="222037412" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_01_C405FC9A.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_01_072F86BC.wem</Path>
 				</File>
 				<File Id="269551509" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_02.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_02_8DB4614C.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_02_191723B0.wem</Path>
 				</File>
 				<File Id="287759630" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_01.wav</ShortName>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="296098086" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_07.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_07_57E1638D.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_07_0EB94D01.wem</Path>
 				</File>
 				<File Id="298242952" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_03.wav</ShortName>
@@ -68,7 +68,7 @@
 				</File>
 				<File Id="349872485" Language="SFX">
 					<ShortName>Amb_Wind_Phase2_lp.wav</ShortName>
-					<Path>SFX\Amb_Wind_Phase2_lp_CD058AC7.wem</Path>
+					<Path>SFX\Amb_Wind_Phase2_lp_760B809C.wem</Path>
 				</File>
 				<File Id="423954894" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_02.wav</ShortName>
@@ -76,11 +76,11 @@
 				</File>
 				<File Id="470681896" Language="SFX">
 					<ShortName>Amb_Wind_Phase3_lp.wav</ShortName>
-					<Path>SFX\Amb_Wind_Phase3_lp_1027AE9A.wem</Path>
+					<Path>SFX\Amb_Wind_Phase3_lp_19735EC9.wem</Path>
 				</File>
 				<File Id="493142140" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_01.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_01_21E113A4.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_01_D45C6423.wem</Path>
 				</File>
 				<File Id="502360231" Language="SFX">
 					<ShortName>SFX_Fire_Off_01.wav</ShortName>
@@ -88,7 +88,7 @@
 				</File>
 				<File Id="529259371" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_10.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_10_FC408F25.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_10_2BF9F96B.wem</Path>
 				</File>
 				<File Id="548274742" Language="SFX">
 					<ShortName>SFX_Veggi_Success.wav</ShortName>
@@ -96,15 +96,15 @@
 				</File>
 				<File Id="590617343" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_08.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_08_D5AEF5E1.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_08_DE5D9E57.wem</Path>
 				</File>
 				<File Id="666870192" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_04.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_04_868BFFEE.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_04_8C4D4B05.wem</Path>
 				</File>
 				<File Id="811501772" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_09.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_09_CF215569.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_09_FFAF6F44.wem</Path>
 				</File>
 				<File Id="826150858" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_05.wav</ShortName>
@@ -112,15 +112,15 @@
 				</File>
 				<File Id="837336748" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_03.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_03_BB16472F.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_03_48F47559.wem</Path>
 				</File>
 				<File Id="842604716" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_06.wav</ShortName>
-					<Path>SFX\Amb_Thunder_Roar_06_A303702F.wem</Path>
+					<Path>SFX\Amb_Thunder_Roar_06_53BC8E69.wem</Path>
 				</File>
 				<File Id="885937118" Language="SFX">
 					<ShortName>Amb_Wind_Phase1_lp.wav</ShortName>
-					<Path>SFX\Amb_Wind_Phase1_lp_F7364A8C.wem</Path>
+					<Path>SFX\Amb_Wind_Phase1_lp_AF76FE5C.wem</Path>
 				</File>
 				<File Id="892070664" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_04.wav</ShortName>
@@ -132,7 +132,7 @@
 				</File>
 				<File Id="1051040488" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_03.wav</ShortName>
-					<Path>SFX\SFX_Thunder_Loading_03_E8D06FE2.wem</Path>
+					<Path>SFX\SFX_Thunder_Loading_03_E986164D.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

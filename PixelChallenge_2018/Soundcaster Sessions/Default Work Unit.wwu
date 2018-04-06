@@ -30,17 +30,12 @@
 							<Position X="2" Y="3"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true">
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}"/>
-							<Value>90.8882854926299</Value>
-						</RTPCValue>
-					</RTPCValueList>
+					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+						<CurrentStateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

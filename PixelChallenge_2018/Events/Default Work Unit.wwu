@@ -25,25 +25,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{D191C247-785B-4614-9766-B98562BFF911}" ShortID="209639558">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="15"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{4F3D9881-BD62-4DBA-9D63-CD5F094E8708}" ShortID="997205071">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Amb_Thunder_Roar" ID="{723FE102-34EB-4ED7-8CE9-2617B6597909}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+									<ObjectRef Name="Amb_Thunder_Roar" ID="{A8188266-5273-4E77-9ABF-BF7B0E6B24F2}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -82,18 +70,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{714E53DA-2EB3-4FD2-8023-2E1CF1D473ED}" ShortID="606723199">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="60"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Set_Phase_3" ID="{68F1745F-ECFE-4018-910F-1B7AA2022FF5}">
@@ -115,18 +91,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{8043F454-F010-49A1-97C0-06282C554BF6}" ShortID="811040767">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="95"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
