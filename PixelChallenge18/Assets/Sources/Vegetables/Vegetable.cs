@@ -2,7 +2,7 @@
 
 public class Vegetable : MonoBehaviour {
 
-    [SerializeField] private PlayerData _playerData;
+    private PlayerData _playerData;
     public PlayerData PlayerData { get { return _playerData; } }
 
     private VegetableHoldable _holdable;
@@ -15,11 +15,11 @@ public class Vegetable : MonoBehaviour {
     {
         _holdable = GetComponent<VegetableHoldable>();
         _rigidbody = GetComponent<Rigidbody>();
-        Initialize();
     }
 
-    private void Initialize()
+    public void Initialize(PlayerData playerData)
     {
+        _playerData = playerData;
         SetRooted(true);
     }
 
