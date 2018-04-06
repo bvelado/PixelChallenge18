@@ -25,11 +25,15 @@
 							<ObjectRef Name="Set_Phase_3" ID="{68F1745F-ECFE-4018-910F-1B7AA2022FF5}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="2" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Fire_Off" ID="{E3409F28-2748-40C2-8B91-D24163C624C9}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="2" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Storm_Phase" ID="{01D76567-B8F5-4087-9FDB-619E165114A6}"/>
-							<Value>95</Value>
+							<Value>90.8882854926299</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

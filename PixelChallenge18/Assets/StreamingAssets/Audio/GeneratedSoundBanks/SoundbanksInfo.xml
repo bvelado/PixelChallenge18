@@ -22,8 +22,10 @@
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="810046381" Name="Play_Amb_Storm_2D" ObjectPath="\Events\Default Work Unit\Play_Amb_Storm_2D"/>
+				<Event Id="3180029768" Name="Play_SFX_Fire_Off" ObjectPath="\Events\Default Work Unit\Play_SFX_Fire_Off"/>
 				<Event Id="2244152443" Name="Play_SFX_Thunder_Crack" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Crack"/>
 				<Event Id="3329011853" Name="Play_SFX_Thunder_Loading" ObjectPath="\Events\Default Work Unit\Play_SFX_Thunder_Loading"/>
+				<Event Id="214169128" Name="Play_SFX_Veggi_Success" ObjectPath="\Events\Default Work Unit\Play_SFX_Veggi_Success"/>
 				<Event Id="2844963020" Name="Set_Phase_2" ObjectPath="\Events\Default Work Unit\Set_Phase_2"/>
 				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
 			</IncludedEvents>
@@ -80,9 +82,17 @@
 					<ShortName>SFX_Thunder_Loading_01.wav</ShortName>
 					<Path>SFX\SFX_Thunder_Loading_01_21E113A4.wem</Path>
 				</File>
+				<File Id="502360231" Language="SFX">
+					<ShortName>SFX_Fire_Off_01.wav</ShortName>
+					<Path>SFX\SFX_Fire_Off_01_FAB7959A.wem</Path>
+				</File>
 				<File Id="529259371" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_10.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_10_FC408F25.wem</Path>
+				</File>
+				<File Id="548274742" Language="SFX">
+					<ShortName>SFX_Veggi_Success.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_FAB7959A.wem</Path>
 				</File>
 				<File Id="590617343" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_08.wav</ShortName>
@@ -115,6 +125,10 @@
 				<File Id="892070664" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_04.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_04_FAB7959A.wem</Path>
+				</File>
+				<File Id="937897836" Language="SFX">
+					<ShortName>SFX_Fire_Off_02.wav</ShortName>
+					<Path>SFX\SFX_Fire_Off_02_FAB7959A.wem</Path>
 				</File>
 				<File Id="1051040488" Language="SFX">
 					<ShortName>SFX_Thunder_Loading_03.wav</ShortName>

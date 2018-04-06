@@ -267,12 +267,12 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>7</YPos>
+														<YPos>10.49694</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>42.0742</XPos>
-														<YPos>7</YPos>
+														<XPos>41.84146</XPos>
+														<YPos>10.56419</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -638,9 +638,9 @@
 										<StateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 										<State Name="" ID="{7A042C83-6037-4400-B6E6-BC885869AD31}" ShortID="322861477">
 											<PropertyList>
-												<Property Name="Highpass" Type="int16" Value="15"/>
-												<Property Name="Lowpass" Type="int16" Value="15"/>
-												<Property Name="Volume" Type="Real64" Value="-4"/>
+												<Property Name="Highpass" Type="int16" Value="19"/>
+												<Property Name="Lowpass" Type="int16" Value="22"/>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -670,7 +670,7 @@
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>400</Value>
+										<Value>180</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -936,6 +936,107 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="SFX_Fire_Off" ID="{1347B0A7-F10E-434A-A189-54D269AC62D4}" ShortID="905367131">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7B9CED2B-997F-4134-BE66-E21C8AAC7444}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C2CB52A7-78AB-41B6-93C1-1EC96CDBA3E1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Fire_Off_01" ID="{438B99AB-090E-4D55-9C00-0451753176A7}" ShortID="893921508">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Fire_Off_01" ID="{15EAD208-302A-4089-BC0F-84BDA879482E}" ShortID="502360231">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Fire_Off_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Fire_Off_01" ID="{15EAD208-302A-4089-BC0F-84BDA879482E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Fire_Off_02" ID="{35CBB170-862D-4E68-9B67-794EE0A2E189}" ShortID="272757056">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Fire_Off_02" ID="{EE16CC3E-6CBB-4EF5-802F-BF29FC778715}" ShortID="937897836">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Fire_Off_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Fire_Off_02" ID="{EE16CC3E-6CBB-4EF5-802F-BF29FC778715}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="SFX_Veggi_Success" ID="{A8795A15-DB76-4837-8F8B-54DEFCC50C81}" ShortID="861225181">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Veggi_Success" ID="{0280C340-8C35-43C4-BDA3-B1982D98CCF3}" ShortID="548274742">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Veggi_Success.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Veggi_Success" ID="{0280C340-8C35-43C4-BDA3-B1982D98CCF3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{F16775EF-122C-479B-B202-12AD740ABF0F}" ShortID="939217485">

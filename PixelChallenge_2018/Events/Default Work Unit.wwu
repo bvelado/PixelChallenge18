@@ -172,6 +172,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SFX_Fire_Off" ID="{E3409F28-2748-40C2-8B91-D24163C624C9}">
+					<ChildrenList>
+						<Action Name="" ID="{C5EEE104-0CF7-40F3-ABE3-5057DAA44E13}" ShortID="655764372">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Fire_Off" ID="{1347B0A7-F10E-434A-A189-54D269AC62D4}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Veggi_Success" ID="{90A145C9-AA1F-48E5-B981-EFBC064DDFBC}">
+					<ChildrenList>
+						<Action Name="" ID="{012DF18D-598E-445F-92A1-E27E6ED739D8}" ShortID="1035020152">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Veggi_Success" ID="{A8795A15-DB76-4837-8F8B-54DEFCC50C81}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
