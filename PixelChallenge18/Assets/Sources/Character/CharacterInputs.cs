@@ -30,9 +30,7 @@ public sealed class CharacterInputs : MonoBehaviour {
     /// </summary>
     private const string CROUCH = "crouch";
     #endregion
-
-    private string _playerId = "";
-
+    
     #region Cached input name
     /// These are the actual name of the inputs used by this
     /// character. They must be filled using Initialize().
@@ -67,25 +65,24 @@ public sealed class CharacterInputs : MonoBehaviour {
     #endregion
 
 #if UNITY_EDITOR
-    [SerializeField] private string DEBUG_PLAYER_ID;
-
-    private void Awake()
+    /// <summary>
+    /// SEULEMENT POUR LE DEBUG
+    /// </summary>
+    private void Start()
     {
-        Initialize(DEBUG_PLAYER_ID);
+        Initialize(GetComponent<Player>().Data);
     }
 #endif
 
-    public void Initialize(string playerId)
+    public void Initialize(PlayerData playerData)
     {
-        _playerId = playerId;
-
         // LEFT JOYSTICK
-        _leftJoystickXAxisName = string.Format("{0}{1}", _playerId, LEFT_JOYSTICK_HORIZONTAL_AXIS);
-        _leftJoystickYAxisName = string.Format("{0}{1}", _playerId, LEFT_JOYSTICK_VERTICAL_AXIS);
+        _leftJoystickXAxisName = string.Format("{0}{1}", playerData.ID, LEFT_JOYSTICK_HORIZONTAL_AXIS);
+        _leftJoystickYAxisName = string.Format("{0}{1}", playerData.ID, LEFT_JOYSTICK_VERTICAL_AXIS);
 
-        _holdAxisName = string.Format("{0}{1}", _playerId, HOLD);
-        _crouchAxisName = string.Format("{0}{1}", _playerId, CROUCH);
-        _kickButtonName = string.Format("{0}{1}", _playerId, KICK);
+        _holdAxisName = string.Format("{0}{1}", playerData.ID, HOLD);
+        _crouchAxisName = string.Format("{0}{1}", playerData.ID, CROUCH);
+        _kickButtonName = string.Format("{0}{1}", playerData.ID, KICK);
     }
 
     private void Update()

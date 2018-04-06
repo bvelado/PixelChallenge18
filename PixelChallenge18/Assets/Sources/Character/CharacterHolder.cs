@@ -2,11 +2,12 @@
 
 public class CharacterHolder : MonoBehaviour
 {
-    public Transform HoldRoot {  get { return _holdRoot; } }
-
-    [SerializeField] private Bounds _grabRange;
-    [SerializeField] private LayerMask _holdableLayerMask;
     [SerializeField] private Transform _holdRoot;
+    public Transform HoldRoot { get { return _holdRoot; } }
+
+    [SerializeField] private LayerMask _holdableLayerMask;
+    [SerializeField] private Transform _raycastOrigin;
+    [SerializeField] private float _raycastDistance = 0.5f;
 
     private CharacterInputs _inputs;
     private CharacterMotor _motor;
@@ -64,27 +65,16 @@ public class CharacterHolder : MonoBehaviour
 
     private IHoldable FindClosestHoldable()
     {
-        var grabBoxCenter = transform.position + (transform.rotation * _grabRange.center) - (transform.forward * _grabRange.extents.z / 2f);
-        Debug.DrawLine(grabBoxCenter, grabBoxCenter + Vector3.forward * 10f, Color.red, 2f);
-        if(Physics.BoxCast(grabBoxCenter, _grabRange.extents / 2f, transform.forward, out _hit, transform.rotation, _grabRange.extents.z, _holdableLayerMask.value))
-        {
-            var item = _hit.collider.gameObject;
-
-            Debug.Log(string.Format("Found {0} with a LayerMask value of {1}", item.name, _holdableLayerMask.value));
-
-            if (item != null && item.GetComponent<IHoldable>() != null)
-            {
-                return item.GetComponent<IHoldable>();
-            }
+        if(Physics.Raycast(_raycastOrigin.position, _raycastOrigin.forward, out _hit, _raycastDistance, _holdableLayerMask.value)) {
+            return _hit.collider.GetComponentInParent<IHoldable>();
         }
 
         return null;
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        Gizmos.matrix = transform.localToWorldMatrix;
-
-        Gizmos.DrawWireCube(_grabRange.center, _grabRange.size);
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(_raycastOrigin.position, _raycastOrigin.position + _raycastOrigin.forward * _raycastDistance);
     }
 }
