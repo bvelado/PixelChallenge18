@@ -2,12 +2,11 @@
 
 public class VegetableHoldable : MonoBehaviour, IHoldable
 {
-    public event System.Action<CharacterHolder> BeganBeingHeld;
-    public event System.Action<CharacterHolder> EndedBeingHeld;
+    public event System.Action<VegetableHoldable> BeganBeingHeld;
+    public event System.Action<VegetableHoldable> EndedBeingHeld;
 
     public void OnBeginHold(CharacterHolder holder)
     {
-        Debug.Log("I'm being held by " + holder);
         transform.SetParent(holder.HoldRoot);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
@@ -24,13 +23,12 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
 
         if(BeganBeingHeld != null)
         {
-            BeganBeingHeld.Invoke(holder);
+            BeganBeingHeld.Invoke(this);
         }
     }
 
     public void OnEndHold(CharacterHolder holder)
     {
-        Debug.Log("I'm being thrown by " + holder);
         transform.SetParent(null);
 
         var rigidbody = GetComponent<Rigidbody>();
@@ -45,7 +43,7 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
 
         if (EndedBeingHeld != null)
         {
-            EndedBeingHeld.Invoke(holder);
+            EndedBeingHeld.Invoke(this);
         }
     }
 }

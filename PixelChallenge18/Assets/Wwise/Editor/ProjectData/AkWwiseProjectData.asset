@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: 1737008161
-    m_lastTimePart2: -1999266852
+    m_lastTimePsrt1: 85678172
+    m_lastTimePart2: -1999266839
     List:
     - Name: Play_Amb_Storm_2D
       Path: Default Work Unit\Play_Amb_Storm_2D
@@ -28,6 +28,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 810046381
       Guid: 844af8b4938bd94bb5f25a788801cc6a
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Music
+      Path: Default Work Unit\Play_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      ID: -1362926625
+      Guid: df0bc613e6bb5343813ab0977f06e08e
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -107,8 +119,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E98DCFF4-602F-4283-9131-52037A65BD46}'
-    m_lastTimePsrt1: -799067344
-    m_lastTimePart2: -1999266939
+    m_lastTimePsrt1: 2090221417
+    m_lastTimePart2: -1999266935
     List:
     - Name: Reverb_01
       Path: Default Work Unit\Master Audio Bus\REVERB\Reverb_01
@@ -176,9 +188,34 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CF3F1732-78F5-4598-BE17-5B51174B16CF}'
-    m_lastTimePsrt1: 472316531
-    m_lastTimePart2: -1999266948
+    m_lastTimePsrt1: 88845402
+    m_lastTimePart2: -1999266839
     List:
+    - Name: SW_Music
+      Path: Default Work Unit\SW_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SW_Music
+        ObjectType: 11
+      ID: -1416409205
+      Guid: 74f78c3affe8a648b21dacd334fb2600
+      values:
+      - Menu
+      - SILENCE
+      - Start_Game
+      ValueIcons:
+      - ElementName: Menu
+        ObjectType: 10
+      - ElementName: SILENCE
+        ObjectType: 10
+      - ElementName: Start_Game
+        ObjectType: 10
+      valueIDs: f0256c9b5a924ab5bc017542
+      ValueGuids:
+      - bytes: 882d7db780b4d847adbb52ad824ac3f0
+      - bytes: da101db68c2c0b4fa92f50cfad64b080
+      - bytes: 0e78c6bc366a7b43919e845d8256f3c8
     - Name: SW_Storm_Phase
       Path: Default Work Unit\SW_Storm_Phase
       PathAndIcons:
@@ -224,8 +261,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}'
-    m_lastTimePsrt1: 1737023201
-    m_lastTimePart2: -1999266852
+    m_lastTimePsrt1: 85688171
+    m_lastTimePart2: -1999266839
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
