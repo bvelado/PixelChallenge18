@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/CharacterActions.unity
+  - enabled: 0
+    path: Assets/Scenes/Test_CharacterActions.unity
     guid: 7e2627a5bffca7c438b0b19811f6e85d
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 56c96c9f763974945a5c1988f697cd9f

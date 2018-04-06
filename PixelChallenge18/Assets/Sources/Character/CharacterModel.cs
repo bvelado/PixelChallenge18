@@ -35,13 +35,12 @@ public class CharacterModel : MonoBehaviour {
     public void SetPick()
     {
         _animator.SetBool(_pickAnimatorParameter, true);
-        //_animator.SetBool(_idleAnimatorParameter, false);
-        //_animator.SetBool(_runAnimatorParameter, false);
+        _animator.SetBool(_holdAnimatorParameter, true);
     }
 
-    public void SetHold()
+    public void SetLoose()
     {
         _animator.SetBool(_pickAnimatorParameter, false);
-        _animator.SetBool(_holdAnimatorParameter, true);
+        _animator.SetBool(_holdAnimatorParameter, false);
     }
 }
