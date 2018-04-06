@@ -39,6 +39,7 @@
 				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Parents" Type="bool" Value="False"/>
 				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - PlayingID" Type="bool" Value="False"/>
 				<Property Name="Game Profiler\Capture List\Filters\Wwise Objects - Use Hierarchy" Type="bool" Value="False"/>
+				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
@@ -78,6 +79,8 @@
 				<Property Name="Music Transition List\{622CEFB4-4746-4027-9D52-C5B0AFC5CC5D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{64D55316-2C8E-43EC-9878-77945FA5E6B4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{6F200984-56D4-4969-BFF4-34467BB9A672}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{781C87EB-F373-4C17-8069-FFE1E9ECF663}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{7BFB8A45-48D1-4972-9342-B90A127299DF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{7C34EF73-55FE-4CB7-9508-C660029F352B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{7E422B39-210F-4400-813E-8D755A4E58D0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{8E4F3597-2038-47CF-84AF-82A7350383B1}\x64_Expand States" Type="string" Value=""/>

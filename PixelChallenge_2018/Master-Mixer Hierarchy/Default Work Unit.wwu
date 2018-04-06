@@ -14,7 +14,33 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}"/>
-						<Bus Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}"/>
+						<Bus Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}"/>
+									<DuckingParam>
+										<Volume>-2</Volume>
+										<FadeInTime>0.100000001490116</FadeInTime>
+										<FadeOutTime>0.100000001490116</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}"/>
+									<DuckingParam>
+										<Volume>-1.5</Volume>
+										<FadeInTime>0.100000001490116</FadeInTime>
+										<FadeOutTime>0.100000001490116</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 						<Bus Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}"/>
 						<Bus Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}"/>
 						<Bus Name="REVERB" ID="{7E8654D3-137E-4E01-B5B1-B153F03CD164}">
