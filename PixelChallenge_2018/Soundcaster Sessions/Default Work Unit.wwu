@@ -105,7 +105,7 @@
 						<CurrentStateRef Name="MUS_Phase_1" ID="{58D15A7E-D7E4-4E37-A270-BA95E10A9CEF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
 						<CurrentSwitchRef Name="SW_Player_01" ID="{648DEBB5-2F18-486B-ACB9-2F605458E4AC}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
