@@ -229,6 +229,7 @@
 						<Action Name="" ID="{6A66E707-2388-46C5-9E2E-FE2499D9CED2}" ShortID="409746679">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="4"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

@@ -5266,7 +5266,7 @@
 														</Point>
 														<Point>
 															<XPos>56.71233</XPos>
-															<YPos>-0</YPos>
+															<YPos>0</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Log2</SegmentShape>
 														</Point>
@@ -5302,7 +5302,7 @@
 														</Point>
 														<Point>
 															<XPos>200</XPos>
-															<YPos>-0</YPos>
+															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
 													</PointList>
@@ -5572,6 +5572,9 @@
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{9EEAC19A-7E55-4849-B93F-AE0739FFB587}">
@@ -6375,7 +6378,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -6411,7 +6414,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -6500,7 +6503,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -6536,7 +6539,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -6625,7 +6628,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -6661,7 +6664,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -6750,7 +6753,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -6786,7 +6789,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -6912,7 +6915,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -6948,7 +6951,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -7037,7 +7040,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -7073,7 +7076,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -7162,7 +7165,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -7198,7 +7201,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -7287,7 +7290,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -7323,7 +7326,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -7455,14 +7458,16 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoopCount" Type="int32" Value="17"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.25"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -7501,7 +7506,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>56.71233</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
@@ -7537,7 +7542,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>200</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
