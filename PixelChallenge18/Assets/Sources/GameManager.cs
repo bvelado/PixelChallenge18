@@ -279,6 +279,8 @@ public class GameManager : MonoBehaviour {
         ResetMap();
         InitGame();
         TriggerStormStepOne();
+        AkSoundEngine.SetState("ST_MuteSFX", "UnmuteSFX");
+        AkSoundEngine.PostEvent("Set_Phase_1", gameObject);
     }
 
     public void RespawnPlayer (int idx)

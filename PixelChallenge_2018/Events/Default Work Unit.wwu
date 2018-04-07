@@ -416,6 +416,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{9FC253D1-36C7-4819-8CE4-D024A9EB965E}" ShortID="694702468">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MuteSFX" ID="{534B0E0F-821C-486C-B813-49F2DA257C38}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Hit_Bucket" ID="{2BC8697C-FB73-4AC9-B4AF-C850FE442D38}">
