@@ -7,9 +7,9 @@ public class Vegetable : MonoBehaviour {
 
     private VegetableHoldable _holdable;
     private Rigidbody _rigidbody;
-    
 
     private bool _isRooted = false;
+    public bool IsRooted { get { return _isRooted; } }
 
     private void Awake()
     {

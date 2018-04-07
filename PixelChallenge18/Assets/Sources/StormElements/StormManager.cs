@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public enum EStormStep
@@ -11,6 +12,9 @@ public enum EStormStep
 public class StormManager : MonoBehaviour {
 
     [SerializeField] private StormWind _wind;
+
+    [Header("Prefabs")]
+    [SerializeField] private GameObject _bucketPrefab;
 
     [Header("Parameters")]
     [SerializeField] private float _delayBetweenBucketAndThunder = 5f;
@@ -30,7 +34,16 @@ public class StormManager : MonoBehaviour {
     private float _lastWind = 0f;
     private float _lastThunder = 0f;
     private bool _isStorming = false;
-    
+
+    private VegetablesLookup _vegetableLookup;
+    private Map _map;
+
+    private void Awake()
+    {
+        _vegetableLookup = FindObjectOfType<VegetablesLookup>();
+        _map = FindObjectOfType<Map>();
+    }
+
     public void Initialize()
     {
         SetStormStep(EStormStep.Small);
@@ -97,6 +110,25 @@ public class StormManager : MonoBehaviour {
     }
 
     private void TriggerThunder()
+    {
+        SpawnBucket();
+        StartCoroutine(ThunderCoroutine());
+    }
+
+    private IEnumerator ThunderCoroutine()
+    {
+        yield return new WaitForSeconds(_delayBetweenBucketAndThunder);
+        ThunderHit();
+    }
+
+    private void SpawnBucket()
+    {
+       var availableTiles = _map.GetAllGardenTiles().Where(x => x.GetComponentInChildren<Vegetable>() == null);
+       // var tile = availableTiles[Random.Range()]
+       //Instantiate(_bucketPrefab, null)
+    }
+
+    private void ThunderHit()
     {
 
     }

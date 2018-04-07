@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Map : MonoBehaviour {
 
-    private const float TILE_SIZE = 6.70f;
+    public const float TILE_SIZE = 6.70f;
     private const int MAP_WIDTH = 9;
     private const int MAP_HEIGHT = 9;
     private const int CHUNK_WIDTH = 3;
@@ -18,6 +18,8 @@ public class Map : MonoBehaviour {
     [SerializeField] private GameObject _holeTilePrefab;
 
     [SerializeField] private Transform _mapContainer;
+
+    private List<GameObject> _instantiatedGardenTiles = new List<GameObject>();
 
     private void Awake()
     {
@@ -66,6 +68,7 @@ public class Map : MonoBehaviour {
             var vegetable = gardenTile.GetComponentInChildren<Vegetable>();
             vegetable.Initialize(_playerDatas[i/2]);
             pool.Add(gardenTile);
+            _instantiatedGardenTiles.Add(gardenTile);
         }
         var lastTile = Instantiate(isBucketChunk ? _bucketTilePrefab : _holeTilePrefab, chunkContainer);
         pool.Add(lastTile);
@@ -75,9 +78,15 @@ public class Map : MonoBehaviour {
 
     public void ClearMap ()
     {
+        _instantiatedGardenTiles.Clear();
         foreach (Transform child in _mapContainer)
         {
             Destroy(child.gameObject);
-        }
+        }        
+    }
+
+    public GameObject[] GetAllGardenTiles()
+    {
+        return _instantiatedGardenTiles.ToArray();
     }
 }
