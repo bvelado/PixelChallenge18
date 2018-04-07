@@ -34,6 +34,7 @@ public class StormWind : MonoBehaviour {
         foreach(var player in _playersLookup.GetPlayers())
         {
             players.Add(player.GetComponent<CharacterCrouch>());
+            player.GetComponent<CharacterModel>().SetWind();
         }
         _windEffectCoroutine = StartCoroutine(WindEffectCoroutine(windForce, players.ToArray()));
         AkSoundEngine.PostEvent("Play_SFX_Wind_Gust", gameObject);
@@ -73,7 +74,7 @@ public class StormWind : MonoBehaviour {
         foreach (var player in players)
         {
             player.GetComponent<CharacterMotor>().SetAdditionalVelocity(Vector2.zero);
-            
+            player.GetComponent<CharacterModel>().SetWindFalse();
         }
 
         windFX.gameObject.SetActive(false);
