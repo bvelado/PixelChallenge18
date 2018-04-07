@@ -2102,6 +2102,11 @@ Prefab:
       propertyPath: mapGenerated
       value: 
       objectReference: {fileID: 640126310}
+    - target: {fileID: 114199274099843058, guid: ce23ca9792238ff498c27a3077d67f35,
+        type: 2}
+      propertyPath: stormManager
+      value: 
+      objectReference: {fileID: 1388388498}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce23ca9792238ff498c27a3077d67f35, type: 2}
   m_IsPrefabParent: 0
@@ -5816,9 +5821,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1388388497}
+  - component: {fileID: 1388388498}
   - component: {fileID: 1388388496}
   m_Layer: 0
-  m_Name: Storm Elements
+  m_Name: Storm Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5851,6 +5857,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388388498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388388495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6698a630b5b020645985caa49fee1fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wind: {fileID: 1388388496}
+  _delayBetweenBucketAndThunder: 5
+  _smallWindFrequency: 16
+  _mediumWindFrequency: 12
+  _largeWindFrequency: 18
+  _smallThunderFrequency: 24
+  _mediumThunderFrequency: 18
+  _largeThunderFrequency: 12
 --- !u!1001 &1409450687
 Prefab:
   m_ObjectHideFlags: 0
