@@ -3536,6 +3536,7 @@ MonoBehaviour:
   _pickAnimatorParameter: Pick
   _holdAnimatorParameter: Carry
   _victoryAnimatorParameter: Victory
+  _kickAnimatorParameter: Kick
 --- !u!114 &114161091062508384
 MonoBehaviour:
   m_ObjectHideFlags: 1

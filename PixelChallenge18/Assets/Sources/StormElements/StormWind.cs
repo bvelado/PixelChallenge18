@@ -8,6 +8,7 @@ public class StormWind : MonoBehaviour {
     [SerializeField] private float _windEffectDuration = 3f;
     [SerializeField] private float _windEffectFrequency = 0.15f;
 
+    public Transform windFX;
     private PlayersLookup _playersLookup;
     private VegetablesLookup _vegetablesLookup;
     private Coroutine _windEffectCoroutine;
