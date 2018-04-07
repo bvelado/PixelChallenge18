@@ -69,6 +69,7 @@ public class StormWind : MonoBehaviour {
         foreach (var player in players)
         {
             player.GetComponent<CharacterMotor>().SetAdditionalVelocity(Vector2.zero);
+            
         }
 
         Debug.Log("Storm ended");

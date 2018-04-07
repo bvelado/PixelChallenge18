@@ -6,6 +6,7 @@ public class StormThunder : MonoBehaviour {
 
     [SerializeField] private float _delayBetweenHit = 5f;
     [SerializeField] private GameObject _hintPrefab;
+    [SerializeField] private GameObject _lightningPrefab;
 
     private VegetablesLookup _vegetableLookup;
 
@@ -37,6 +38,7 @@ public class StormThunder : MonoBehaviour {
         {
             if (target.IsRooted)
             {
+                Destroy(Instantiate(_lightningPrefab, target.transform.position, Quaternion.identity, null), 5f);
                 target.GetComponent<VegetableBurnable>().BeginBurning();
             }
         }
