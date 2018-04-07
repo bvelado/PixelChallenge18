@@ -221,7 +221,7 @@
 																<Property Name="EndTrimOffset" Type="Real64" Value="31579.3650793651"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="6315.78947368421"/>
+																<Property Name="PlayAt" Type="Real64" Value="3157.8947368421"/>
 															</PropertyList>
 															<AudioSourceRef Name="Music_Menu_Loop" ID="{4BD5C059-EFEF-405A-B871-E207C37CD678}"/>
 														</MusicClip>
@@ -277,8 +277,7 @@
 													<ClipList>
 														<MusicClip Name="Music_Menu_Loop_Percu" ID="{1EBEB2E9-8742-42C5-94DB-403C426E9BAF}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6454.15554336265"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="3355.26315789477"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="134.130037709896"/>
 															</PropertyList>
 															<AudioSourceRef Name="Music_Menu_Loop_Percu" ID="{CAB1399E-A37C-486F-8F8D-AB0DFF9CB73D}"/>
@@ -295,7 +294,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>6.45416</XPos>
+																				<XPos>3.35526</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -314,7 +313,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>6.45416</XPos>
+																				<XPos>3.35526</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -333,7 +332,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>6.45416</XPos>
+																				<XPos>3.35526</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -391,7 +390,7 @@
 																<Property Name="EndTrimOffset" Type="Real64" Value="6315.78947368421"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="1398.34826919698"/>
-																<Property Name="PlayAt" Type="Real64" Value="4736.84210526316"/>
+																<Property Name="PlayAt" Type="Real64" Value="1578.94736842105"/>
 															</PropertyList>
 															<AudioSourceRef Name="Music_Gong" ID="{63A04351-C4C9-4F2F-A45B-93278E8E8563}"/>
 															<PropertyCurveList>
@@ -468,7 +467,7 @@
 										<MusicCue Name="Exit Cue" ID="{DD1C9C12-7ABE-4C9F-A47B-FE1B5B2E504D}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="37894.7368421053"/>
+												<Property Name="TimeMs" Type="Real64" Value="34736.8421052632"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>

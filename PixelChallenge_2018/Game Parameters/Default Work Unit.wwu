@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}" SchemaVersion="85">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_SFX_Duck" ID="{0C950D81-3D51-41A0-A5AE-964424321E01}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="-50"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-50"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

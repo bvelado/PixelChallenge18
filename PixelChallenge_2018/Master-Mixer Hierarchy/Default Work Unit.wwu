@@ -13,36 +13,92 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}"/>
+						<Bus Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{14F7AED0-C42A-4764-AB23-32FEC7F4B4FF}" ShortID="718609287">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPC_SFX_Duck" ID="{0C950D81-3D51-41A0-A5AE-964424321E01}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D2792AEA-3569-4D40-97D7-62CD8A71BCB8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-50</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>InvertedSCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3.37042</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}">
 							<PropertyList>
 								<Property Name="RecoveryTime" Type="Real64" Value="0.05"/>
 							</PropertyList>
-							<DuckingList>
-								<DuckItem>
-									<BusRef Name="AMB" ID="{4F73418D-B2CD-4D55-A299-30D4946132C8}"/>
-									<DuckingParam>
-										<Volume>-2</Volume>
-										<FadeInTime>0.100000001490116</FadeInTime>
-										<FadeOutTime>0.100000001490116</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-										<TargetProp>BusVolume</TargetProp>
-									</DuckingParam>
-								</DuckItem>
-								<DuckItem>
-									<BusRef Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}"/>
-									<DuckingParam>
-										<Volume>-1.5</Volume>
-										<FadeInTime>0.100000001490116</FadeInTime>
-										<FadeOutTime>0.100000001490116</FadeOutTime>
-										<FadeCurve>FadeLinear</FadeCurve>
-										<TargetProp>BusVolume</TargetProp>
-									</DuckingParam>
-								</DuckItem>
-							</DuckingList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{3927D9EA-A13E-4E2C-BE1B-5C9665F96E6E}" ShortID="695629434" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="Min" Type="Real32" Value="-50"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="RTPC_SFX_Duck" ID="{0C950D81-3D51-41A0-A5AE-964424321E01}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 						<Bus Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}"/>
-						<Bus Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}"/>
+						<Bus Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{52D2EA77-FFB8-47ED-8FE7-2CDD8D0FE5AD}" ShortID="1066362740">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPC_SFX_Duck" ID="{0C950D81-3D51-41A0-A5AE-964424321E01}" WorkUnitID="{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{152A5C35-57F9-4516-8D18-262C1A7F9B70}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-50</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>InvertedSCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3.12173</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="REVERB" ID="{7E8654D3-137E-4E01-B5B1-B153F03CD164}">
 							<ChildrenList>
 								<AuxBus Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}"/>

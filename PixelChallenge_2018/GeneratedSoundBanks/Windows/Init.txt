@@ -15,6 +15,9 @@ State	ID	Name	State Group			Notes
 	2444080014	MUS_Silence	ST_Music			
 	3149643052	MUS_Menu	ST_Music			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1687132932	RTPC_SFX_Duck			\Default Work Unit\RTPC_SFX_Duck	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	348963605	REVERB			\Default Work Unit\Master Audio Bus\REVERB	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
@@ -28,6 +31,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	367239026	Reverb_02			\Default Work Unit\Master Audio Bus\REVERB\Reverb_02	
 
 Effect plug-ins	ID	Name	Type				Notes
+	695629434	Wwise Meter (Custom)	Wwise Meter			
 	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes
