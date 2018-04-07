@@ -14,12 +14,20 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Ono_Crouch" ID="{D178CF93-3C43-44C9-B312-9518D3F3356F}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_End_Game" ID="{0A9ABA85-F450-4262-B0F2-4923B4C2C200}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_Phase_2" ID="{C208808F-6B71-4BFC-A627-15ADF20996B0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ono_Falling" ID="{677B23FF-8F5E-40FB-B189-A53C16AF69A4}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Music" ID="{13C60BDF-BBE6-4353-813A-B0977F06E08E}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
@@ -30,8 +38,16 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Ono_GrabVeggie" ID="{32A37D6C-C90B-4569-8E97-4B03F1E75125}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_End_Game" ID="{0A9ABA85-F450-4262-B0F2-4923B4C2C200}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ono_isKicked" ID="{BAF92975-24EE-4A13-9517-78DA1BA321BF}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="3" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_SFX_Thunder_Loading" ID="{5197142D-B080-47B4-AE84-AA723181D714}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
@@ -50,6 +66,10 @@
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Ono_Kick" ID="{66DB4CE0-2865-4B15-916D-698C0E054E50}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="4" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SFX_Veggi_PickUp" ID="{3A6E24D8-7304-4089-8394-2E19A1D8896E}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="5" Y="0"/>
 						</Module>
@@ -65,6 +85,14 @@
 							<ObjectRef Name="Play_SFX_Hit_Player" ID="{6349EC93-B52D-4901-A0BD-D2471E3F69FA}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
 							<Position X="5" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_OnoPushedByWind" ID="{5349DF80-98F8-4EC8-9640-643C5112DCF0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="5" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ono_Ready" ID="{868D95C9-D140-48C5-919C-BD603EB3D7C0}" WorkUnitID="{4BBAA461-E23D-4C72-9656-0E1186F84853}"/>
+							<Position X="6" Y="5"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -77,8 +105,8 @@
 						<CurrentStateRef Name="MUS_End_Game" ID="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
-						<CurrentSwitchRef Name="SW_Player_04" ID="{FF14469B-A846-4C98-BCB9-2FD050DD7984}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+						<CurrentSwitchRef Name="SW_Player_03" ID="{BDE8028B-9B22-4AC8-A2DE-80A46E44BD04}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

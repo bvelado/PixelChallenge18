@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>12</Value>
+								<Value>19</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">
@@ -16,6 +16,11 @@
 							</ValueList>
 						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -36,6 +41,7 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -198,6 +204,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ono_Falling_03" ID="{69BDF819-E8DA-417A-AD00-462B5CCEF932}" ShortID="503283013">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -211,6 +222,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -272,6 +288,9 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{77976AF8-FDB7-42E7-930B-5EDA5AC9FF9E}">
@@ -914,6 +933,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ono_Crouch_03" ID="{8C22B411-4948-43B3-B69A-0A96AF2A4C8C}" ShortID="969602661">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -980,6 +1004,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ono_Crouch_04" ID="{F8807F2D-D6CB-4A3C-9F94-8C82A864A104}" ShortID="477822079">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>27</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -1296,6 +1325,9 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{30AF5479-FBE7-4B6F-AC4D-3608B04D7730}">
@@ -1307,6 +1339,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1383,6 +1420,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ono_Kick_04" ID="{04A15C35-10E6-4BE5-A067-02859AC3E0BF}" ShortID="1020081011">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
@@ -1551,7 +1593,7 @@
 													<Modifier Name="" ID="{35928909-C6A3-4D51-9C42-54430A418E1C}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
 															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
@@ -1568,35 +1610,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Kick_Player01_03" ID="{3D4A6588-E2C3-42D5-B88E-63ABCC57C19E}" ShortID="851175219">
-											<PropertyList>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-												</Reference>
-												<Reference Name="UserAuxSend0">
-													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player01_03" ID="{56076304-2669-48C8-9BA9-C2A0861EF80A}" ShortID="192743789">
-													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player01_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player01_03" ID="{56076304-2669-48C8-9BA9-C2A0861EF80A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Ono_Kick_Player01_01" ID="{24C0F859-6B2C-4DEA-BA61-CE5687EA668B}" ShortID="267230263">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1672,7 +1685,7 @@
 													<Modifier Name="" ID="{E83F82AF-3ED3-47CF-94C0-37EC86880902}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
 															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
@@ -1750,7 +1763,7 @@
 													<Modifier Name="" ID="{8FA6EF84-018C-45F1-ADC9-DC9558AA4694}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
 															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
@@ -1834,15 +1847,12 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{4680235F-7695-4FA5-96F8-A6881AE738F1}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
 															<Property Name="Min" Type="Real64" Value="-50"/>
 														</PropertyList>
 													</Modifier>
@@ -3286,6 +3296,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ono_Ready_03" ID="{C6484DAD-0FC6-4012-8BEB-566A0495B1F9}" ShortID="683537153">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -3361,11 +3376,13 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ono_Ready_04" ID="{E34327E7-2A74-4D71-9948-8EC96210D374}" ShortID="790289772">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>26</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{E8C80D87-40CA-4B2F-9333-EFDF3D59F76A}">
@@ -3487,7 +3504,7 @@
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>26</Value>
+										<Value>19</Value>
 									</ValueList>
 								</Property>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -3505,7 +3522,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -5348,6 +5365,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>180</Value>
@@ -5391,6 +5409,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5494,6 +5515,7 @@
 						<RandomSequenceContainer Name="SFX_Thunder_Loading" ID="{7AD0C5A9-CED4-475F-AE14-912B30B04EDA}" ShortID="482156998">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -5506,6 +5528,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -5526,6 +5553,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
