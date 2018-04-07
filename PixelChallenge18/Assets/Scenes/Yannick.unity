@@ -982,6 +982,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999999, y: 0, z: 1.9999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &246192509 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114484826619871126, guid: 23130f3079e28524abff38e2ce6ed17b,
+    type: 2}
+  m_PrefabInternal: {fileID: 12975849}
+  m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
 --- !u!1 &259721898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1825,26 @@ Prefab:
       propertyPath: flashes
       value: 
       objectReference: {fileID: 615368012}
+    - target: {fileID: 114199274099843058, guid: ce23ca9792238ff498c27a3077d67f35,
+        type: 2}
+      propertyPath: baskets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1527669855}
+    - target: {fileID: 114199274099843058, guid: ce23ca9792238ff498c27a3077d67f35,
+        type: 2}
+      propertyPath: baskets.Array.data[1]
+      value: 
+      objectReference: {fileID: 246192509}
+    - target: {fileID: 114199274099843058, guid: ce23ca9792238ff498c27a3077d67f35,
+        type: 2}
+      propertyPath: baskets.Array.data[2]
+      value: 
+      objectReference: {fileID: 723507999}
+    - target: {fileID: 114199274099843058, guid: ce23ca9792238ff498c27a3077d67f35,
+        type: 2}
+      propertyPath: baskets.Array.data[3]
+      value: 
+      objectReference: {fileID: 1007642374}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce23ca9792238ff498c27a3077d67f35, type: 2}
   m_IsPrefabParent: 0
@@ -3442,6 +3468,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999999, y: 0, z: 1.9999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &723507999 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114998424515979944, guid: 23130f3079e28524abff38e2ce6ed17b,
+    type: 2}
+  m_PrefabInternal: {fileID: 12975849}
+  m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
 --- !u!1001 &762901927
 Prefab:
   m_ObjectHideFlags: 0
@@ -4393,6 +4425,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999999, y: 0, z: 1.9999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1007642374 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114926128545719138, guid: 23130f3079e28524abff38e2ce6ed17b,
+    type: 2}
+  m_PrefabInternal: {fileID: 12975849}
+  m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
 --- !u!1 &1010562151 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1309699322393140, guid: d5e586a49f046174a84b55aa0f5f6f4b,
@@ -6275,6 +6313,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fc183d1e19bdd54faf6de076fff4904, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1527669855 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114943200780479576, guid: 23130f3079e28524abff38e2ce6ed17b,
+    type: 2}
+  m_PrefabInternal: {fileID: 12975849}
+  m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
 --- !u!1 &1540135810
 GameObject:
   m_ObjectHideFlags: 0

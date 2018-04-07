@@ -49,7 +49,7 @@ public class Basket : MonoBehaviour {
         _dropRoot.GetChild(_count - 1).gameObject.SetActive(true);
     }
 
-    private void Clear()
+    public void Clear()
     {
         _count = 0;
         for(int i = 0; i < _dropRoot.childCount; i++)

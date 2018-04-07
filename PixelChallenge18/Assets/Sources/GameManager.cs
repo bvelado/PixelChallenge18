@@ -16,12 +16,12 @@ public class GameManager : MonoBehaviour {
     public GameObject windInScene;
     private int nbVegetables = 72;
     private int stormSteps = 1;
-    private List<int> scores = new List<int>();
     private List<int> vegePerPlayer = new List<int>();
     private Dictionary<int, int> playersScores = new Dictionary<int, int>();
     public int vpp = 2;
     public StormManager stormManager;
     public Light flashes;
+    public List<Basket> baskets;
 
     private GameObject spawnedPlayer;
 
@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour {
         vegePerPlayer.Clear();
         for (var i = 0; i < 4; i++)
         {
+            baskets.Clear();
             playersScores.Add(i, 0);
             vegePerPlayer.Add(vpp);
         }
