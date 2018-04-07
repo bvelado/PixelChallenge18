@@ -23,8 +23,11 @@ public class VegetableBurnable : MonoBehaviour {
         if (_isBurning)
         {
             StopCoroutine(_burnCoroutine);
+            AkSoundEngine.PostEvent("Play_SFX_Fire_Off", _fireVFX);
         }
         _fireVFX.SetActive(false);
+
+       
     }
 
     private IEnumerator BurnCoroutine(float duration)
