@@ -16,9 +16,33 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: -396982413
-    m_lastTimePart2: -1999266766
+    m_lastTimePsrt1: -1577715024
+    m_lastTimePart2: -1999266752
     List:
+    - Name: Pause_Menu_Enter
+      Path: Default Work Unit\Pause_Menu_Enter
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pause_Menu_Enter
+        ObjectType: 3
+      ID: -559461766
+      Guid: 6609b8c499794648966160b1f8edf9aa
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Pause_Menu_Exit
+      Path: Default Work Unit\Pause_Menu_Exit
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pause_Menu_Exit
+        ObjectType: 3
+      ID: 179987880
+      Guid: 05dffc63677e4e4ea22440aa2ab36d47
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Play_End_Game
       Path: Default Work Unit\Play_End_Game
       PathAndIcons:
@@ -28,6 +52,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 247285626
       Guid: 85ba9a0a50f46242b0f24923b4c2c200
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Footsteps
+      Path: Default Work Unit\Play_Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+      ID: -440811497
+      Guid: dd9970b43e2cdf4690f21964669b5d70
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -409,8 +445,8 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CF3F1732-78F5-4598-BE17-5B51174B16CF}'
-    m_lastTimePsrt1: 1360902727
-    m_lastTimePart2: -1999266804
+    m_lastTimePsrt1: 1996380294
+    m_lastTimePart2: -1999266754
     List:
     - Name: SW_Player
       Path: Default Work Unit\SW_Player
