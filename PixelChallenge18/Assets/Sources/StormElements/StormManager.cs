@@ -12,6 +12,7 @@ public enum EStormStep
 public class StormManager : MonoBehaviour {
 
     [SerializeField] private StormWind _wind;
+    [SerializeField] private StormThunder _thunder;
 
     [Header("Prefabs")]
     [SerializeField] private GameObject _bucketPrefab;
@@ -118,7 +119,7 @@ public class StormManager : MonoBehaviour {
     private IEnumerator ThunderCoroutine()
     {
         yield return new WaitForSeconds(_delayBetweenBucketAndThunder);
-        ThunderHit();
+        BeginThunder();
     }
 
     private void SpawnBucket()
@@ -128,8 +129,8 @@ public class StormManager : MonoBehaviour {
         Instantiate(_bucketPrefab, tile.transform.position + new Vector3(Map.TILE_SIZE / 2f, 0f, Map.TILE_SIZE / 2f), Quaternion.identity, null);
     }
 
-    private void ThunderHit()
+    private void BeginThunder()
     {
-
+        _thunder.BeginStormThunder();
     }
 }
