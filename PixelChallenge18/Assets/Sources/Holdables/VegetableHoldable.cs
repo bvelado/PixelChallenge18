@@ -41,9 +41,24 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
             rigidbody.GetComponent<Collider>().enabled = true;
         }
 
+        TryToDropInBasket();
+
         if (EndedBeingHeld != null)
         {
             EndedBeingHeld.Invoke(this);
+        }
+    }
+
+    private void TryToDropInBasket()
+    {
+        foreach(var collider in Physics.OverlapSphere(transform.position, 4f))
+        {
+            var basketDrop = collider.GetComponent<BasketDropSpot>();
+            if (basketDrop != null)
+            {
+                basketDrop.TryDropVegetable(this);
+                break;
+            }
         }
     }
 }

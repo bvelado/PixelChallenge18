@@ -10,7 +10,7 @@ public class BasketDropSpot : MonoBehaviour {
     {
         _trigger = GetComponent<SphereCollider>();
 
-        _trigger.isTrigger = true;
+        _trigger.isTrigger = false;
         gameObject.isStatic = true;
     }
 
@@ -20,30 +20,12 @@ public class BasketDropSpot : MonoBehaviour {
         _trigger = GetComponent<SphereCollider>();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        var holdable = other.GetComponentInParent<VegetableHoldable>();
-        if (holdable != null)
-        {
-            holdable.EndedBeingHeld += TryDropVegetable;
-        }
-    }
-
-    private void TryDropVegetable(VegetableHoldable holdable)
+    public void TryDropVegetable(VegetableHoldable holdable)
     {
         var vegetable = holdable.GetComponent<Vegetable>();
         if (vegetable != null && _basket.CanDrop(vegetable))
         {
             _basket.Drop(vegetable);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        var holdable = other.GetComponentInParent<VegetableHoldable>();
-        if (holdable != null)
-        {
-            holdable.EndedBeingHeld -= TryDropVegetable;
         }
     }
 }

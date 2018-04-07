@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 114375999734053776}
   - component: {fileID: 135922027229157192}
   - component: {fileID: 114100636592047510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5a8753773257043459b0bd0402f93c8b, type: 3}
+  - {fileID: 2100000, guid: afd5710b7f290264f806d262d8621905, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1743,8 +1743,8 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1226121968936450}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 12
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 15
+  m_Center: {x: 0, y: 2, z: 0}
