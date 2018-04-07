@@ -78,7 +78,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
-						<CurrentSwitchRef Name="SW_Player_01" ID="{648DEBB5-2F18-486B-ACB9-2F605458E4AC}"/>
+						<CurrentSwitchRef Name="SW_Player_03" ID="{BDE8028B-9B22-4AC8-A2DE-80A46E44BD04}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
