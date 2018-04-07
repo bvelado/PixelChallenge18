@@ -15,6 +15,17 @@ public class Vegetable : MonoBehaviour {
     {
         _holdable = GetComponent<VegetableHoldable>();
         _rigidbody = GetComponent<Rigidbody>();
+
+        FindObjectOfType<VegetablesLookup>().RegisterVegetable(this);
+    }
+
+    private void OnDestroy()
+    {
+        var lookup = FindObjectOfType<VegetablesLookup>();
+        if(lookup != null)
+        {
+            lookup.UnregisterVegetable(this);
+        }
     }
 
     public void Initialize(PlayerData playerData)

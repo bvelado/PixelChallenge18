@@ -12,7 +12,9 @@ public class CharacterHolder : MonoBehaviour
     private CharacterMotor _motor;
 
     private bool _isHolding = false;
-    private IHoldable _heldObject;
+    public bool IsHolding { get { return _isHolding; } }
+    private GameObject _heldObject;
+    public GameObject HeldObject { get { return _heldObject; } }
 
     private RaycastHit _hit;
 
@@ -46,30 +48,38 @@ public class CharacterHolder : MonoBehaviour
 
     private void BeginHold()
     {
+        if (_isHolding)
+        {
+            return;
+        }
+
         var holdable = FindClosestHoldable();
 
         if(holdable != null)
         {
             _isHolding = true;
             _heldObject = holdable;
-            holdable.OnBeginHold(this);
+            holdable.GetComponentInParent<IHoldable>().OnBeginHold(this);
             _model.SetPick();
         }
     }
 
-    private void EndHold()
+    public void EndHold()
     {
+        if (!_isHolding) {
+            return;
+        }
+
         var holdable = _heldObject;
         _isHolding = false;
         _heldObject = null;
-        holdable.OnEndHold(this);
+        holdable.GetComponentInParent<IHoldable>().OnEndHold(this);
         _model.SetLoose();
     }
 
-    private IHoldable FindClosestHoldable()
+    private GameObject FindClosestHoldable()
     {
         GameObject closest = null;
-        IHoldable closestHoldable = null;
         foreach (var collider in Physics.OverlapBox(transform.position + transform.rotation*_overlapBounds.center, _overlapBounds.extents, transform.rotation, _holdableLayerMask.value))
         {
             var holdable = collider.GetComponentInParent<IHoldable>();
@@ -79,12 +89,10 @@ public class CharacterHolder : MonoBehaviour
                 {
                     if(Vector3.Distance(transform.position, collider.transform.position) < Vector3.Distance(transform.position, closest.transform.position)){
                         closest = collider.gameObject;
-                        closestHoldable = holdable;
                     }
                 } else
                 {
                     closest = collider.gameObject;
-                    closestHoldable = holdable;
                 }
             }
         }
@@ -93,7 +101,7 @@ public class CharacterHolder : MonoBehaviour
         //    return _hit.collider.GetComponentInParent<IHoldable>();
         //}
 
-        return closestHoldable;
+        return closest;
     }
 
     private void OnDrawGizmos()
