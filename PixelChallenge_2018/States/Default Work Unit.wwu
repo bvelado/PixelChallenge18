@@ -22,6 +22,13 @@
 						<State Name="MUS_Phase_1" ID="{58D15A7E-D7E4-4E37-A270-BA95E10A9CEF}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="ST_MuteSFX" ID="{F727E480-4DFC-4E24-8846-04571804F647}">
+					<ChildrenList>
+						<State Name="None" ID="{03CEF6A3-13EC-434A-A51D-87E0C78D6ACD}"/>
+						<State Name="MuteSFX" ID="{534B0E0F-821C-486C-B813-49F2DA257C38}"/>
+						<State Name="UnmuteSFX" ID="{909AD601-A2C2-4D22-B7DB-A37F7BD8AF03}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

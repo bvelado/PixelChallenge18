@@ -3966,7 +3966,7 @@
 											<ChildrenList>
 												<Path2D Name="OnoPushedByWind_01_Path" ID="{D03A4FD0-E018-4310-B05B-763542467007}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -4076,7 +4076,7 @@
 											<ChildrenList>
 												<Path2D Name="OnoPushedByWind_03_Path" ID="{4DDDC4CE-19A9-4B4B-8E87-3547418A51B5}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -4186,7 +4186,7 @@
 											<ChildrenList>
 												<Path2D Name="OnoPushedByWind_04_Path" ID="{1754DB34-DBF6-4136-A086-E30E1AE31A47}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="42"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -4296,7 +4296,7 @@
 											<ChildrenList>
 												<Path2D Name="OnoPushedByWind_02_Path" ID="{B3C94F90-7476-4C62-B815-2F4C442F82D5}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
 													</PropertyList>
 													<PointList>
 														<Point>
