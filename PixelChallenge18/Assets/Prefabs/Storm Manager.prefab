@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4058826075049696}
   - component: {fileID: 114846382046771380}
   - component: {fileID: 114291624850553494}
+  - component: {fileID: 114869596305514256}
   m_Layer: 0
   m_Name: Storm Manager
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MonoBehaviour:
   _windPower: 2
   _windEffectDuration: 3
   _windEffectFrequency: 0.15
+  windFX: {fileID: 0}
 --- !u!114 &114846382046771380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,12 +69,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wind: {fileID: 114291624850553494}
+  _thunder: {fileID: 114869596305514256}
   _bucketPrefab: {fileID: 1355874837397804, guid: 42f6fe61dcc61a949a9cfd9baf527be6,
     type: 2}
   _delayBetweenBucketAndThunder: 5
   _smallWindFrequency: 16
   _mediumWindFrequency: 12
   _largeWindFrequency: 18
-  _smallThunderFrequency: 24
+  _smallThunderFrequency: 5
   _mediumThunderFrequency: 18
   _largeThunderFrequency: 12
+--- !u!114 &114869596305514256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535917593146766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56bfc96f3ae17404eac7c794d3a43e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _delayBetweenHit: 5
+  _hintPrefab: {fileID: 1649076383670324, guid: 63c58a04351153c4abf286d562533aa5,
+    type: 2}
+  _lightningPrefab: {fileID: 1218748863470380, guid: 51481c0b264928b4f985f80400d740b5,
+    type: 2}

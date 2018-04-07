@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour {
     public List<Transform> pZones;
     private Animator myAnim;
     public List<GameObject> stormFX;
+    public List<Sprite> trombi;
+    public List<Image> trombiImage;
     public GameObject winnerScreen;
     public List<Text> scoresText;
     public Button playButton;
@@ -282,6 +284,7 @@ public class UIManager : MonoBehaviour {
             replayButton.Select();
         }
         scoresText[pScoreIdx].text = score.ToString();
+        trombiImage[pScoreIdx].sprite = trombi[pIdx];
         pScoreIdx++;
     }
 

@@ -9,6 +9,7 @@ public class StormWind : MonoBehaviour {
     [SerializeField] private float _windEffectFrequency = 0.15f;
 
     public Transform windFX;
+    public GameObject windsoundEmitter;
     private PlayersLookup _playersLookup;
     private VegetablesLookup _vegetablesLookup;
     private Coroutine _windEffectCoroutine;
@@ -32,6 +33,7 @@ public class StormWind : MonoBehaviour {
             players.Add(player.GetComponent<CharacterCrouch>());
         }
         _windEffectCoroutine = StartCoroutine(WindEffectCoroutine(windForce, players.ToArray()));
+        AkSoundEngine.PostEvent("Play_SFX_Wind_Gust", gameObject);
     }
 
     private IEnumerator WindEffectCoroutine(Vector2 windForce, CharacterCrouch[] players)
@@ -73,6 +75,8 @@ public class StormWind : MonoBehaviour {
         }
 
         Debug.Log("Storm ended");
+        
+
         yield return null;
     }
 
