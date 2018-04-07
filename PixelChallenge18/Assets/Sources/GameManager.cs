@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour {
     {
         var rndFlashes = Random.Range(5.0f, 14.0f);
         StartCoroutine("Flash", rndFlashes);
+       
     }
 
     IEnumerator Flash (float gap)
@@ -86,6 +87,8 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(rnd);
         flashes.enabled = false;
         StartFlashes();
+
+        AkSoundEngine.PostEvent("Play_SFX_Thunder_Crack_Random", gameObject);
     }
 
 
