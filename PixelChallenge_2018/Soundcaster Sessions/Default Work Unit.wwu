@@ -77,8 +77,8 @@
 						<CurrentStateRef Name="MUS_Phase_3" ID="{B91796E3-FDAA-4BD4-88D9-588442C70D61}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
-						<CurrentSwitchRef Name="SW_Player_02" ID="{D163237B-FDD1-4075-9B3F-BB95D3B9C5DB}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+						<CurrentSwitchRef Name="SW_Player_04" ID="{FF14469B-A846-4C98-BCB9-2FD050DD7984}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
