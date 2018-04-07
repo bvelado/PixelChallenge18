@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<ActorMixer Name="Character" ID="{A947FE1D-9202-48D3-A040-EFC1E1F5B4E1}" ShortID="524584123">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>270</Value>
@@ -21,6 +26,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -766,6 +774,9 @@
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="SW_Player" ID="{7180BD3B-EB92-4D8E-B713-AC8B0A25C987}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1862,13 +1873,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="SW_Storm_Phase" ID="{E678A83D-80B4-4B16-B9E0-E3AC188AE3B6}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase" ID="{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2108,21 +2119,21 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+												<SwitchRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+												<ItemList>
+													<ItemRef Name="Ono_GrabVeggie_03" ID="{08C4F9F9-0C4E-419F-BD50-6250FC427D44}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_01" ID="{FFDCFA5A-BAD1-475A-940F-28CF4C968931}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+												<SwitchRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_02" ID="{7F2305CD-5F78-4FF9-B8F0-9B3192B1FDCA}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
-												<ItemList>
-													<ItemRef Name="Ono_GrabVeggie_03" ID="{08C4F9F9-0C4E-419F-BD50-6250FC427D44}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -2134,13 +2145,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="SW_Storm_Phase" ID="{E678A83D-80B4-4B16-B9E0-E3AC188AE3B6}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase" ID="{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2380,21 +2391,21 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+												<SwitchRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+												<ItemList>
+													<ItemRef Name="Ono_GrabVeggie_03" ID="{46D70930-3829-4D53-883E-6B6F20B8D768}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_01" ID="{3658C3D2-8266-4EF4-B23A-51E1A87C4ACE}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+												<SwitchRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_02" ID="{292508B5-1712-483A-80D2-4CC07ABC154B}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
-												<ItemList>
-													<ItemRef Name="Ono_GrabVeggie_03" ID="{46D70930-3829-4D53-883E-6B6F20B8D768}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -2406,13 +2417,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="SW_Storm_Phase" ID="{E678A83D-80B4-4B16-B9E0-E3AC188AE3B6}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase" ID="{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2650,21 +2661,21 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+												<SwitchRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+												<ItemList>
+													<ItemRef Name="Ono_GrabVeggie_03" ID="{297CCBEA-7F02-4036-A3B3-39945193AEFE}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_01" ID="{A0A39785-00AF-4150-9458-8B96A27D1139}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+												<SwitchRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_02" ID="{193E4173-014E-460C-A01E-0E3D3A47FFC0}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
-												<ItemList>
-													<ItemRef Name="Ono_GrabVeggie_03" ID="{297CCBEA-7F02-4036-A3B3-39945193AEFE}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -2675,11 +2686,14 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="SW_Storm_Phase" ID="{E678A83D-80B4-4B16-B9E0-E3AC188AE3B6}" WorkUnitID="{CF3F1732-78F5-4598-BE17-5B51174B16CF}"/>
+											<ObjectRef Name="ST_Storm_Phase" ID="{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" WorkUnitID="{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2917,21 +2931,21 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
+												<SwitchRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+												<ItemList>
+													<ItemRef Name="Ono_GrabVeggie_04" ID="{EE8DA3D3-4213-44CE-9303-57D0266C002E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_01" ID="{A94AFAEA-06EA-4590-A6E5-D7B0BF43E3C0}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
+												<SwitchRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
 												<ItemList>
 													<ItemRef Name="Ono_GrabVeggie_02" ID="{6F3D8EA3-34CB-465D-A03A-5B544BEEF29D}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
-												<ItemList>
-													<ItemRef Name="Ono_GrabVeggie_04" ID="{EE8DA3D3-4213-44CE-9303-57D0266C002E}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -3369,7 +3383,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -5801,7 +5815,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-3</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -5907,16 +5921,19 @@
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>15</Value>
+										<Value>24</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>16</Value>
+										<Value>23</Value>
 									</ValueList>
 								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>350</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{A8582285-8615-44CB-AD1D-79C29C0C0791}">
@@ -5931,7 +5948,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

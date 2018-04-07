@@ -28,9 +28,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	367239025	Reverb_01			\Default Work Unit\Master Audio Bus\REVERB\Reverb_01	
-	367239026	Reverb_02			\Default Work Unit\Master Audio Bus\REVERB\Reverb_02	
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	695629434	Wwise Meter (Custom)	Wwise Meter			
 	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 

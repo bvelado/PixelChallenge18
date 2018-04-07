@@ -27,13 +27,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	1754733041	SW_Storm_Phase			\Default Work Unit\SW_Storm_Phase	
 	3839158905	SW_Player			\Default Work Unit\SW_Player	
 
 Switch	ID	Name	Switch Group			Notes
-	3141025861	SW_Storm_Phase_1	SW_Storm_Phase			
-	3141025862	SW_Storm_Phase_2	SW_Storm_Phase			
-	3141025863	SW_Storm_Phase_3	SW_Storm_Phase			
 	3862010272	SW_Player_04	SW_Player			
 	3862010277	SW_Player_01	SW_Player			
 	3862010278	SW_Player_02	SW_Player			
