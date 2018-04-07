@@ -56,7 +56,6 @@ public class GameManager : MonoBehaviour {
         vegePerPlayer.Clear();
         for (var i = 0; i < 4; i++)
         {
-            baskets.Clear();
             playersScores.Add(i, 0);
             vegePerPlayer.Add(vpp);
         }
@@ -119,6 +118,7 @@ public class GameManager : MonoBehaviour {
     {
         spawnedPlayer = Instantiate(playersPrefab[idx], spawnPoints[idx].position, spawnPoints[idx].rotation);
         spawnedPlayer.GetComponent<Player>().Initialize(playersData[idx]);
+        spawnedPlayer.GetComponent<CharacterMotor>().Initialize();
         playersToDestroy[idx] = spawnedPlayer;
     }
 
@@ -272,9 +272,10 @@ public class GameManager : MonoBehaviour {
         {
             if (playersToDestroy[i] != null)
             {
-                playersToDestroy[i].transform.position = spawnPoints[i].position;
+                RespawnPlayer(i);
                 playersToDestroy[i].SetActive(true);
             }
+            baskets[i].Clear();
         }
         ResetMap();
         InitGame();
@@ -284,6 +285,7 @@ public class GameManager : MonoBehaviour {
     public void RespawnPlayer (int idx)
     {
         playersToDestroy[idx].transform.position = spawnPoints[idx].position;
+        playersToDestroy[idx].GetComponent<CharacterMotor>().Initialize();
     }
 
     public void ClearScene()

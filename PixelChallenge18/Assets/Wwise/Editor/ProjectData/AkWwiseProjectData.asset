@@ -379,8 +379,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}'
-    m_lastTimePsrt1: -396957034
-    m_lastTimePart2: -1999266766
+    m_lastTimePsrt1: 1359238387
+    m_lastTimePart2: -1999266608
     List:
     - Name: ST_Music
       Path: Default Work Unit\ST_Music
@@ -423,6 +423,31 @@ MonoBehaviour:
       - bytes: e39617b9aafdd44b88d9588442c70d61
       - bytes: bd71af82e6ed4b4abff63067cd44a036
       - bytes: 63a42353ab6f55469e75789ceb0664de
+    - Name: ST_MuteSFX
+      Path: Default Work Unit\ST_MuteSFX
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ST_MuteSFX
+        ObjectType: 9
+      ID: -697059911
+      Guid: 80e427f7fc4d244e884604571804f647
+      values:
+      - MuteSFX
+      - None
+      - UnmuteSFX
+      ValueIcons:
+      - ElementName: MuteSFX
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: UnmuteSFX
+        ObjectType: 8
+      valueIDs: 23a17193db3ba32cb07cfcf0
+      ValueGuids:
+      - bytes: 0f0e4b531c826c48b81349f2da257c38
+      - bytes: a3f6ce03ec134a43a51d87e0c78d6acd
+      - bytes: 01d69a90c2a2224db7dba37f7bd8af03
     - Name: ST_Storm_Phase
       Path: Default Work Unit\ST_Storm_Phase
       PathAndIcons:

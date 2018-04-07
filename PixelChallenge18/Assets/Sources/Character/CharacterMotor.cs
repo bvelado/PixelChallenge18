@@ -15,6 +15,7 @@ public class CharacterMotor : MonoBehaviour
     private bool _hasInputToProcess;
     private bool _movable = true;
     private bool _falling = false;
+    private CharacterModel _model;
 
     private Vector2 _additionalVelocity;
 
@@ -31,6 +32,7 @@ public class CharacterMotor : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _inputs = GetComponent<CharacterInputs>();
         _crouch = GetComponent<CharacterCrouch>();
+        _model = GetComponent<CharacterModel>();
 
         _additionalVelocity = Vector2.zero;
 
@@ -109,7 +111,8 @@ public class CharacterMotor : MonoBehaviour
 
         if (falling)
         {
-            _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, Vector3.zero, 0.9f);
+            //_rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, Vector3.zero, 0.9f);
+            _model.SetChute();
             _rigidbody.AddForce(Physics.gravity);
             _rigidbody.constraints -= RigidbodyConstraints.FreezePositionY;
         }
