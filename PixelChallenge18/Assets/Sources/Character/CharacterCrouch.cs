@@ -38,6 +38,6 @@ public class CharacterCrouch : MonoBehaviour {
         {
             _model.SetGetup();
         }
-        AkSoundEngine.PostEvent("Play_Ono_Crouch", gameObject);
+        
     }
 }

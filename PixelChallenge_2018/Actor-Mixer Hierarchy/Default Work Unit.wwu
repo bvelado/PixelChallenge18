@@ -1969,8 +1969,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Group 141" ID="{640C3DED-3A97-4D00-8DB9-5DD9BB04C33C}" ShortID="999255450">
+												<Sound Name="Ono_Grab_VeggiP2_Player02_01" ID="{9BDC2E50-BC16-40B7-84FD-B205CFFD2B01}" ShortID="67409297">
 													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
@@ -1982,17 +1983,18 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Group 141" ID="{4DCA26E8-86DB-403B-9CD9-800C0CB3A721}" ShortID="577417502">
+														<AudioFileSource Name="Ono_Grab_VeggiP2_Player02_01" ID="{4E6725B9-559C-40EE-92DE-A9F2EF79974E}" ShortID="735714831">
 															<Language>SFX</Language>
-															<AudioFile>Group 141.wav</AudioFile>
+															<AudioFile>Ono_Grab_VeggiP2_Player02_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Group 141" ID="{4DCA26E8-86DB-403B-9CD9-800C0CB3A721}" Platform="Linked"/>
+														<ActiveSource Name="Ono_Grab_VeggiP2_Player02_01" ID="{4E6725B9-559C-40EE-92DE-A9F2EF79974E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Group 142" ID="{DBACAC24-F32D-49CF-97C7-FFC64B4BFC73}" ShortID="511325932">
+												<Sound Name="Ono_Grab_VeggiP2_Player02_02" ID="{9419119A-6DF4-45E7-BF35-64333F54EB88}" ShortID="939302691">
 													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
@@ -2004,13 +2006,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Group 142" ID="{E51A3A10-CD19-40EF-981A-01D3D4F8EFE9}" ShortID="234429993">
+														<AudioFileSource Name="Ono_Grab_VeggiP2_Player02_02" ID="{EC15B95A-46AD-4AB6-A5E3-026BDC9BDF28}" ShortID="713264480">
 															<Language>SFX</Language>
-															<AudioFile>Group 142.wav</AudioFile>
+															<AudioFile>Ono_Grab_VeggiP2_Player02_02.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Group 142" ID="{E51A3A10-CD19-40EF-981A-01D3D4F8EFE9}" Platform="Linked"/>
+														<ActiveSource Name="Ono_Grab_VeggiP2_Player02_02" ID="{EC15B95A-46AD-4AB6-A5E3-026BDC9BDF28}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2166,8 +2168,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Ono_Grab_VeggiP2_Player02_01" ID="{9BDC2E50-BC16-40B7-84FD-B205CFFD2B01}" ShortID="67409297">
+												<Sound Name="Group 141" ID="{640C3DED-3A97-4D00-8DB9-5DD9BB04C33C}" ShortID="999255450">
 													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
@@ -2179,17 +2182,18 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Ono_Grab_VeggiP2_Player02_01" ID="{4E6725B9-559C-40EE-92DE-A9F2EF79974E}" ShortID="735714831">
+														<AudioFileSource Name="Group 141" ID="{4DCA26E8-86DB-403B-9CD9-800C0CB3A721}" ShortID="577417502">
 															<Language>SFX</Language>
-															<AudioFile>Ono_Grab_VeggiP2_Player02_01.wav</AudioFile>
+															<AudioFile>Group 141.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Ono_Grab_VeggiP2_Player02_01" ID="{4E6725B9-559C-40EE-92DE-A9F2EF79974E}" Platform="Linked"/>
+														<ActiveSource Name="Group 141" ID="{4DCA26E8-86DB-403B-9CD9-800C0CB3A721}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Ono_Grab_VeggiP2_Player02_02" ID="{9419119A-6DF4-45E7-BF35-64333F54EB88}" ShortID="939302691">
+												<Sound Name="Group 142" ID="{DBACAC24-F32D-49CF-97C7-FFC64B4BFC73}" ShortID="511325932">
 													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
@@ -2201,13 +2205,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Ono_Grab_VeggiP2_Player02_02" ID="{EC15B95A-46AD-4AB6-A5E3-026BDC9BDF28}" ShortID="713264480">
+														<AudioFileSource Name="Group 142" ID="{E51A3A10-CD19-40EF-981A-01D3D4F8EFE9}" ShortID="234429993">
 															<Language>SFX</Language>
-															<AudioFile>Ono_Grab_VeggiP2_Player02_02.wav</AudioFile>
+															<AudioFile>Group 142.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Ono_Grab_VeggiP2_Player02_02" ID="{EC15B95A-46AD-4AB6-A5E3-026BDC9BDF28}" Platform="Linked"/>
+														<ActiveSource Name="Group 142" ID="{E51A3A10-CD19-40EF-981A-01D3D4F8EFE9}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2375,13 +2379,13 @@
 											<Grouping>
 												<SwitchRef Name="SW_Storm_Phase_1" ID="{44948A56-AF0F-49C6-B682-0F177F2CD7A8}"/>
 												<ItemList>
-													<ItemRef Name="Ono_GrabVeggie_02" ID="{292508B5-1712-483A-80D2-4CC07ABC154B}"/>
+													<ItemRef Name="Ono_GrabVeggie_01" ID="{3658C3D2-8266-4EF4-B23A-51E1A87C4ACE}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
 												<ItemList>
-													<ItemRef Name="Ono_GrabVeggie_01" ID="{3658C3D2-8266-4EF4-B23A-51E1A87C4ACE}"/>
+													<ItemRef Name="Ono_GrabVeggie_02" ID="{292508B5-1712-483A-80D2-4CC07ABC154B}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>

@@ -301,16 +301,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{F4A4114C-8153-4901-BA49-59673F056455}" ShortID="484919230">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{58DD546B-2611-4B08-A7CB-884D37ABD436}" WorkUnitID="{64B17717-D6E4-47F2-91C8-6F09B803ECE2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{A939CD3C-7541-43E7-8618-F9BA44C72CD0}" ShortID="688973631">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
