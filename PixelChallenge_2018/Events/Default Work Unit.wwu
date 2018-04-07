@@ -229,6 +229,7 @@
 						<Action Name="" ID="{6A66E707-2388-46C5-9E2E-FE2499D9CED2}" ShortID="409746679">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -467,6 +468,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{068913A0-ADB4-4A5E-B4AA-34151A8C6440}" ShortID="889502056">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PushedByWind_Combo" ID="{FD87EB20-FC1E-45AA-BC4E-1FAE61196191}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Hit_Player" ID="{6349EC93-B52D-4901-A0BD-D2471E3F69FA}">
@@ -675,6 +687,21 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Thunder_Hint_lp" ID="{076749D5-93E4-48DF-AD18-FD492829643D}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Thunder_Crack_Random" ID="{95FB2185-15F2-458F-A9F1-B113DBDEEE93}">
+					<ChildrenList>
+						<Action Name="" ID="{6439FD91-A725-4ED0-BFAE-223D0C40A468}" ShortID="960066613">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thunder_Crack_Random" ID="{83DD0916-75E1-466E-BDB3-6F8C62FF81D4}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

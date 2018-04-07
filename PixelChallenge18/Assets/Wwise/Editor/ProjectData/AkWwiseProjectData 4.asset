@@ -12,14 +12,541 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData 4
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
-  RtpcWwu: []
-  TriggerWwu: []
-  AcousticTextureWwu: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
+    m_lastTimePsrt1: -875355242
+    m_lastTimePart2: -1999266619
+    List:
+    - Name: Pause_Menu_Enter
+      Path: Default Work Unit\Pause_Menu_Enter
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pause_Menu_Enter
+        ObjectType: 3
+      ID: -559461766
+      Guid: 6609b8c499794648966160b1f8edf9aa
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Pause_Menu_Exit
+      Path: Default Work Unit\Pause_Menu_Exit
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pause_Menu_Exit
+        ObjectType: 3
+      ID: 179987880
+      Guid: 05dffc63677e4e4ea22440aa2ab36d47
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_End_Game
+      Path: Default Work Unit\Play_End_Game
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_End_Game
+        ObjectType: 3
+      ID: 247285626
+      Guid: 85ba9a0a50f46242b0f24923b4c2c200
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Footsteps
+      Path: Default Work Unit\Play_Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+      ID: -440811497
+      Guid: dd9970b43e2cdf4690f21964669b5d70
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Music
+      Path: Default Work Unit\Play_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      ID: -1362926625
+      Guid: df0bc613e6bb5343813ab0977f06e08e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Ono_Crouch
+      Path: Default Work Unit\Play_Ono_Crouch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ono_Crouch
+        ObjectType: 3
+      ID: -1892150527
+      Guid: 93cf78d1433cc944b3129518d3f3356f
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Ono_Falling
+      Path: Default Work Unit\Play_Ono_Falling
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ono_Falling
+        ObjectType: 3
+      ID: 1982566496
+      Guid: ff237b675e8ffb40b189a53c16af69a4
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Ono_GrabVeggie
+      Path: Default Work Unit\Play_Ono_GrabVeggie
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ono_GrabVeggie
+        ObjectType: 3
+      ID: 552788742
+      Guid: 6c7da3320bc969458e974b03f1e75125
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Ono_isKicked
+      Path: Default Work Unit\Play_Ono_isKicked
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ono_isKicked
+        ObjectType: 3
+      ID: -1408642702
+      Guid: 7529f9baee24134a951778da1ba321bf
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Ono_Kick
+      Path: Default Work Unit\Play_Ono_Kick
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ono_Kick
+        ObjectType: 3
+      ID: 1421661965
+      Guid: e04cdb666528154b916d698c0e054e50
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Ono_Ready
+      Path: Default Work Unit\Play_Ono_Ready
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ono_Ready
+        ObjectType: 3
+      ID: 647168308
+      Guid: c9958d8640d1c548919cbd603eb3d7c0
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_OnoPushedByWind
+      Path: Default Work Unit\Play_OnoPushedByWind
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_OnoPushedByWind
+        ObjectType: 3
+      ID: 1714662894
+      Guid: 80df4953f898c84e9640643c5112dcf0
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Fire_Off
+      Path: Default Work Unit\Play_SFX_Fire_Off
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Fire_Off
+        ObjectType: 3
+      ID: -1114937528
+      Guid: 289f40e34827c2408b91d24163c624c9
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Hit_Bucket
+      Path: Default Work Unit\Play_SFX_Hit_Bucket
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Hit_Bucket
+        ObjectType: 3
+      ID: 1961944926
+      Guid: 7c69c82b73fbc94ab4afc850fe442d38
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Hit_Player
+      Path: Default Work Unit\Play_SFX_Hit_Player
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Hit_Player
+        ObjectType: 3
+      ID: 1994371699
+      Guid: 93ec49632db50149a0bdd2471e3f69fa
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Thunder_Crack
+      Path: Default Work Unit\Play_SFX_Thunder_Crack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Thunder_Crack
+        ObjectType: 3
+      ID: -2050814853
+      Guid: 790d7e497ac7034b832aea2bc8efdb80
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Thunder_Loading
+      Path: Default Work Unit\Play_SFX_Thunder_Loading
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Thunder_Loading
+        ObjectType: 3
+      ID: -965955443
+      Guid: 2d14975180b0b447ae84aa723181d714
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Veggi_PickUp
+      Path: Default Work Unit\Play_SFX_Veggi_PickUp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Veggi_PickUp
+        ObjectType: 3
+      ID: 1606135503
+      Guid: d8246e3a0473894083942e19a1d8896e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Veggi_Success
+      Path: Default Work Unit\Play_SFX_Veggi_Success
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Veggi_Success
+        ObjectType: 3
+      ID: 214169128
+      Guid: c945a1901faae548b981efbc064ddfbc
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Wind_Gust
+      Path: Default Work Unit\Play_SFX_Wind_Gust
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Wind_Gust
+        ObjectType: 3
+      ID: 1573413394
+      Guid: ad5d284da741064d9c4a29a6d7c9058c
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_UI_Click
+      Path: Default Work Unit\Play_UI_Click
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI_Click
+        ObjectType: 3
+      ID: 1749424733
+      Guid: e9a6973084577c43ae8541d388531342
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_UI_Highlight
+      Path: Default Work Unit\Play_UI_Highlight
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI_Highlight
+        ObjectType: 3
+      ID: -1623359371
+      Guid: 1b593840c71c394f9b3841db0a819b11
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Set_Phase_1
+      Path: Default Work Unit\Set_Phase_1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Phase_1
+        ObjectType: 3
+      ID: -1450004273
+      Guid: 844af8b4938bd94bb5f25a788801cc6a
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Set_Phase_2
+      Path: Default Work Unit\Set_Phase_2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Phase_2
+        ObjectType: 3
+      ID: -1450004276
+      Guid: 8f8008c2716bfc4ba62715adf20996b0
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Set_Phase_3
+      Path: Default Work Unit\Set_Phase_3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Phase_3
+        ObjectType: 3
+      ID: -1450004275
+      Guid: 5f74f168feec1840910f1b7aa2022ff5
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: START_GAME
+      Path: Default Work Unit\START_GAME
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: START_GAME
+        ObjectType: 3
+      ID: 1114964412
+      Guid: c9f925e3b2295040ae12bfbfe9bc68d0
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Thunder_Hint_lp
+      Path: Default Work Unit\Stop_SFX_Thunder_Hint_lp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_SFX_Thunder_Hint_lp
+        ObjectType: 3
+      ID: 967360661
+      Guid: c2f436420a030d4d8a04624bb54ba89a
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E98DCFF4-602F-4283-9131-52037A65BD46}'
+    m_lastTimePsrt1: 938074179
+    m_lastTimePart2: -1999266638
+    List:
+    - Name: Reverb_01
+      Path: Default Work Unit\Master Audio Bus\REVERB\Reverb_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: REVERB
+        ObjectType: 2
+      - ElementName: Reverb_01
+        ObjectType: 1
+      ID: 367239025
+      Guid: 51d4d0b9d6c3f749acc3dd56b813f34f
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}'
+    m_lastTimePsrt1: 2016194120
+    m_lastTimePart2: -1999266809
+    List:
+    - Name: ST_Music
+      Path: Default Work Unit\ST_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ST_Music
+        ObjectType: 9
+      ID: 1645386324
+      Guid: 124010ed7fa6594dbf4ac7af67ddaeaa
+      values:
+      - MUS_End_Game
+      - MUS_Menu
+      - MUS_Phase_1
+      - MUS_Phase_2
+      - MUS_Phase_3
+      - MUS_Silence
+      - None
+      ValueIcons:
+      - ElementName: MUS_End_Game
+        ObjectType: 8
+      - ElementName: MUS_Menu
+        ObjectType: 8
+      - ElementName: MUS_Phase_1
+        ObjectType: 8
+      - ElementName: MUS_Phase_2
+        ObjectType: 8
+      - ElementName: MUS_Phase_3
+        ObjectType: 8
+      - ElementName: MUS_Silence
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: e5392a5a2cbdbbbb02230e8601230e8600230e868eb3ad91db3ba32c
+      ValueGuids:
+      - bytes: 20bb70add3f5cf41b27fea613be89d85
+      - bytes: 20a4719996d26e40971f2070b88812da
+      - bytes: 7e5ad158e4d7374ea270ba95e10a9cef
+      - bytes: 3307ec9794d3004dae1a000b1b55709e
+      - bytes: e39617b9aafdd44b88d9588442c70d61
+      - bytes: bd71af82e6ed4b4abff63067cd44a036
+      - bytes: 63a42353ab6f55469e75789ceb0664de
+    - Name: ST_Storm_Phase
+      Path: Default Work Unit\ST_Storm_Phase
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ST_Storm_Phase
+        ObjectType: 9
+      ID: 1341083562
+      Guid: 9041d5bde0114746bb18ca8dc9a9d3d2
+      values:
+      - None
+      - ST_Storm_Phase_1
+      - ST_Storm_Phase_2
+      - ST_Storm_Phase_3
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: ST_Storm_Phase_1
+        ObjectType: 8
+      - ElementName: ST_Storm_Phase_2
+        ObjectType: 8
+      - ElementName: ST_Storm_Phase_3
+        ObjectType: 8
+      valueIDs: db3ba32ce2e772d3e1e772d3e0e772d3
+      ValueGuids:
+      - bytes: 9da89c54638d7e4aab5c2e0ea2aa75e6
+      - bytes: f6fda79cdc54c84f8ab27606a9f63872
+      - bytes: ff4ff1a0274d644ba40f702051411f68
+      - bytes: 69afd72db6eb2e46863da8eb42c56fd4
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{CF3F1732-78F5-4598-BE17-5B51174B16CF}'
+    m_lastTimePsrt1: 1360902727
+    m_lastTimePart2: -1999266804
+    List:
+    - Name: SW_Player
+      Path: Default Work Unit\SW_Player
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SW_Player
+        ObjectType: 11
+      ID: -455808391
+      Guid: 3bbd807192eb8e4db713ac8b0a25c987
+      values:
+      - SW_Player_01
+      - SW_Player_02
+      - SW_Player_03
+      - SW_Player_04
+      ValueIcons:
+      - ElementName: SW_Player_01
+        ObjectType: 10
+      - ElementName: SW_Player_02
+        ObjectType: 10
+      - ElementName: SW_Player_03
+        ObjectType: 10
+      - ElementName: SW_Player_04
+        ObjectType: 10
+      valueIDs: a59931e6a69931e6a79931e6a09931e6
+      ValueGuids:
+      - bytes: b5eb8d64182f6b48acb92f605458e4ac
+      - bytes: 7b2363d1d1fd75409b3fbb95d3b9c5db
+      - bytes: 8b02e8bd229bc84aa2de80a46e44bd04
+      - bytes: 9b4614ff46a8984cbcb92fd050dd7984
+    - Name: SW_Storm_Phase
+      Path: Default Work Unit\SW_Storm_Phase
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SW_Storm_Phase
+        ObjectType: 11
+      ID: 1754733041
+      Guid: 3da878e6b480164bb9e0e3ac188ae3b6
+      values:
+      - SW_Storm_Phase_1
+      - SW_Storm_Phase_2
+      - SW_Storm_Phase_3
+      ValueIcons:
+      - ElementName: SW_Storm_Phase_1
+        ObjectType: 10
+      - ElementName: SW_Storm_Phase_2
+        ObjectType: 10
+      - ElementName: SW_Storm_Phase_3
+        ObjectType: 10
+      valueIDs: 454038bb464038bb474038bb
+      ValueGuids:
+      - bytes: 568a94440fafc649b6820f177f2cd7a8
+      - bytes: 57300fcfb567194694825e43cbf46d40
+      - bytes: 71f636588b514b48a39570037bc42d7d
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{20556E0B-B325-4A85-A6D7-8AEB04651F51}'
+    m_lastTimePsrt1: -2141870992
+    m_lastTimePart2: -1999266958
+    List:
+    - Name: Main_Soundbank
+      Path: Default Work Unit\Main_Soundbank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Soundbank
+        ObjectType: 7
+      ID: -2066316180
+      Guid: 332358c30b2ac54bbd872dbfd2ab5e42
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}'
+    m_lastTimePsrt1: 1932182549
+    m_lastTimePart2: -1999266781
+    List:
+    - Name: RTPC_SFX_Duck
+      Path: Default Work Unit\RTPC_SFX_Duck
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_SFX_Duck
+        ObjectType: 13
+      ID: 1687132932
+      Guid: 810d950c513da041a5ae964424321e01
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{37D3FE87-3C94-46D6-8550-2DE0673857CD}'
+    m_lastTimePsrt1: -2141850979
+    m_lastTimePart2: -1999266958
+    List: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A4EB050E-344E-4819-830B-2606D80FCB37}'
+    m_lastTimePsrt1: -2141850979
+    m_lastTimePart2: -1999266958
+    List: []
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0

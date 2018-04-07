@@ -16,12 +16,12 @@ public class GameManager : MonoBehaviour {
     public GameObject windInScene;
     private int nbVegetables = 72;
     private int stormSteps = 1;
-    private List<int> scores = new List<int>();
     private List<int> vegePerPlayer = new List<int>();
     private Dictionary<int, int> playersScores = new Dictionary<int, int>();
     public int vpp = 2;
     public StormManager stormManager;
     public Light flashes;
+    public List<Basket> baskets;
 
     private GameObject spawnedPlayer;
 
@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour {
         vegePerPlayer.Clear();
         for (var i = 0; i < 4; i++)
         {
+            baskets.Clear();
             playersScores.Add(i, 0);
             vegePerPlayer.Add(vpp);
         }
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour {
     {
         var rndFlashes = Random.Range(5.0f, 14.0f);
         StartCoroutine("Flash", rndFlashes);
+       
     }
 
     IEnumerator Flash (float gap)
@@ -86,6 +88,8 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(rnd);
         flashes.enabled = false;
         StartFlashes();
+
+        AkSoundEngine.PostEvent("Play_SFX_Thunder_Crack_Random", gameObject);
     }
 
 
@@ -218,6 +222,7 @@ public class GameManager : MonoBehaviour {
         rainEmission.rateOverTime = 2500;
         stormSteps = 2;
         stormManager.SetStormStep(EStormStep.Medium);
+        AkSoundEngine.PostEvent("Set_Phase_2", gameObject);
     }
 
     void TriggerStormStepThree()
@@ -226,6 +231,7 @@ public class GameManager : MonoBehaviour {
         rainEmission.rateOverTime = 12000;
         stormSteps = 3;
         stormManager.SetStormStep(EStormStep.Large);
+        AkSoundEngine.PostEvent("Set_Phase_3", gameObject);
     }
 
     void CheckEndGame()
@@ -255,6 +261,9 @@ public class GameManager : MonoBehaviour {
         {
             UIManager.s_Singleton.DisplayAPlayerScore(pair.Value, pair.Key);
         }
+        AkSoundEngine.PostEvent("Play_End_Game", gameObject);
+        
+
     }
 
     public void Resetup ()

@@ -74,3 +74,9 @@ MonoBehaviour:
   windInScene: {fileID: 0}
   vpp: 18
   stormManager: {fileID: 0}
+  flashes: {fileID: 0}
+  baskets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
