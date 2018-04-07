@@ -74,7 +74,7 @@
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\CurrentStates\{65E447B2-9759-4C57-88E7-342CDF0588FD}" Type="string" Value="{E5C4E978-A180-4E54-98EE-9600BD835BE2}"/>
-				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
 				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{97EC0733-D394-4D00-AE1A-000B1B55709E}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>

@@ -1134,73 +1134,68 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Kick_Player01_03" ID="{3D4A6588-E2C3-42D5-B88E-63ABCC57C19E}" ShortID="851175219">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player01_03" ID="{56076304-2669-48C8-9BA9-C2A0861EF80A}" ShortID="192743789">
-													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player01_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player01_03" ID="{56076304-2669-48C8-9BA9-C2A0861EF80A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ono_Kick_Player01_01" ID="{24C0F859-6B2C-4DEA-BA61-CE5687EA668B}" ShortID="267230263">
+										<Sound Name="Ono_Is_Pushed_Player01_01" ID="{16CB84CD-A701-416E-A986-EBEB74E51B0C}" ShortID="260939372">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player01_01" ID="{E9BC309C-9A47-4787-82BA-84744353DF22}" ShortID="960351596">
+												<AudioFileSource Name="Ono_Is_Pushed_Player01_01" ID="{C3D67DC1-DB70-4AA9-87D7-DC8D0ED50AC4}" ShortID="446540324">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player01_01.wav</AudioFile>
+													<AudioFile>Ono_Is_Pushed_Player01_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="410936984"/>
+														<File ID="254976956"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player01_01" ID="{E9BC309C-9A47-4787-82BA-84744353DF22}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Is_Pushed_Player01_01" ID="{C3D67DC1-DB70-4AA9-87D7-DC8D0ED50AC4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ono_Kick_Player01_02" ID="{6BC13417-308D-453F-ADF3-E666CB125969}" ShortID="807957623">
+										<Sound Name="Ono_Is_Pushed_Player01_02" ID="{A1BC27F4-2A81-4F36-9797-CA7DA8CD29E3}" ShortID="41052322">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player01_02" ID="{9CB8417C-D430-4100-B98C-20D09B84ED74}" ShortID="926642433">
+												<AudioFileSource Name="Ono_Is_Pushed_Player01_02" ID="{FC6232A9-013D-4039-A7DD-A3CE48196945}" ShortID="608504606">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player01_02.wav</AudioFile>
+													<AudioFile>Ono_Is_Pushed_Player01_02.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="955552694"/>
+														<File ID="282526192"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player01_02" ID="{9CB8417C-D430-4100-B98C-20D09B84ED74}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Is_Pushed_Player01_02" ID="{FC6232A9-013D-4039-A7DD-A3CE48196945}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1233,14 +1228,21 @@
 									<ChildrenList>
 										<Sound Name="Ono_Kick_Player02_01" ID="{21DA9DB0-9E85-4F92-BD99-31572A37A924}" ShortID="143482155">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1258,14 +1260,21 @@
 										</Sound>
 										<Sound Name="Ono_Kick_Player02_02" ID="{090AEC5D-FE15-46B8-8697-7EF146B97A96}" ShortID="284332906">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1309,51 +1318,65 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Kick_Player03_01" ID="{42D12683-A90D-4E7A-9E4B-57E00610BE60}" ShortID="991460548">
+										<Sound Name="Ono_Is_Pushed_Player03_01" ID="{AC4A4875-5A65-4B8D-A0E5-A5E84DEA16A9}" ShortID="663477327">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player03_01" ID="{1FC157D5-3B4E-42A0-8878-72CE82555B89}" ShortID="967327172">
+												<AudioFileSource Name="Ono_Is_Pushed_Player03_01" ID="{C4F1D1F4-2FBF-4B0B-BB38-92820D5C0308}" ShortID="232402844">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player03_01.wav</AudioFile>
+													<AudioFile>Ono_Is_Pushed_Player03_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="490474571"/>
+														<File ID="253880758"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player03_01" ID="{1FC157D5-3B4E-42A0-8878-72CE82555B89}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Is_Pushed_Player03_01" ID="{C4F1D1F4-2FBF-4B0B-BB38-92820D5C0308}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ono_Kick_Player03_02" ID="{753D62DE-4C84-4294-81BF-8FEED74B6193}" ShortID="801333241">
+										<Sound Name="Ono_Is_Pushed_Player03_02" ID="{A29CFAC7-296C-4E70-8EA6-AE53BED5AA7F}" ShortID="463241867">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player03_02" ID="{97504453-360B-407B-BEE8-52FE9CECAF36}" ShortID="198777602">
+												<AudioFileSource Name="Ono_Is_Pushed_Player03_02" ID="{469F75A0-085A-4A9B-89D4-EF128213BCBD}" ShortID="999129800">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player03_02.wav</AudioFile>
+													<AudioFile>Ono_Is_Pushed_Player03_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player03_02" ID="{97504453-360B-407B-BEE8-52FE9CECAF36}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Is_Pushed_Player03_02" ID="{469F75A0-085A-4A9B-89D4-EF128213BCBD}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1362,6 +1385,9 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{A92055BD-D6D0-4238-9B96-85E9AD0A17E1}">
@@ -1384,51 +1410,65 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Kick_Player04_01" ID="{8764AB0A-04E3-473D-8DAA-62D104056FCA}" ShortID="629026847">
+										<Sound Name="Ono_Is_Pushed_Player04_01" ID="{C3E80967-59C2-4190-A36E-E8960C1C276C}" ShortID="350973421">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player04_01" ID="{B1730184-4877-4D56-B4C4-539224B3C6E2}" ShortID="958037613">
+												<AudioFileSource Name="Ono_Is_Pushed_Player04_01" ID="{94FB721E-6A3B-4FFE-8B2E-7980E07DF39F}" ShortID="636266828">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player04_01.wav</AudioFile>
+													<AudioFile>Ono_Is_Pushed_Player04_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="382443225"/>
+														<File ID="648206673"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player04_01" ID="{B1730184-4877-4D56-B4C4-539224B3C6E2}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Is_Pushed_Player04_01" ID="{94FB721E-6A3B-4FFE-8B2E-7980E07DF39F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ono_Kick_Player04_02" ID="{4799F411-10A9-47F7-931E-EB8EA02A51EC}" ShortID="743625709">
+										<Sound Name="Ono_Is_Pushed_Player04_02" ID="{A1C51706-017D-4F21-95CE-BCB898CB98B8}" ShortID="788616963">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Kick_Player04_02" ID="{0731A56E-EEC9-400D-9EB1-9E17BC36E931}" ShortID="970836610">
+												<AudioFileSource Name="Ono_Is_Pushed_Player04_02" ID="{DCCC6C7F-0440-422E-A352-8A3704224FDB}" ShortID="694835118">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Kick_Player04_02.wav</AudioFile>
+													<AudioFile>Ono_Is_Pushed_Player04_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Kick_Player04_02" ID="{0731A56E-EEC9-400D-9EB1-9E17BC36E931}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Is_Pushed_Player04_02" ID="{DCCC6C7F-0440-422E-A352-8A3704224FDB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1480,6 +1520,11 @@
 						<SwitchContainer Name="Ono_isKicked" ID="{81706E3F-CAB2-446F-9CC1-553321730BCF}" ShortID="182187601">
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.15</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1523,54 +1568,97 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Is_Pushed_Player01_01" ID="{16CB84CD-A701-416E-A986-EBEB74E51B0C}" ShortID="260939372">
+										<Sound Name="Ono_Kick_Player01_03" ID="{3D4A6588-E2C3-42D5-B88E-63ABCC57C19E}" ShortID="851175219">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Is_Pushed_Player01_01" ID="{C3D67DC1-DB70-4AA9-87D7-DC8D0ED50AC4}" ShortID="446540324">
+												<AudioFileSource Name="Ono_Kick_Player01_03" ID="{56076304-2669-48C8-9BA9-C2A0861EF80A}" ShortID="192743789">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Is_Pushed_Player01_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="254976956"/>
-													</ConvertedFileIDList>
+													<AudioFile>Ono_Kick_Player01_03.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Is_Pushed_Player01_01" ID="{C3D67DC1-DB70-4AA9-87D7-DC8D0ED50AC4}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Kick_Player01_03" ID="{56076304-2669-48C8-9BA9-C2A0861EF80A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ono_Is_Pushed_Player01_02" ID="{A1BC27F4-2A81-4F36-9797-CA7DA8CD29E3}" ShortID="41052322">
+										<Sound Name="Ono_Kick_Player01_01" ID="{24C0F859-6B2C-4DEA-BA61-CE5687EA668B}" ShortID="267230263">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Is_Pushed_Player01_02" ID="{FC6232A9-013D-4039-A7DD-A3CE48196945}" ShortID="608504606">
+												<AudioFileSource Name="Ono_Kick_Player01_01" ID="{E9BC309C-9A47-4787-82BA-84744353DF22}" ShortID="960351596">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Is_Pushed_Player01_02.wav</AudioFile>
+													<AudioFile>Ono_Kick_Player01_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="282526192"/>
+														<File ID="410936984"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Is_Pushed_Player01_02" ID="{FC6232A9-013D-4039-A7DD-A3CE48196945}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Kick_Player01_01" ID="{E9BC309C-9A47-4787-82BA-84744353DF22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ono_Kick_Player01_02" ID="{6BC13417-308D-453F-ADF3-E666CB125969}" ShortID="807957623">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ono_Kick_Player01_02" ID="{9CB8417C-D430-4100-B98C-20D09B84ED74}" ShortID="926642433">
+													<Language>SFX</Language>
+													<AudioFile>Ono_Kick_Player01_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="955552694"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ono_Kick_Player01_02" ID="{9CB8417C-D430-4100-B98C-20D09B84ED74}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1679,51 +1767,65 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Is_Pushed_Player03_01" ID="{AC4A4875-5A65-4B8D-A0E5-A5E84DEA16A9}" ShortID="663477327">
+										<Sound Name="Ono_Kick_Player03_01" ID="{42D12683-A90D-4E7A-9E4B-57E00610BE60}" ShortID="991460548">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Is_Pushed_Player03_01" ID="{C4F1D1F4-2FBF-4B0B-BB38-92820D5C0308}" ShortID="232402844">
+												<AudioFileSource Name="Ono_Kick_Player03_01" ID="{1FC157D5-3B4E-42A0-8878-72CE82555B89}" ShortID="967327172">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Is_Pushed_Player03_01.wav</AudioFile>
+													<AudioFile>Ono_Kick_Player03_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="253880758"/>
+														<File ID="490474571"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Is_Pushed_Player03_01" ID="{C4F1D1F4-2FBF-4B0B-BB38-92820D5C0308}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Kick_Player03_01" ID="{1FC157D5-3B4E-42A0-8878-72CE82555B89}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ono_Is_Pushed_Player03_02" ID="{A29CFAC7-296C-4E70-8EA6-AE53BED5AA7F}" ShortID="463241867">
+										<Sound Name="Ono_Kick_Player03_02" ID="{753D62DE-4C84-4294-81BF-8FEED74B6193}" ShortID="801333241">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Is_Pushed_Player03_02" ID="{469F75A0-085A-4A9B-89D4-EF128213BCBD}" ShortID="999129800">
+												<AudioFileSource Name="Ono_Kick_Player03_02" ID="{97504453-360B-407B-BEE8-52FE9CECAF36}" ShortID="198777602">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Is_Pushed_Player03_02.wav</AudioFile>
+													<AudioFile>Ono_Kick_Player03_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Is_Pushed_Player03_02" ID="{469F75A0-085A-4A9B-89D4-EF128213BCBD}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Kick_Player03_02" ID="{97504453-360B-407B-BEE8-52FE9CECAF36}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1732,6 +1834,9 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{4680235F-7695-4FA5-96F8-A6881AE738F1}">
@@ -1754,51 +1859,65 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Ono_Is_Pushed_Player04_01" ID="{C3E80967-59C2-4190-A36E-E8960C1C276C}" ShortID="350973421">
+										<Sound Name="Ono_Kick_Player04_01" ID="{8764AB0A-04E3-473D-8DAA-62D104056FCA}" ShortID="629026847">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Is_Pushed_Player04_01" ID="{94FB721E-6A3B-4FFE-8B2E-7980E07DF39F}" ShortID="636266828">
+												<AudioFileSource Name="Ono_Kick_Player04_01" ID="{B1730184-4877-4D56-B4C4-539224B3C6E2}" ShortID="958037613">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Is_Pushed_Player04_01.wav</AudioFile>
+													<AudioFile>Ono_Kick_Player04_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="648206673"/>
+														<File ID="382443225"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Is_Pushed_Player04_01" ID="{94FB721E-6A3B-4FFE-8B2E-7980E07DF39F}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Kick_Player04_01" ID="{B1730184-4877-4D56-B4C4-539224B3C6E2}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ono_Is_Pushed_Player04_02" ID="{A1C51706-017D-4F21-95CE-BCB898CB98B8}" ShortID="788616963">
+										<Sound Name="Ono_Kick_Player04_02" ID="{4799F411-10A9-47F7-931E-EB8EA02A51EC}" ShortID="743625709">
 											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATT_Default" ID="{22A22BCD-ED2A-4FC4-8387-6903D607DFF5}" WorkUnitID="{D29C0BEF-549E-4B66-9E63-5522282F02F5}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="SFX" ID="{C50B4D0D-97A7-4B63-B118-7F30E068AB71}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ono_Is_Pushed_Player04_02" ID="{DCCC6C7F-0440-422E-A352-8A3704224FDB}" ShortID="694835118">
+												<AudioFileSource Name="Ono_Kick_Player04_02" ID="{0731A56E-EEC9-400D-9EB1-9E17BC36E931}" ShortID="970836610">
 													<Language>SFX</Language>
-													<AudioFile>Ono_Is_Pushed_Player04_02.wav</AudioFile>
+													<AudioFile>Ono_Kick_Player04_02.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Ono_Is_Pushed_Player04_02" ID="{DCCC6C7F-0440-422E-A352-8A3704224FDB}" Platform="Linked"/>
+												<ActiveSource Name="Ono_Kick_Player04_02" ID="{0731A56E-EEC9-400D-9EB1-9E17BC36E931}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -3244,6 +3363,9 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{E8C80D87-40CA-4B2F-9333-EFDF3D59F76A}">
