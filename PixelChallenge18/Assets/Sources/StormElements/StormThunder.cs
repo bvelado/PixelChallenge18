@@ -36,7 +36,7 @@ public class StormThunder : MonoBehaviour {
 
         foreach(var target in targets)
         {
-            if (target.IsRooted)
+            if (target != null && target.IsRooted)
             {
                 Destroy(Instantiate(_lightningPrefab, target.transform.position, Quaternion.identity, null), 5f);
                 target.GetComponent<VegetableBurnable>().BeginBurning();
