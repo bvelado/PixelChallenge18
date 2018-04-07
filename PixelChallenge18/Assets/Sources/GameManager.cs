@@ -249,6 +249,11 @@ public class GameManager : MonoBehaviour {
         TriggerStormStepOne();
     }
 
+    public void RespawnPlayer (int idx)
+    {
+        playersToDestroy[idx].transform.position = spawnPoints[idx].position;
+    }
+
     public void ClearScene()
     {
         for (var i = 0; i < 4; i++)
