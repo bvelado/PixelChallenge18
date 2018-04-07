@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: 839511781
-    m_lastTimePart2: -1999266622
+    m_lastTimePsrt1: -1030202773
+    m_lastTimePart2: -1999266619
     List:
     - Name: Pause_Menu_Enter
       Path: Default Work Unit\Pause_Menu_Enter
@@ -328,6 +328,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1114964412
       Guid: c9f925e3b2295040ae12bfbfe9bc68d0
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Thunder_Hint_lp
+      Path: Default Work Unit\Stop_SFX_Thunder_Hint_lp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_SFX_Thunder_Hint_lp
+        ObjectType: 3
+      ID: 967360661
+      Guid: c2f436420a030d4d8a04624bb54ba89a
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
