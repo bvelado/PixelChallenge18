@@ -11,6 +11,7 @@ public class CharacterMotor : MonoBehaviour {
 
     private Vector2 _velocity;
     private bool _hasInputToProcess;
+    private bool _movable = true;
 
     private Vector2 _additionalVelocity;
 
@@ -40,6 +41,12 @@ public class CharacterMotor : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        if(!_movable)
+        {
+            _hasInputToProcess = false;
+            return;
+        }
+
         if (_hasInputToProcess)
         {
             _rigidbody.velocity = new Vector3(_velocity.x + _additionalVelocity.x, _rigidbody.velocity.y, _velocity.y + _additionalVelocity.y);
@@ -55,5 +62,15 @@ public class CharacterMotor : MonoBehaviour {
     public void SetAdditionalVelocity(Vector2 force)
     {
         _additionalVelocity = force;
+    }
+
+    public void SetMovable(bool movable)
+    {
+        _movable = movable;
+
+        if (!_movable)
+        {
+            _rigidbody.velocity = Vector3.zero;
+        }
     }
 }

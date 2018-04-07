@@ -12,7 +12,7 @@ public class Character_Sound_Script : MonoBehaviour {
     public void Start()
     {
         AkSoundEngine.PostEvent("Play_Ono_Ready", gameObject);
-      
+        
     }
 
 }

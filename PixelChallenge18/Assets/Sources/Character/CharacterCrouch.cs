@@ -4,6 +4,7 @@ public class CharacterCrouch : MonoBehaviour {
 
     private CharacterModel _model;
     private CharacterInputs _inputs;
+    private CharacterMotor _motor;
 
     private bool _isCrouched = false;
     public bool IsCrouched { get { return _isCrouched; } }
@@ -12,6 +13,7 @@ public class CharacterCrouch : MonoBehaviour {
     {
         _inputs = GetComponent<CharacterInputs>();
         _model = GetComponent<CharacterModel>();
+        _motor = GetComponent<CharacterMotor>();
     }
 
     private void OnEnable()
@@ -27,6 +29,7 @@ public class CharacterCrouch : MonoBehaviour {
     private void OnCrouchInputEmitted(bool crouch)
     {
         _isCrouched = crouch;
+        _motor.SetMovable(!crouch);
         if (crouch)
         {
             _model.SetCrouched();

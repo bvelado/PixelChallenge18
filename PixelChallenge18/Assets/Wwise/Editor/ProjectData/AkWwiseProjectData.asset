@@ -552,6 +552,9 @@ MonoBehaviour:
   - /PixelChallenge_2018
   - /PixelChallenge_2018/Events
   - /PixelChallenge_2018/Events/Default Work Unit
+  - /PixelChallenge_2018/Switches
+  - /PixelChallenge_2018/Switches/Default Work Unit
+  - /PixelChallenge_2018/Switches/Default Work Unit/SW_Player
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

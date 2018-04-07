@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Player 3
   m_EditorClassIdentifier: 
   _id: p3_
+  _zeroBasedNumber: 2
   _color: {r: 0, g: 0.8455882, b: 0.07581135, a: 1}

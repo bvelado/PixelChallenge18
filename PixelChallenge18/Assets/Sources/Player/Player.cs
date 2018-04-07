@@ -11,5 +11,8 @@ public class Player : MonoBehaviour {
         _playerData = playerData;
 
         FindObjectOfType<PlayersLookup>().RegisterPlayer(this);
+
+        string switchState = "SW_Player_0" + (playerData.ZeroBasedNumber+1).ToString();
+        AkSoundEngine.SetSwitch("SW_Player", switchState, gameObject);
     }
 }
