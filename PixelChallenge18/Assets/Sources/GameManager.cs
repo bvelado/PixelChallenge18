@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject playerPrefab;
     public List<Transform> spawnPoints;
-    public List<GameObject> playersToDestroy = new List<GameObject>();
+    public Map mapGenerated;
+    private List<GameObject> playersToDestroy = new List<GameObject>();
     public List<PlayerData> playersData;
     public GameObject lightningPrefab;
     public ParticleSystem rainInScene;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour {
     private List<int> scores = new List<int>();
     private List<int> vegePerPlayer = new List<int>();
     private Dictionary<int, int> playersScores = new Dictionary<int, int>();
+    public int vpp = 2;
 
     private GameObject spawnedPlayer;
 
@@ -35,15 +37,26 @@ public class GameManager : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
-		for (var i = 0; i < 4; i++)
+    void Start()
+    {
+        playersToDestroy.Clear();
+        for (var i = 0; i < 4; i++)
         {
             playersToDestroy.Add(null);
-            scores.Add(0);
-            playersScores.Add(i, 0);
-            vegePerPlayer.Add(18);
         }
-	}
+    }
+
+    public void InitGame ()
+    {
+        playersScores.Clear();
+        vegePerPlayer.Clear();
+        for (var i = 0; i < 4; i++)
+        {
+            playersScores.Add(i, 0);
+            vegePerPlayer.Add(vpp);
+        }
+        nbVegetables = 72;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -92,18 +105,22 @@ public class GameManager : MonoBehaviour {
         {
             case "p1_":
                 idx = 0;
+                vegePerPlayer[0] -= 1;
                 break;
             case "p2_":
                 idx = 1;
+                vegePerPlayer[1] -= 1;
                 break;
             case "p3_":
                 idx = 2;
+                vegePerPlayer[2] -= 1;
                 break;
             case "p4_":
                 idx = 3;
+                vegePerPlayer[3] -= 1;
                 break;
         }
-        scores[idx] += 1;
+        playersScores[idx] += 1;
         nbVegetables--;
         CheckStormState();
         CheckEndGame();
@@ -119,6 +136,13 @@ public class GameManager : MonoBehaviour {
         {
             TriggerStormStepThree();
         }
+    }
+
+    void TriggerStormStepOne()
+    {
+        var rainEmission = rainInScene.emission;
+        rainEmission.rateOverTime = 250;
+        stormSteps = 1;
     }
 
     void TriggerStormStepTwo ()
@@ -148,12 +172,48 @@ public class GameManager : MonoBehaviour {
 
     void SendScores ()
     {
-        var sortedScores = playersScores.Values.ToList();
-        sortedScores.Sort();
-        sortedScores.Reverse();
-        foreach (var value in sortedScores)
+        foreach (var player in playersToDestroy)
         {
-            UIManager.s_Singleton.DisplayAPlayerScore(value, sortedScores[value]);
+            if (player != null)
+            {
+                player.SetActive(false);
+            }
         }
+        var items = from pair in playersScores
+                    orderby pair.Value descending
+                    select pair;
+        foreach (KeyValuePair<int, int> pair in items)
+        {
+            UIManager.s_Singleton.DisplayAPlayerScore(pair.Value, pair.Key);
+        }
+    }
+
+    public void Resetup ()
+    {
+        for (var i = 0; i < 4; i++)
+        {
+            if (playersToDestroy[i] != null)
+            {
+                playersToDestroy[i].transform.position = spawnPoints[i].position;
+                playersToDestroy[i].SetActive(true);
+            }
+        }
+        mapGenerated.ClearMap();
+        mapGenerated.GenerateMap();
+        InitGame();
+        TriggerStormStepOne();
+    }
+
+    public void ClearScene()
+    {
+        for (var i = 0; i < 4; i++)
+        {
+            if (playersToDestroy[i] != null)
+            {
+                Destroy(playersToDestroy[i]);
+            }
+        }
+        mapGenerated.ClearMap();
+        mapGenerated.GenerateMap();
     }
 }

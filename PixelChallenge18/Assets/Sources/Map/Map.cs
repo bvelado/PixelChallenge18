@@ -72,4 +72,12 @@ public class Map : MonoBehaviour {
 
         return pool;
     }
+
+    public void ClearMap ()
+    {
+        foreach (Transform child in _mapContainer)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 }
