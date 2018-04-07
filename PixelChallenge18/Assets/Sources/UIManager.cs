@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
@@ -11,7 +12,10 @@ public class UIManager : MonoBehaviour {
     public List<Transform> pZones;
     private Animator myAnim;
     public List<GameObject> stormFX;
+    public GameObject winnerScreen;
+    public List<Text> scoresText;
 
+    private int pScoreIdx = 0;
     private bool onCredits = false;
     private bool onSelection = false;
     private List<bool> hasJoined = new List<bool>();
@@ -144,6 +148,7 @@ public class UIManager : MonoBehaviour {
         pZones[idx].GetChild(0).gameObject.SetActive(true);
         pZones[idx].GetChild(1).gameObject.SetActive(false);
         hasJoined[idx] = false;
+        GameManager.s_Singleton.DestroyPlayer(idx);
         for (var i = 0; i < hasJoined.Count; i++)
         {
             if (hasJoined[i] == true)
@@ -177,5 +182,15 @@ public class UIManager : MonoBehaviour {
         {
             fx.SetActive(false);
         }
+    }
+
+    public void DisplayAPlayerScore(int score, int pIdx)
+    {
+        if (!winnerScreen.activeSelf)
+        {
+            winnerScreen.SetActive(true);
+        }
+        scoresText[pScoreIdx].text = score.ToString();
+        pScoreIdx++;
     }
 }

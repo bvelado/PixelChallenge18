@@ -58,8 +58,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  playersToDestroy: []
   playersData:
   - {fileID: 11400000, guid: 7e4aed08026f6ba4f815b30cdaca9a81, type: 2}
   - {fileID: 11400000, guid: 04ffac56f93efa647b3835829afa6aec, type: 2}
   - {fileID: 11400000, guid: 5dc715870abb4014d9fce26823078f1e, type: 2}
   - {fileID: 11400000, guid: e55f65e9c64430444becb2cfa4cff65a, type: 2}
+  lightningPrefab: {fileID: 1218748863470380, guid: 51481c0b264928b4f985f80400d740b5,
+    type: 2}
+  rainInScene: {fileID: 0}
+  windInScene: {fileID: 0}
