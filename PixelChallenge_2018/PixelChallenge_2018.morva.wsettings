@@ -63,8 +63,8 @@
 				<Property Name="Interactive Music\x64_{EBDA2109-1407-498F-908D-CFE298455B09} - SegmentEditorZoomInfo" Type="string" Value="VVVVVVVV5T8AAAAAAADwP+zKyhBRvEBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
-				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
-				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{B91796E3-FDAA-4BD4-88D9-588442C70D61}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
+				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{9971A420-D296-406E-971F-2070B88812DA}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
