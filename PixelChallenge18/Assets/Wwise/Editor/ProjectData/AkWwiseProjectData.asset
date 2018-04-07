@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: 357219784
-    m_lastTimePart2: -1999266624
+    m_lastTimePsrt1: 839511781
+    m_lastTimePart2: -1999266622
     List:
     - Name: Pause_Menu_Enter
       Path: Default Work Unit\Pause_Menu_Enter
@@ -539,6 +539,9 @@ MonoBehaviour:
   - /PixelChallenge_2018
   - /PixelChallenge_2018/Events
   - /PixelChallenge_2018/Events/Default Work Unit
+  - /PixelChallenge_2018/Switches
+  - /PixelChallenge_2018/Switches/Default Work Unit
+  - /PixelChallenge_2018/Switches/Default Work Unit/SW_Player
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

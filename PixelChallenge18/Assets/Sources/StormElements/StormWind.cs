@@ -26,6 +26,9 @@ public class StormWind : MonoBehaviour {
     {
         Vector2 windForce = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
         windForce = windForce.normalized * _windPower;
+                
+        windFX.rotation = Quaternion.LookRotation(new Vector3(windForce.x, 0f, windForce.y));
+        windFX.gameObject.SetActive(true);
 
         List<CharacterCrouch> players = new List<CharacterCrouch>();
         foreach(var player in _playersLookup.GetPlayers())
@@ -71,16 +74,10 @@ public class StormWind : MonoBehaviour {
         {
             player.GetComponent<CharacterMotor>().SetAdditionalVelocity(Vector2.zero);
             
-        }        
+        }
+
+        windFX.gameObject.SetActive(false);
 
         yield return null;
     }
-
-    private void OnGUI()
-    {
-        if(GUI.Button(new Rect(0,0,100,20), "Wind storm")){
-            BeginStormWind();
-        }
-    }
-
 }

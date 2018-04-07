@@ -57,6 +57,7 @@ MonoBehaviour:
   _windEffectDuration: 3
   _windEffectFrequency: 0.15
   windFX: {fileID: 0}
+  windsoundEmitter: {fileID: 0}
 --- !u!114 &114846382046771380
 MonoBehaviour:
   m_ObjectHideFlags: 1
