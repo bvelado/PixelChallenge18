@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
     private List<int> vegePerPlayer = new List<int>();
     private Dictionary<int, int> playersScores = new Dictionary<int, int>();
     public int vpp = 2;
+    public StormManager stormManager;
 
     private GameObject spawnedPlayer;
 
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour {
             vegePerPlayer.Add(vpp);
         }
         nbVegetables = 72;
+        InitStorm();
     }
 	
 	// Update is called once per frame
@@ -163,11 +165,28 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void InitStorm()
+    {
+        stormManager.Initialize();
+        stormManager.SetStormStep(EStormStep.Small);
+    }
+
+    public void StartStorm()
+    {
+        stormManager.BeginStorm();
+    }
+
+    public void StopStorm()
+    {
+        stormManager.EndStorm();
+    }
+
     void TriggerStormStepOne()
     {
         var rainEmission = rainInScene.emission;
         rainEmission.rateOverTime = 250;
         stormSteps = 1;
+        stormManager.SetStormStep(EStormStep.Small);
     }
 
     void TriggerStormStepTwo ()
@@ -175,6 +194,7 @@ public class GameManager : MonoBehaviour {
         var rainEmission = rainInScene.emission;
         rainEmission.rateOverTime = 2500;
         stormSteps = 2;
+        stormManager.SetStormStep(EStormStep.Medium);
     }
 
     void TriggerStormStepThree()
@@ -182,6 +202,7 @@ public class GameManager : MonoBehaviour {
         var rainEmission = rainInScene.emission;
         rainEmission.rateOverTime = 12000;
         stormSteps = 3;
+        stormManager.SetStormStep(EStormStep.Large);
     }
 
     void CheckEndGame()
@@ -238,6 +259,7 @@ public class GameManager : MonoBehaviour {
             }
         }
         ResetMap();
+        StopStorm();
     }
 
     void ResetMap ()

@@ -255,6 +255,7 @@ public class UIManager : MonoBehaviour {
         ActivateStormFX();
         GameManager.s_Singleton.InitGame();
         AkSoundEngine.PostEvent("Set_Phase_1", gameObject);
+        GameManager.s_Singleton.StartStorm();
     }
 
     void ActivateStormFX()
