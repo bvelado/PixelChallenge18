@@ -20,6 +20,11 @@ public class CharacterMotor : MonoBehaviour
 
     private RaycastHit _hit;
 
+    public void Initialize()
+    {
+        _falling = false;
+    }
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
