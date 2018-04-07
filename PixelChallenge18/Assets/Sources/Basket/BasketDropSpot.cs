@@ -25,7 +25,7 @@ public class BasketDropSpot : MonoBehaviour {
         var holdable = other.GetComponentInParent<VegetableHoldable>();
         if (holdable != null)
         {
-            holdable.EndedBeingHeld += TryDropVegetable;      
+            holdable.EndedBeingHeld += TryDropVegetable;
         }
     }
 
