@@ -5,7 +5,7 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour {
 
-    public GameObject playerPrefab;
+    public List<GameObject> playersPrefab;
     public List<Transform> spawnPoints;
     public Map mapGenerated;
     public VegetablesLookup vegeLu;
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour {
 
     public void SpawnPlayer (int idx)
     {
-        spawnedPlayer = Instantiate(playerPrefab, spawnPoints[idx].position, spawnPoints[idx].rotation);
+        spawnedPlayer = Instantiate(playersPrefab[idx], spawnPoints[idx].position, spawnPoints[idx].rotation);
         spawnedPlayer.GetComponent<Player>().Initialize(playersData[idx]);
         playersToDestroy[idx] = spawnedPlayer;
     }
