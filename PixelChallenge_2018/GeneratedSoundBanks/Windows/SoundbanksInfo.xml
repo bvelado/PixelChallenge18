@@ -65,6 +65,7 @@
 				<Event Id="3735505530" Name="Pause_Menu_Enter" ObjectPath="\Events\Default Work Unit\Pause_Menu_Enter"/>
 				<Event Id="179987880" Name="Pause_Menu_Exit" ObjectPath="\Events\Default Work Unit\Pause_Menu_Exit"/>
 				<Event Id="247285626" Name="Play_End_Game" ObjectPath="\Events\Default Work Unit\Play_End_Game"/>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2402816769" Name="Play_Ono_Crouch" ObjectPath="\Events\Default Work Unit\Play_Ono_Crouch"/>
 				<Event Id="1982566496" Name="Play_Ono_Falling" ObjectPath="\Events\Default Work Unit\Play_Ono_Falling"/>
@@ -161,6 +162,10 @@
 					<ShortName>SFX_God_Sweetener.wav</ShortName>
 					<Path>SFX\SFX_God_Sweetener_515932F0.wem</Path>
 				</File>
+				<File Id="208487790" Language="SFX">
+					<ShortName>FS_Cat_Dirt_16.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_16_515932F0.wem</Path>
+				</File>
 				<File Id="214070572" Language="SFX">
 					<ShortName>Ono_Grab_Veggi_Player02_03.wav</ShortName>
 					<Path>SFX\Ono_Grab_Veggi_Player02_03_515932F0.wem</Path>
@@ -168,6 +173,10 @@
 				<File Id="218337981" Language="SFX">
 					<ShortName>UI_Click.wav</ShortName>
 					<Path>SFX\UI_Click_515932F0.wem</Path>
+				</File>
+				<File Id="220573456" Language="SFX">
+					<ShortName>FS_Cat_Dirt_17.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_17_515932F0.wem</Path>
 				</File>
 				<File Id="222037412" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_01.wav</ShortName>
@@ -241,6 +250,10 @@
 					<ShortName>SFX_Wind_Eagle_03.wav</ShortName>
 					<Path>SFX\SFX_Wind_Eagle_03_515932F0.wem</Path>
 				</File>
+				<File Id="385732148" Language="SFX">
+					<ShortName>FS_Cat_Dirt_08.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_08_515932F0.wem</Path>
+				</File>
 				<File Id="387981893" Language="SFX">
 					<ShortName>Ono_Crouch_Player03_02.wav</ShortName>
 					<Path>SFX\Ono_Crouch_Player03_02_515932F0.wem</Path>
@@ -261,9 +274,17 @@
 					<ShortName>Ono_Is_Pushed_Player02_02.wav</ShortName>
 					<Path>SFX\Ono_Is_Pushed_Player02_02_515932F0.wem</Path>
 				</File>
+				<File Id="423480435" Language="SFX">
+					<ShortName>FS_Cat_Dirt_05.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_05_D4A4A15E.wem</Path>
+				</File>
 				<File Id="423954894" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_02.wav</ShortName>
 					<Path>SFX\SFX_Thunder_Crack_02_515932F0.wem</Path>
+				</File>
+				<File Id="437767649" Language="SFX">
+					<ShortName>FS_Cat_Dirt_02.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_02_515932F0.wem</Path>
 				</File>
 				<File Id="464034750" Language="SFX">
 					<ShortName>Ono_Grab_Veggi_Player01_01.wav</ShortName>
@@ -296,6 +317,10 @@
 				<File Id="511456738" Language="SFX">
 					<ShortName>Ono_Grab_Veggi_Player03_01.wav</ShortName>
 					<Path>SFX\Ono_Grab_Veggi_Player03_01_515932F0.wem</Path>
+				</File>
+				<File Id="526296089" Language="SFX">
+					<ShortName>FS_Cat_Dirt_13.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_13_515932F0.wem</Path>
 				</File>
 				<File Id="529259371" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_10.wav</ShortName>
@@ -333,13 +358,25 @@
 					<ShortName>SFX_Wind_Gust_02.wav</ShortName>
 					<Path>SFX\SFX_Wind_Gust_02_515932F0.wem</Path>
 				</File>
+				<File Id="612425398" Language="SFX">
+					<ShortName>FS_Cat_Dirt_14.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_14_25E81806.wem</Path>
+				</File>
 				<File Id="614998035" Language="SFX">
 					<ShortName>Ono_PushedByWind_Player03_01.wav</ShortName>
 					<Path>SFX\Ono_PushedByWind_Player03_01_515932F0.wem</Path>
 				</File>
+				<File Id="629206543" Language="SFX">
+					<ShortName>FS_Cat_Dirt_04.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_04_515932F0.wem</Path>
+				</File>
 				<File Id="633427371" Language="SFX">
 					<ShortName>Ono_PushedByWind_Player03_02.wav</ShortName>
 					<Path>SFX\Ono_PushedByWind_Player03_02_515932F0.wem</Path>
+				</File>
+				<File Id="645729669" Language="SFX">
+					<ShortName>FS_Cat_Dirt_03.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_03_515932F0.wem</Path>
 				</File>
 				<File Id="648206673" Language="SFX">
 					<ShortName>Ono_Is_Pushed_Player04_01.wav</ShortName>
@@ -353,6 +390,10 @@
 					<ShortName>SFX_Thunder_Loading_04.wav</ShortName>
 					<Path>SFX\SFX_Thunder_Loading_04_D9AAAF50.wem</Path>
 				</File>
+				<File Id="676854217" Language="SFX">
+					<ShortName>FS_Cat_Dirt_10.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_10_9942759C.wem</Path>
+				</File>
 				<File Id="702313963" Language="SFX">
 					<ShortName>Ono_Ready_Player03_01.wav</ShortName>
 					<Path>SFX\Ono_Ready_Player03_01_515932F0.wem</Path>
@@ -365,6 +406,14 @@
 					<ShortName>Ono_Kick_Player02_02.wav</ShortName>
 					<Path>SFX\Ono_Kick_Player02_02_515932F0.wem</Path>
 				</File>
+				<File Id="734781045" Language="SFX">
+					<ShortName>FS_Cat_Dirt_06.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_06_027F5BF1.wem</Path>
+				</File>
+				<File Id="746818016" Language="SFX">
+					<ShortName>FS_Cat_Dirt_15.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_15_515932F0.wem</Path>
+				</File>
 				<File Id="750146402" Language="SFX">
 					<ShortName>Ono_Falling_Player_03.wav</ShortName>
 					<Path>SFX\Ono_Falling_Player_03_515932F0.wem</Path>
@@ -373,9 +422,17 @@
 					<ShortName>Ono_Is_Pushed_Player01_03.wav</ShortName>
 					<Path>SFX\Ono_Is_Pushed_Player01_03_515932F0.wem</Path>
 				</File>
+				<File Id="758099696" Language="SFX">
+					<ShortName>FS_Cat_Dirt_07.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_07_515932F0.wem</Path>
+				</File>
 				<File Id="766301470" Language="SFX">
 					<ShortName>Ono_Kick_Player02_03.wav</ShortName>
 					<Path>SFX\Ono_Kick_Player02_03_515932F0.wem</Path>
+				</File>
+				<File Id="768502564" Language="SFX">
+					<ShortName>FS_Cat_Dirt_09.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_09_515932F0.wem</Path>
 				</File>
 				<File Id="768744854" Language="SFX">
 					<ShortName>Ono_PushedByWind_Player01_02.wav</ShortName>
@@ -388,6 +445,10 @@
 				<File Id="775643993" Language="SFX">
 					<ShortName>Ono_PushedByWind_Player04_01.wav</ShortName>
 					<Path>SFX\Ono_PushedByWind_Player04_01_515932F0.wem</Path>
+				</File>
+				<File Id="776783485" Language="SFX">
+					<ShortName>FS_Cat_Dirt_01.wav</ShortName>
+					<Path>SFX\FS_Cat_Dirt_01_515932F0.wem</Path>
 				</File>
 				<File Id="811501772" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_09.wav</ShortName>
