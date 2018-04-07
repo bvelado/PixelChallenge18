@@ -51,8 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce6cf6f8f6c6f04e8238be3de7acff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1221228617196506, guid: 8cd067364100eb84a95b8d6250066f6c,
-    type: 2}
+  playersPrefab:
+  - {fileID: 1889330676246288, guid: 149109144261268438d5e7df2434d8c4, type: 2}
+  - {fileID: 1285334614496942, guid: ac192cf9ca273214dbb7462c2219b196, type: 2}
+  - {fileID: 1710083568714890, guid: 95950819eeb5e574981a7ee0fe88176e, type: 2}
+  - {fileID: 1166616453318254, guid: b4e1085deab6c2045afe011e7870625a, type: 2}
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -69,4 +72,5 @@ MonoBehaviour:
     type: 2}
   rainInScene: {fileID: 0}
   windInScene: {fileID: 0}
-  vpp: 2
+  vpp: 18
+  stormManager: {fileID: 0}
