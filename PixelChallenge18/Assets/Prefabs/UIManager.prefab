@@ -312,6 +312,8 @@ GameObject:
   - component: {fileID: 114422709773587210}
   - component: {fileID: 114490062648248322}
   - component: {fileID: 114657272221601186}
+  - component: {fileID: 95203699252462606}
+  - component: {fileID: 114288466910744176}
   m_Layer: 5
   m_Name: Button_Quit
   m_TagString: Untagged
@@ -1643,7 +1645,7 @@ GameObject:
   - component: {fileID: 114164650499528844}
   - component: {fileID: 114984369043128236}
   m_Layer: 5
-  m_Name: Button_Continue
+  m_Name: Button_Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,6 +1720,8 @@ GameObject:
   - component: {fileID: 114280451846513636}
   - component: {fileID: 114153538549388578}
   - component: {fileID: 114818660327851150}
+  - component: {fileID: 95164560146090064}
+  - component: {fileID: 114282620986520282}
   m_Layer: 5
   m_Name: Button_Replay
   m_TagString: Untagged
@@ -2274,6 +2278,40 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f105264025c16bf4b875cd52f67a9f8e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95164560146090064
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764567577780200}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 01183c8259dfedc408a9160c97254102, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95203699252462606
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1202471781145838}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32f6ecad188a9fd4fb4efee2cfa54922, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3253,7 +3291,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3278,17 +3316,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114818660327851150}
         m_MethodName: OnClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114318977642704160}
-        m_MethodName: OnClickReplay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3327,6 +3354,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114282620986520282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764567577780200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e0a1d33453c454ca1dee3c9d51d157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114285863272428676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3393,6 +3431,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: UI
+--- !u!114 &114288466910744176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1202471781145838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e0a1d33453c454ca1dee3c9d51d157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114312408557919320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3441,6 +3490,7 @@ MonoBehaviour:
   creditsScreen: {fileID: 1016529771998194}
   selectionScreen: {fileID: 1575027297482246}
   gameScreen: {fileID: 1611432382260356}
+  pauseScreen: {fileID: 1493404668618982}
   pZones:
   - {fileID: 224626344714723056}
   - {fileID: 224236728123870020}
@@ -3456,6 +3506,7 @@ MonoBehaviour:
   - {fileID: 114019713978550528}
   playButton: {fileID: 114336678554121248}
   replayButton: {fileID: 114280451846513636}
+  resumeButton: {fileID: 114677193769011610}
 --- !u!114 &114319360407757918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4081,7 +4132,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4106,17 +4157,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114490062648248322}
         m_MethodName: OnClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114318977642704160}
-        m_MethodName: OnClickQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

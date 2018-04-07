@@ -38,4 +38,14 @@ public class ButtonsAnimEvents : MonoBehaviour {
     {
         UIManager.s_Singleton.OnClickQuit();
     }
+
+    public void ResumeClicked()
+    {
+        UIManager.s_Singleton.OnClickResume();
+    }
+
+    public void QuitPauseClicked()
+    {
+        UIManager.s_Singleton.OnClickQuitPause();
+    }
 }

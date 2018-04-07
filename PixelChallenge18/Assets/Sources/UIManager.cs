@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour {
     public GameObject creditsScreen;
     public GameObject selectionScreen;
     public GameObject gameScreen;
+    public GameObject pauseScreen;
     public List<Transform> pZones;
     private Animator myAnim;
     public List<GameObject> stormFX;
@@ -16,11 +17,13 @@ public class UIManager : MonoBehaviour {
     public List<Text> scoresText;
     public Button playButton;
     public Button replayButton;
+    public Button resumeButton;
 
     private int pScoreIdx = 0;
     private bool onCredits = false;
     private bool onSelection = false;
     private List<bool> hasJoined = new List<bool>();
+    private List<bool> hasPaused = new List<bool>();
 
     public static UIManager s_Singleton;
 
@@ -48,6 +51,7 @@ public class UIManager : MonoBehaviour {
         for (var i = 0; i < 4; i++)
         {
             hasJoined.Add(false);
+            hasPaused.Add(false);
             pZones[i].GetChild(0).gameObject.SetActive(true);
             pZones[i].GetChild(1).gameObject.SetActive(false);
         }
@@ -94,6 +98,23 @@ public class UIManager : MonoBehaviour {
             RemovePlayer(3);
         }
 
+        if (Input.GetButtonDown("p1_start") && !onSelection && hasJoined[0])
+        {
+            TogglePause(0);
+        }
+        else if (Input.GetButtonDown("p2_start") && !onSelection && hasJoined[1])
+        {
+            TogglePause(1);
+        }
+        else if (Input.GetButtonDown("p3_start") && !onSelection && hasJoined[2])
+        {
+            TogglePause(2);
+        }
+        else if (Input.GetButtonDown("p4_start") && !onSelection && hasJoined[3])
+        {
+            TogglePause(3);
+        }
+
         if (Input.GetButtonDown("p1_start") && onSelection)
         {
             var j = 0;
@@ -109,6 +130,43 @@ public class UIManager : MonoBehaviour {
                 StartGame();
             }
         }
+    }
+
+    void TogglePause (int idx)
+    {
+        if (hasPaused[idx])
+        {
+            pauseScreen.SetActive(false);
+            hasPaused[idx] = false;
+            GameManager.s_Singleton.UnsetupPause();
+            return;
+        }
+        pauseScreen.SetActive(true);
+        hasPaused[idx] = true;
+        GameManager.s_Singleton.SetupPause();
+        resumeButton.Select();
+    }
+
+    public void OnClickResume ()
+    {
+        for (var i = 0; i < 4; i++)
+        {
+            if (hasPaused[i])
+            {
+                TogglePause(i);
+                return;
+            }
+        }
+    }
+
+    public void OnClickQuitPause()
+    {
+        pauseScreen.SetActive(false);
+        for (var i = 0; i < 4; i++)
+        {
+            hasPaused[i] = false;
+        }
+        OnClickQuit();
     }
 
     public void OnClickPlay()
