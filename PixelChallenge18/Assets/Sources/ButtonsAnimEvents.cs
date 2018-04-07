@@ -28,4 +28,14 @@ public class ButtonsAnimEvents : MonoBehaviour {
     {
         UIManager.s_Singleton.OnClickExit();
     }
+
+    public void ReplayClicked()
+    {
+        UIManager.s_Singleton.OnClickReplay();
+    }
+
+    public void QuitClicked()
+    {
+        UIManager.s_Singleton.OnClickQuit();
+    }
 }

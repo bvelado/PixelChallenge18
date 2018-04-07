@@ -58,7 +58,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  playersToDestroy: []
+  mapGenerated: {fileID: 0}
   playersData:
   - {fileID: 11400000, guid: 7e4aed08026f6ba4f815b30cdaca9a81, type: 2}
   - {fileID: 11400000, guid: 04ffac56f93efa647b3835829afa6aec, type: 2}
@@ -68,3 +68,4 @@ MonoBehaviour:
     type: 2}
   rainInScene: {fileID: 0}
   windInScene: {fileID: 0}
+  vpp: 2

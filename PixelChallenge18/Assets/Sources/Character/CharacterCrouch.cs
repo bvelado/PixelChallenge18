@@ -23,7 +23,14 @@ public class CharacterCrouch : MonoBehaviour {
 
     private void OnCrouchInputEmitted(bool crouch)
     {
-        _model.SetCrouched(crouch);
+        if (crouch)
+        {
+            _model.SetCrouched();
+        }
+        else
+        {
+            _model.SetGetup();
+        }
         AkSoundEngine.PostEvent("Play_Ono_Crouch", gameObject);
     }
 }

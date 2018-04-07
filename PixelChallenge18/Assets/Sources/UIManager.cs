@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour {
     public List<GameObject> stormFX;
     public GameObject winnerScreen;
     public List<Text> scoresText;
+    public Button playButton;
+    public Button replayButton;
 
     private int pScoreIdx = 0;
     private bool onCredits = false;
@@ -37,12 +39,19 @@ public class UIManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         myAnim = GetComponent<Animator>();
+        Init();
+    }
 
-        for (var i = 0; i < 4; i ++)
+    void Init ()
+    {
+        hasJoined.Clear();
+        for (var i = 0; i < 4; i++)
         {
             hasJoined.Add(false);
+            pZones[i].GetChild(0).gameObject.SetActive(true);
+            pZones[i].GetChild(1).gameObject.SetActive(false);
         }
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -108,8 +117,6 @@ public class UIManager : MonoBehaviour {
         selectionScreen.SetActive(true);
         onSelection = true;
         JoinPlayer(0);
-        
-        
     }
 
     public void OnClickExit()
@@ -169,6 +176,7 @@ public class UIManager : MonoBehaviour {
         gameScreen.SetActive(true);
         myAnim.SetTrigger("ReadyGo");
         ActivateStormFX();
+        GameManager.s_Singleton.InitGame();
         AkSoundEngine.PostEvent("Set_Phase_1", gameObject);
     }
 
@@ -193,8 +201,27 @@ public class UIManager : MonoBehaviour {
         if (!winnerScreen.activeSelf)
         {
             winnerScreen.SetActive(true);
+            replayButton.Select();
         }
         scoresText[pScoreIdx].text = score.ToString();
         pScoreIdx++;
+    }
+
+    public void OnClickReplay ()
+    {
+        winnerScreen.SetActive(false);
+        myAnim.SetTrigger("ReadyGo");
+        GameManager.s_Singleton.Resetup();
+        pScoreIdx = 0;
+    }
+
+    public void OnClickQuit ()
+    {
+        GameManager.s_Singleton.ClearScene();
+        winnerScreen.SetActive(false);
+        titleScreen.SetActive(true);
+        playButton.Select();
+        pScoreIdx = 0;
+        Init();
     }
 }

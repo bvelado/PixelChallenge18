@@ -8,16 +8,20 @@ public class CharacterModel : MonoBehaviour {
     [SerializeField] private Animator _animator;
 
     [Header("Animator parameters")]
-    [SerializeField] private string _crouchedAnimatorParameter;
+    [SerializeField] private string _diveAnimatorParameter;
     [SerializeField] private string _idleAnimatorParameter;
     [SerializeField] private string _runAnimatorParameter;
     [SerializeField] private string _pickAnimatorParameter;
     [SerializeField] private string _holdAnimatorParameter;
 
-    public void SetCrouched(bool crouch)
+    public void SetCrouched()
     {
-        //_animator.SetBool(_crouchedAnimatorParameter, crouch);
-        //_animator.SetBool(_idleAnimatorParameter, false);
+        _animator.SetBool(_diveAnimatorParameter, true);
+    }
+
+    public void SetGetup()
+    {
+        _animator.SetBool(_diveAnimatorParameter, false);
     }
 
     public void SetIdle()
