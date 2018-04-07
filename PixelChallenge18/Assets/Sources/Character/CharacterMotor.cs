@@ -23,6 +23,7 @@ public class CharacterMotor : MonoBehaviour
     public void Initialize()
     {
         _falling = false;
+        _rigidbody.constraints |= RigidbodyConstraints.FreezePositionY;
     }
 
     private void Awake()
@@ -110,6 +111,7 @@ public class CharacterMotor : MonoBehaviour
         {
             _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, Vector3.zero, 0.9f);
             _rigidbody.AddForce(Physics.gravity);
+            _rigidbody.constraints -= RigidbodyConstraints.FreezePositionY;
         }
     }
 }
