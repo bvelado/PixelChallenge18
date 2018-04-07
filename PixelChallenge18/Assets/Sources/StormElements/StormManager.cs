@@ -123,9 +123,9 @@ public class StormManager : MonoBehaviour {
 
     private void SpawnBucket()
     {
-       var availableTiles = _map.GetAllGardenTiles().Where(x => x.GetComponentInChildren<Vegetable>() == null);
-       // var tile = availableTiles[Random.Range()]
-       //Instantiate(_bucketPrefab, null)
+        var availableTiles = _map.GetAllGardenTiles().Where(x => x.GetComponentInChildren<Vegetable>() == null).ToArray();
+        var tile = availableTiles[Random.Range(0, availableTiles.Count())];
+        Instantiate(_bucketPrefab, tile.transform.position + new Vector3(Map.TILE_SIZE / 2f, 0f, Map.TILE_SIZE / 2f), Quaternion.identity, null);
     }
 
     private void ThunderHit()

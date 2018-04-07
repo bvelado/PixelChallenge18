@@ -976,6 +976,48 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999999, y: 0, z: 1.9999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &285316855
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973446565735870, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 23130f3079e28524abff38e2ce6ed17b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &287250071
 Prefab:
   m_ObjectHideFlags: 0
@@ -5578,7 +5620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wind: {fileID: 1388388496}
-  _bucketPrefab: {fileID: 0}
+  _bucketPrefab: {fileID: 1355874837397804, guid: 42f6fe61dcc61a949a9cfd9baf527be6,
+    type: 2}
   _delayBetweenBucketAndThunder: 5
   _smallWindFrequency: 16
   _mediumWindFrequency: 12
