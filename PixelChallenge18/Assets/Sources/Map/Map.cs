@@ -71,6 +71,10 @@ public class Map : MonoBehaviour {
             _instantiatedGardenTiles.Add(gardenTile);
         }
         var lastTile = Instantiate(isBucketChunk ? _bucketTilePrefab : _holeTilePrefab, chunkContainer);
+        if (isBucketChunk)
+        {
+            _instantiatedGardenTiles.Add(lastTile);
+        }
         pool.Add(lastTile);
 
         return pool;
