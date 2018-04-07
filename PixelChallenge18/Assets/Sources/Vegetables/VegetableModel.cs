@@ -13,7 +13,7 @@ public class VegetableModel : MonoBehaviour {
 
     public void Initialize(PlayerData playerData)
     {
-        _renderer.material.color = playerData.Color;
+        _renderer.material.SetColor("_MaskColor", playerData.Color);
     }
 
 }
