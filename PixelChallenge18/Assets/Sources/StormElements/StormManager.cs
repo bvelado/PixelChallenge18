@@ -38,6 +38,7 @@ public class StormManager : MonoBehaviour {
 
     private VegetablesLookup _vegetableLookup;
     private Map _map;
+    private GameObject _instantiatedBucket;
 
     private void Awake()
     {
@@ -124,9 +125,14 @@ public class StormManager : MonoBehaviour {
 
     private void SpawnBucket()
     {
+        if(_instantiatedBucket != null)
+        {
+            return;
+        }
+
         var availableTiles = _map.GetAllGardenTiles().Where(x => x.GetComponentInChildren<Vegetable>() == null).ToArray();
         var tile = availableTiles[Random.Range(0, availableTiles.Count()-1)];
-        Instantiate(_bucketPrefab, tile.transform.position + new Vector3(Map.TILE_SIZE / 2f, 0f, Map.TILE_SIZE / 2f), Quaternion.identity, null);
+        _instantiatedBucket = Instantiate(_bucketPrefab, tile.transform.position + new Vector3(Map.TILE_SIZE / 2f, 0f, Map.TILE_SIZE / 2f), Quaternion.identity, null);
     }
 
     private void BeginThunder()

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class BucketHoldable : MonoBehaviour, IHoldable
 {
@@ -51,14 +52,13 @@ public class BucketHoldable : MonoBehaviour, IHoldable
 
     private void TryToExtinguishFire()
     {
-        foreach(var collider in Physics.OverlapSphere(transform.position, 3f))
+        Debug.Log("Extinguish");
+        foreach(var collider in Physics.OverlapSphere(transform.position, 5f))
         {
-            var vegetableBurnable = collider.GetComponent<VegetableBurnable>();
+            var vegetableBurnable = collider.GetComponentInParent<VegetableBurnable>();
             if (vegetableBurnable != null && vegetableBurnable.IsBurning)
             {
                 vegetableBurnable.Extinguish();
-                Destroy(gameObject);
-                break;
             }
         }
     }

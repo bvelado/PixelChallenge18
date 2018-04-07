@@ -18,6 +18,10 @@ public class Player : MonoBehaviour {
 
     private void OnDestroy()
     {
-        FindObjectOfType<PlayersLookup>().UnregisterPlayer(this);
+        var loopkup = FindObjectOfType<PlayersLookup>();
+        if (loopkup != null)
+        {
+            loopkup.UnregisterPlayer(this);
+        }
     }
 }

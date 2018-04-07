@@ -16,16 +16,15 @@ public class VegetableBurnable : MonoBehaviour {
         _isBurning = true;
         _fireVFX.SetActive(true);
         _burnCoroutine = StartCoroutine(BurnCoroutine(_burnDuration));
-        GetComponent<VegetableHoldable>().SetHoldable(false);
     }
 
     public void Extinguish()
     {
-        GetComponent<VegetableHoldable>().SetHoldable(true);
         if (_isBurning)
         {
             StopCoroutine(_burnCoroutine);
         }
+        _fireVFX.SetActive(false);
     }
 
     private IEnumerator BurnCoroutine(float duration)

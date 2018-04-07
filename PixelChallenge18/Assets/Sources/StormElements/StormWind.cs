@@ -38,7 +38,6 @@ public class StormWind : MonoBehaviour {
 
     private IEnumerator WindEffectCoroutine(Vector2 windForce, CharacterCrouch[] players)
     {
-        Debug.Log("Storm began");
         float timer = 0f;
         while(timer < _windEffectDuration)
         {
@@ -72,10 +71,7 @@ public class StormWind : MonoBehaviour {
         {
             player.GetComponent<CharacterMotor>().SetAdditionalVelocity(Vector2.zero);
             
-        }
-
-        Debug.Log("Storm ended");
-        
+        }        
 
         yield return null;
     }
