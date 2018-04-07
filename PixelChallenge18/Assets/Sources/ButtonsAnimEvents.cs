@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ButtonsAnimEvents : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public Animator titleAnim;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -47,5 +49,10 @@ public class ButtonsAnimEvents : MonoBehaviour {
     public void QuitPauseClicked()
     {
         UIManager.s_Singleton.OnClickQuitPause();
+    }
+
+    public void TitleGo ()
+    {
+        titleAnim.SetTrigger("Go");
     }
 }
