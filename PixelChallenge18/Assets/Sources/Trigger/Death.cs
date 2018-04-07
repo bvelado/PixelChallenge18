@@ -21,5 +21,9 @@ public class Death : MonoBehaviour {
             GameManager.s_Singleton.DestroyedVegetable(collider.GetComponent<Vegetable>().PlayerData.ID);
             Destroy(collider.gameObject);
         }
+        if (collider.CompareTag("Seau"))
+        {
+            Destroy(collider.gameObject);
+        }
     }
 }

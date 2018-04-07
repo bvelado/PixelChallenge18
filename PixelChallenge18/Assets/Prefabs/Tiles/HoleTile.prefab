@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4432699983308280}
   - component: {fileID: 33003419471714824}
   - component: {fileID: 23364034871229018}
-  - component: {fileID: 65406920019630852}
+  - component: {fileID: 64298742336213676}
   m_Layer: 0
   m_Name: TileTrou
   m_TagString: Untagged
@@ -112,8 +112,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464768987378912}
   m_Mesh: {fileID: 4300000, guid: 56db44f0ef18c064ea1761cc1450fb70, type: 3}
---- !u!65 &65406920019630852
-BoxCollider:
+--- !u!64 &64298742336213676
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -121,6 +121,8 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999992, y: 0.9425568, z: 1.9999999}
-  m_Center: {x: 0.00000038743016, y: 0.46971884, z: -1.6687767e-15}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 56db44f0ef18c064ea1761cc1450fb70, type: 3}
