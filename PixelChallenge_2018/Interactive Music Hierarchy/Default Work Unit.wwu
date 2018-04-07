@@ -1076,13 +1076,6 @@
 							</CueList>
 						</MusicSegment>
 						<MusicPlaylistContainer Name="Music_End_Game" ID="{1F40C43E-2876-496B-A080-469732B4BC1D}" ShortID="589980941">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C3C82AE-E055-40CE-A340-76162345860D}"/>

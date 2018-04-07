@@ -5919,10 +5919,8 @@
 						<RandomSequenceContainer Name="SFX_Wind_Gust" ID="{836DB96B-F5A9-4C2C-9A07-DFA15B9DC5A3}" ShortID="446542593">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-400</Value>
-									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{E1FFD6E9-73FB-4EA6-8EC0-2D0A32217022}">
@@ -5934,6 +5932,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -5958,6 +5961,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}" WorkUnitID="{E98DCFF4-602F-4283-9131-52037A65BD46}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

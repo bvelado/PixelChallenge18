@@ -18,6 +18,7 @@
 				<Property Name="Event Action List\{6349EC93-B52D-4901-A0BD-D2471E3F69FA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{63FCDF05-7E67-4E4E-A224-40AA2AB36D47}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{66DB4CE0-2865-4B15-916D-698C0E054E50}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{677B23FF-8F5E-40FB-B189-A53C16AF69A4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{68F1745F-ECFE-4018-910F-1B7AA2022FF5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{868D95C9-D140-48C5-919C-BD603EB3D7C0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8F489C5A-3F85-41BF-9A42-137E64950B73}\x64_Expand States" Type="string" Value=""/>
@@ -74,8 +75,8 @@
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\CurrentStates\{65E447B2-9759-4C57-88E7-342CDF0588FD}" Type="string" Value="{E5C4E978-A180-4E54-98EE-9600BD835BE2}"/>
-				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
-				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{97EC0733-D394-4D00-AE1A-000B1B55709E}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
+				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
