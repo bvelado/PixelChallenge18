@@ -121,6 +121,8 @@ public class GameManager : MonoBehaviour {
                 vegePerPlayer[3] -= 1;
                 break;
         }
+        Debug.Log(playersToDestroy[idx]);
+        playersToDestroy[idx].GetComponent<CharacterModel>().SetVictory();
         playersScores[idx] += 1;
         nbVegetables--;
         CheckStormState();
