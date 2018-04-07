@@ -19,6 +19,10 @@ State	ID	Name	State Group			Notes
 	2473697571	MuteSFX	ST_MuteSFX			
 	4043078832	UnmuteSFX	ST_MuteSFX			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	666963091	MuteSFX	ST_MuteSFX	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\REVERB		
+	877866915	MuteSFX	ST_MuteSFX	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1687132932	RTPC_SFX_Duck			\Default Work Unit\RTPC_SFX_Duck	
 

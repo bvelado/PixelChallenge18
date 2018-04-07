@@ -64,6 +64,27 @@
 									</Custom>
 								</Reference>
 							</ReferenceList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="ST_MuteSFX" ID="{F727E480-4DFC-4E24-8846-04571804F647}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="MuteSFX" ID="{534B0E0F-821C-486C-B813-49F2DA257C38}"/>
+										<State Name="" ID="{CD661F20-30DA-4122-8F08-8D8455031A60}" ShortID="877866915">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="UnmuteSFX" ID="{909AD601-A2C2-4D22-B7DB-A37F7BD8AF03}"/>
+										<State Name="" ID="{001202EF-E21F-4234-82E6-9E5851F2A06C}" ShortID="669805400"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="VOICE" ID="{BE0C185A-E710-4F29-A5F3-3F53BDA1131D}"/>
 						<Bus Name="MUSIC" ID="{90BFFEDF-C8B8-4D91-9034-0F26635EB8C7}">
@@ -109,6 +130,27 @@
 									</ReferenceList>
 								</AuxBus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="ST_MuteSFX" ID="{F727E480-4DFC-4E24-8846-04571804F647}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="MuteSFX" ID="{534B0E0F-821C-486C-B813-49F2DA257C38}"/>
+										<State Name="" ID="{8C303DE8-6862-4BCA-A0AC-A6D8A6EEC5B6}" ShortID="666963091">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="UnmuteSFX" ID="{909AD601-A2C2-4D22-B7DB-A37F7BD8AF03}"/>
+										<State Name="" ID="{44D774F7-3FDA-4C94-8D28-D30036013BE9}" ShortID="243847395"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 					</ChildrenList>
 				</Bus>
