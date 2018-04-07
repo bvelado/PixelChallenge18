@@ -34,5 +34,6 @@ public class Basket : MonoBehaviour {
         }
 
         vegetable.transform.position = _dropRoot.position;
+        GameManager.s_Singleton.SecuredVegetable(_playerData.ID);
     }
 }

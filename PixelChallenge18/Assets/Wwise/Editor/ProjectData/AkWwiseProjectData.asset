@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: -2003302848
-    m_lastTimePart2: -1999266791
+    m_lastTimePsrt1: 1932167510
+    m_lastTimePart2: -1999266781
     List:
     - Name: Play_End_Game
       Path: Default Work Unit\Play_End_Game
@@ -299,8 +299,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E98DCFF4-602F-4283-9131-52037A65BD46}'
-    m_lastTimePsrt1: -258632870
-    m_lastTimePart2: -1999266795
+    m_lastTimePsrt1: 1932789160
+    m_lastTimePart2: -1999266781
     List:
     - Name: Reverb_01
       Path: Default Work Unit\Master Audio Bus\REVERB\Reverb_01
@@ -409,9 +409,38 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CF3F1732-78F5-4598-BE17-5B51174B16CF}'
-    m_lastTimePsrt1: 2016199134
-    m_lastTimePart2: -1999266809
+    m_lastTimePsrt1: 1360902727
+    m_lastTimePart2: -1999266804
     List:
+    - Name: SW_Player
+      Path: Default Work Unit\SW_Player
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SW_Player
+        ObjectType: 11
+      ID: -455808391
+      Guid: 3bbd807192eb8e4db713ac8b0a25c987
+      values:
+      - SW_Player_01
+      - SW_Player_02
+      - SW_Player_03
+      - SW_Player_04
+      ValueIcons:
+      - ElementName: SW_Player_01
+        ObjectType: 10
+      - ElementName: SW_Player_02
+        ObjectType: 10
+      - ElementName: SW_Player_03
+        ObjectType: 10
+      - ElementName: SW_Player_04
+        ObjectType: 10
+      valueIDs: a59931e6a69931e6a79931e6a09931e6
+      ValueGuids:
+      - bytes: b5eb8d64182f6b48acb92f605458e4ac
+      - bytes: 7b2363d1d1fd75409b3fbb95d3b9c5db
+      - bytes: 8b02e8bd229bc84aa2de80a46e44bd04
+      - bytes: 9b4614ff46a8984cbcb92fd050dd7984
     - Name: SW_Storm_Phase
       Path: Default Work Unit\SW_Storm_Phase
       PathAndIcons:
@@ -457,9 +486,18 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{FCF6CA67-23BA-4FBE-AC8A-B0C188CDCAC2}'
-    m_lastTimePsrt1: 85688171
-    m_lastTimePart2: -1999266839
-    List: []
+    m_lastTimePsrt1: 1932182549
+    m_lastTimePart2: -1999266781
+    List:
+    - Name: RTPC_SFX_Duck
+      Path: Default Work Unit\RTPC_SFX_Duck
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_SFX_Duck
+        ObjectType: 13
+      ID: 1687132932
+      Guid: 810d950c513da041a5ae964424321e01
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 

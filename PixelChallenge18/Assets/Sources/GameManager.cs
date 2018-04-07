@@ -85,8 +85,24 @@ public class GameManager : MonoBehaviour {
         CheckEndGame();
     }
 
-    public void SecuredVegetable(int idx)
+    public void SecuredVegetable(string pId)
     {
+        var idx = -1;
+        switch (pId)
+        {
+            case "p1_":
+                idx = 0;
+                break;
+            case "p2_":
+                idx = 1;
+                break;
+            case "p3_":
+                idx = 2;
+                break;
+            case "p4_":
+                idx = 3;
+                break;
+        }
         scores[idx] += 1;
         nbVegetables--;
         CheckStormState();
