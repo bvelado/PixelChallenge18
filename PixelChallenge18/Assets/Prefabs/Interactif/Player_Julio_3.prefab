@@ -3560,6 +3560,9 @@ MonoBehaviour:
   _holdAnimatorParameter: Carry
   _victoryAnimatorParameter: Victory
   _kickAnimatorParameter: Kick
+  _chuteAnimatorParameter: Chute
+  _stunAnimatorParameter: Stun
+  _windAnimatorParameter: Wind
 --- !u!114 &114870911087143738
 MonoBehaviour:
   m_ObjectHideFlags: 1
