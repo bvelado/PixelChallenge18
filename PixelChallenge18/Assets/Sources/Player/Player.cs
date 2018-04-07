@@ -15,4 +15,9 @@ public class Player : MonoBehaviour {
         string switchState = "SW_Player_0" + (playerData.ZeroBasedNumber+1).ToString();
         AkSoundEngine.SetSwitch("SW_Player", switchState, GetComponentInChildren<Character_Sound_Script>().gameObject);
     }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<PlayersLookup>().UnregisterPlayer(this);
+    }
 }

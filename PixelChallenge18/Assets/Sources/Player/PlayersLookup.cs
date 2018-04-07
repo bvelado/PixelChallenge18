@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayersLookup : MonoBehaviour {
 
@@ -30,4 +31,8 @@ public class PlayersLookup : MonoBehaviour {
         return null;
     }
 
+    public void UnregisterPlayer(Player player)
+    {
+        _lookup.Remove(player.Data);
+    }
 }
