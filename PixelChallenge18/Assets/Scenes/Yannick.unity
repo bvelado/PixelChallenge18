@@ -895,6 +895,11 @@ Prefab:
       propertyPath: windFX
       value: 
       objectReference: {fileID: 671641955}
+    - target: {fileID: 114291624850553494, guid: fe9b58c503a63bb419526e7b981876f2,
+        type: 2}
+      propertyPath: _windPower
+      value: 2.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe9b58c503a63bb419526e7b981876f2, type: 2}
   m_IsPrefabParent: 0
@@ -1848,7 +1853,7 @@ Prefab:
     - target: {fileID: 114199274099843058, guid: ce23ca9792238ff498c27a3077d67f35,
         type: 2}
       propertyPath: vpp
-      value: 2
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce23ca9792238ff498c27a3077d67f35, type: 2}
