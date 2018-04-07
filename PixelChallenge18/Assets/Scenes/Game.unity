@@ -3165,7 +3165,7 @@ Prefab:
     - target: {fileID: 224021041136188260, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.33599
       objectReference: {fileID: 0}
     - target: {fileID: 224021041136188260, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3175,7 +3175,7 @@ Prefab:
     - target: {fileID: 224021041136188260, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 94.67198
       objectReference: {fileID: 0}
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3195,7 +3195,7 @@ Prefab:
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -172.45798
       objectReference: {fileID: 0}
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3205,7 +3205,7 @@ Prefab:
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 94.67198
       objectReference: {fileID: 0}
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3225,7 +3225,7 @@ Prefab:
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -283.57996
       objectReference: {fileID: 0}
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3235,7 +3235,7 @@ Prefab:
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 94.67198
       objectReference: {fileID: 0}
     - target: {fileID: 224782936598811540, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}

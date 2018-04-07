@@ -59,7 +59,10 @@ public class CharacterHolder : MonoBehaviour
         {
             _isHolding = true;
             _heldObject = holdable;
-            holdable.GetComponentInParent<IHoldable>().OnBeginHold(this);
+            if(holdable != null)
+            {
+                holdable.GetComponentInParent<IHoldable>().OnBeginHold(this);
+            }
             _model.SetPick();
         }
     }
@@ -73,7 +76,10 @@ public class CharacterHolder : MonoBehaviour
         var holdable = _heldObject;
         _isHolding = false;
         _heldObject = null;
-        holdable.GetComponentInParent<IHoldable>().OnEndHold(this);
+        if(holdable != null)
+        {
+            holdable.GetComponentInParent<IHoldable>().OnEndHold(this);
+        }        
         _model.SetLoose();
     }
 
