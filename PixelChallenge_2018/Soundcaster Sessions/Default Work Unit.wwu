@@ -73,11 +73,11 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
-						<CurrentStateRef Name="MUS_Menu" ID="{9971A420-D296-406E-971F-2070B88812DA}"/>
+						<CurrentStateRef Name="ST_Storm_Phase_2" ID="{A0F14FFF-4D27-4B64-A40F-702051411F68}"/>
+						<CurrentStateRef Name="MUS_Phase_2" ID="{97EC0733-D394-4D00-AE1A-000B1B55709E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
 						<CurrentSwitchRef Name="SW_Player_02" ID="{D163237B-FDD1-4075-9B3F-BB95D3B9C5DB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
