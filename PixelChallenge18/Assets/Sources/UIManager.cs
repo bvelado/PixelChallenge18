@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
@@ -24,6 +25,8 @@ public class UIManager : MonoBehaviour {
     private bool onSelection = false;
     private List<bool> hasJoined = new List<bool>();
     private List<bool> hasPaused = new List<bool>();
+
+    public StandaloneInputModule es;
 
     public static UIManager s_Singleton;
 
@@ -134,15 +137,28 @@ public class UIManager : MonoBehaviour {
 
     void TogglePause (int idx)
     {
-        if (hasPaused[idx])
+        for (var i = 0; i < 4; i++)
         {
-            pauseScreen.SetActive(false);
-            hasPaused[idx] = false;
-            GameManager.s_Singleton.UnsetupPause();
-            return;
+            if (hasPaused[i])
+            {
+                if (i == idx)
+                {
+                    pauseScreen.SetActive(false);
+                    hasPaused[idx] = false;
+                    GameManager.s_Singleton.UnsetupPause();
+                    return;
+                }
+                else if (i != idx)
+                {
+                    return;
+                }
+            }
         }
         pauseScreen.SetActive(true);
         hasPaused[idx] = true;
+        es.horizontalAxis = "p" + (idx+1).ToString() + "_horizontal";
+        es.verticalAxis = "p" + (idx + 1).ToString() + "_vertical";
+        es.submitButton = "p" + (idx + 1).ToString() + "_kick";
         GameManager.s_Singleton.SetupPause();
         resumeButton.Select();
     }
@@ -161,6 +177,9 @@ public class UIManager : MonoBehaviour {
 
     public void OnClickQuitPause()
     {
+        es.horizontalAxis = "p1_horizontal";
+        es.verticalAxis = "p1_vertical";
+        es.submitButton = "p1_kick";
         pauseScreen.SetActive(false);
         for (var i = 0; i < 4; i++)
         {
