@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 64298742336213676}
   m_Layer: 0
   m_Name: TileTrou
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

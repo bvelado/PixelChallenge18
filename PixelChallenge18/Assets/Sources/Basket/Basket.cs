@@ -35,9 +35,10 @@ public class Basket : MonoBehaviour {
             return;
         }
         AkSoundEngine.PostEvent("Play_SFX_Veggi_Success", gameObject);
-      
-        Destroy(vegetable.gameObject);
+
         GameManager.s_Singleton.SecuredVegetable(_playerData.ID);
+        Destroy(vegetable.gameObject);
+        
         _count++;
         UpdateView();
         

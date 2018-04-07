@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Vegetable
   - Seau
+  - Fire
+  - Ground
   layers:
   - Default
   - TransparentFX

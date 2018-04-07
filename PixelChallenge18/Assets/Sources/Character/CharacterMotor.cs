@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class CharacterMotor : MonoBehaviour {
+public class CharacterMotor : MonoBehaviour
+{
 
     [Header("Parameters")]
     [SerializeField] private float _moveSpeed = 1f;
@@ -10,11 +11,14 @@ public class CharacterMotor : MonoBehaviour {
     private CharacterInputs _inputs;
     private CharacterCrouch _crouch;
 
-    private Vector2 _velocity;
+    private Vector3 _velocity;
     private bool _hasInputToProcess;
     private bool _movable = true;
+    private bool _falling = false;
 
     private Vector2 _additionalVelocity;
+
+    private RaycastHit _hit;
 
     private void Awake()
     {
@@ -30,7 +34,7 @@ public class CharacterMotor : MonoBehaviour {
     private void HandleLeftJoystickInput(Vector2 input)
     {
         Move(input * _moveSpeed * Time.deltaTime);
-        if(!Mathf.Approximately(input.magnitude, 0f) && !_crouch.IsCrouched)
+        if (!Mathf.Approximately(input.magnitude, 0f) && !_crouch.IsCrouched)
         {
             UpdateOrientation(input);
         }
@@ -38,13 +42,24 @@ public class CharacterMotor : MonoBehaviour {
 
     public void Move(Vector2 velocity)
     {
-        _velocity = velocity;
+        if (_falling)
+        {
+            return;
+        }
+
+        _velocity = new Vector3(velocity.x, 0f, velocity.y);
         _hasInputToProcess = true;
     }
 
     private void FixedUpdate()
     {
-        if(!_movable)
+        if (_falling)
+        {
+            _rigidbody.AddForce(Physics.gravity);
+            return;
+        }
+
+        if (!_movable)
         {
             _hasInputToProcess = false;
             return;
@@ -52,7 +67,7 @@ public class CharacterMotor : MonoBehaviour {
 
         if (_hasInputToProcess)
         {
-            _rigidbody.velocity = new Vector3(_velocity.x + _additionalVelocity.x, _rigidbody.velocity.y, _velocity.y + _additionalVelocity.y);
+            _rigidbody.velocity = _velocity;
             _hasInputToProcess = false;
         }
     }
@@ -74,6 +89,16 @@ public class CharacterMotor : MonoBehaviour {
         if (!_movable)
         {
             _rigidbody.velocity = Vector3.zero;
+        }
+    }
+
+    public void SetFalling(bool falling)
+    {
+        _falling = falling;
+
+        if (falling)
+        {
+
         }
     }
 }
