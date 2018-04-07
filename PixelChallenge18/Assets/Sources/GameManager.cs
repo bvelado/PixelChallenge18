@@ -222,6 +222,7 @@ public class GameManager : MonoBehaviour {
         rainEmission.rateOverTime = 2500;
         stormSteps = 2;
         stormManager.SetStormStep(EStormStep.Medium);
+        AkSoundEngine.PostEvent("Set_Phase_2", gameObject);
     }
 
     void TriggerStormStepThree()
@@ -230,6 +231,7 @@ public class GameManager : MonoBehaviour {
         rainEmission.rateOverTime = 12000;
         stormSteps = 3;
         stormManager.SetStormStep(EStormStep.Large);
+        AkSoundEngine.PostEvent("Set_Phase_3", gameObject);
     }
 
     void CheckEndGame()
@@ -259,6 +261,9 @@ public class GameManager : MonoBehaviour {
         {
             UIManager.s_Singleton.DisplayAPlayerScore(pair.Value, pair.Key);
         }
+        AkSoundEngine.PostEvent("Play_End_Game", gameObject);
+        
+
     }
 
     public void Resetup ()
