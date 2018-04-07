@@ -5416,7 +5416,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-3</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -5573,7 +5573,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-6</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -7467,7 +7467,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
