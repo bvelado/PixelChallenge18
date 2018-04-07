@@ -113,6 +113,7 @@ ModelImporter:
     100210: HP_R_Ctrl_Toe
     100212: HP_R_Ctrl_ToeRoll
     100214: //RootNode
+    100216: HP_Ctrl_Global
     400000: HP_Bone_Head
     400002: HP_Bone_Hip
     400004: HP_Bone_Neck
@@ -221,7 +222,8 @@ ModelImporter:
     400210: HP_R_Ctrl_Toe
     400212: HP_R_Ctrl_ToeRoll
     400214: //RootNode
-    7400000: Take 001
+    400216: HP_Ctrl_Global
+    7400000: WindPushed
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -251,9 +253,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: WindPushed
       takeName: Take 001
-      firstFrame: 0
+      firstFrame: 8
       lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
@@ -261,8 +263,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -292,9 +294,9 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -311,10 +313,10 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 4
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -329,9 +331,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 23830d139efc3e7459b24f83844f76cc,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
