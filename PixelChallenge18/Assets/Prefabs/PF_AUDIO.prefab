@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4823743000364262}
   - component: {fileID: 114435644371641338}
   - component: {fileID: 114289041181562178}
-  - component: {fileID: 114557966124974074}
   m_Layer: 0
   m_Name: PF_AUDIO
   m_TagString: Untagged
@@ -81,25 +80,3 @@ MonoBehaviour:
   decodeBank: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
---- !u!114 &114557966124974074
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1343441176694640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e955b2fc1473dc4c8c36bcd34d6ace2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: c9f925e3b2295040ae12bfbfe9bc68d0
-  eventID: 1114964412
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  transitionDuration: 0
-  m_callbackData: {fileID: 0}
-  playingId: 0

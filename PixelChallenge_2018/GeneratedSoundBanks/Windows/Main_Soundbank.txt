@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	179987880	Pause_Menu_Exit			\Default Work Unit\Pause_Menu_Exit	
 	214169128	Play_SFX_Veggi_Success			\Default Work Unit\Play_SFX_Veggi_Success	
 	247285626	Play_End_Game			\Default Work Unit\Play_End_Game	
 	552788742	Play_Ono_GrabVeggie			\Default Work Unit\Play_Ono_GrabVeggie	
@@ -22,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	3180029768	Play_SFX_Fire_Off			\Default Work Unit\Play_SFX_Fire_Off	
 	3329011853	Play_SFX_Thunder_Loading			\Default Work Unit\Play_SFX_Thunder_Loading	
+	3735505530	Pause_Menu_Enter			\Default Work Unit\Pause_Menu_Enter	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1754733041	SW_Storm_Phase			\Default Work Unit\SW_Storm_Phase	
@@ -38,21 +40,12 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1341083562	ST_Storm_Phase			\Default Work Unit\ST_Storm_Phase	
-	2614884293	UI_Mute			\Default Work Unit\UI_Mute	
 
 State	ID	Name	State Group			Notes
 	748895195	None	ST_Storm_Phase			
 	3547523040	ST_Storm_Phase_3	ST_Storm_Phase			
 	3547523041	ST_Storm_Phase_2	ST_Storm_Phase			
 	3547523042	ST_Storm_Phase_1	ST_Storm_Phase			
-	748895195	None	UI_Mute			
-	2156697475	UNMUTE	UI_Mute			
-	2974103762	MUTE	UI_Mute			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	12981798	MUTE	UI_Mute	\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Highlight		
-	187801774	MUTE	UI_Mute	\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Click		
-	740647462	MUTE	UI_Mute	\Actor-Mixer Hierarchy\Default Work Unit\UI		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12299086	Ono_Crouch_Player02_01	D:\PixelChallenge\PixelChallenge_2018\.cache\Windows\SFX\Ono_Crouch_Player02_01_515932F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Ono_Crouch\Ono_Crouch_02\Ono_Crouch_Player02_01		3581

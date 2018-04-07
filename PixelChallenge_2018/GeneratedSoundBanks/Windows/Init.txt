@@ -1,7 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1341083562	ST_Storm_Phase			\Default Work Unit\ST_Storm_Phase	
 	1645386324	ST_Music			\Default Work Unit\ST_Music	
-	2614884293	UI_Mute			\Default Work Unit\UI_Mute	
 
 State	ID	Name	State Group			Notes
 	748895195	None	ST_Storm_Phase			
@@ -15,9 +14,6 @@ State	ID	Name	State Group			Notes
 	2249073410	MUS_Phase_1	ST_Music			
 	2444080014	MUS_Silence	ST_Music			
 	3149643052	MUS_Menu	ST_Music			
-	748895195	None	UI_Mute			
-	2156697475	UNMUTE	UI_Mute			
-	2974103762	MUTE	UI_Mute			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1687132932	RTPC_SFX_Duck			\Default Work Unit\RTPC_SFX_Duck	

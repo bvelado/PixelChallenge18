@@ -304,7 +304,6 @@
 						<Action Name="" ID="{F4A4114C-8153-4901-BA49-59673F056455}" ShortID="484919230">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -312,24 +311,27 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{DB78EF3B-8A9E-4E19-8985-C8B33A4CC4B1}" ShortID="31945794">
+						<Action Name="" ID="{A939CD3C-7541-43E7-8618-F9BA44C72CD0}" ShortID="688973631">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Delay" Type="Real64" Value="1.5"/>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="UNMUTE" ID="{E5C4E978-A180-4E54-98EE-9600BD835BE2}"/>
+									<ObjectRef Name="Amb_Storm_2D" ID="{5E090C68-95DC-4016-B545-7A8777E159F7}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{43DED865-5DC7-42FA-ACF3-E9E64C518837}" ShortID="778216176">
+						<Action Name="" ID="{FE887EB1-A47C-49A8-9ABD-504CECDB669E}" ShortID="124323293">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MUTE" ID="{566CE159-9A46-42CF-A665-D78366A05994}"/>
+									<ObjectRef Name="Amb_Thunder_Roar" ID="{A8188266-5273-4E77-9ABF-BF7B0E6B24F2}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -582,6 +584,37 @@
 									<ObjectRef Name="UI_Highlight" ID="{B535603B-1102-4E0A-A237-D63A94CFB9D6}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_Menu_Enter" ID="{C4B80966-7999-4846-9661-60B1F8EDF9AA}">
+					<ChildrenList>
+						<Action Name="" ID="{C17D90D6-DA72-4A49-90C3-433936D8EE92}" ShortID="913093924">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{62E69E5F-C5F0-47C9-9961-6BE643BD5B97}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{58DD546B-2611-4B08-A7CB-884D37ABD436}" WorkUnitID="{64B17717-D6E4-47F2-91C8-6F09B803ECE2}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_Menu_Exit" ID="{63FCDF05-7E67-4E4E-A224-40AA2AB36D47}">
+					<ChildrenList>
+						<Action Name="" ID="{FE809AAD-A12B-4C65-B605-8CDE501D2DCE}" ShortID="269814419">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

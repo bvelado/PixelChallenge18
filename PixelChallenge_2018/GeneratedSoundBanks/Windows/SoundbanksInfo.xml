@@ -62,6 +62,8 @@
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3735505530" Name="Pause_Menu_Enter" ObjectPath="\Events\Default Work Unit\Pause_Menu_Enter"/>
+				<Event Id="179987880" Name="Pause_Menu_Exit" ObjectPath="\Events\Default Work Unit\Pause_Menu_Exit"/>
 				<Event Id="247285626" Name="Play_End_Game" ObjectPath="\Events\Default Work Unit\Play_End_Game"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2402816769" Name="Play_Ono_Crouch" ObjectPath="\Events\Default Work Unit\Play_Ono_Crouch"/>

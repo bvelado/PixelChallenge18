@@ -10,6 +10,7 @@
 								<Value>270</Value>
 							</ValueList>
 						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

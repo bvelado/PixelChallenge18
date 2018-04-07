@@ -54,6 +54,7 @@ public class UIManager : MonoBehaviour {
         if (Input.GetButtonDown("p1_kick") && onSelection && !hasJoined[0])
         {
             JoinPlayer(0);
+           
         }
         else if (Input.GetButtonDown("p1_cancel") && onSelection && hasJoined[0])
         {
@@ -107,6 +108,8 @@ public class UIManager : MonoBehaviour {
         selectionScreen.SetActive(true);
         onSelection = true;
         JoinPlayer(0);
+        
+        
     }
 
     public void OnClickExit()
@@ -166,6 +169,7 @@ public class UIManager : MonoBehaviour {
         gameScreen.SetActive(true);
         myAnim.SetTrigger("ReadyGo");
         ActivateStormFX();
+        AkSoundEngine.PostEvent("Set_Phase_1", gameObject);
     }
 
     void ActivateStormFX()

@@ -16,7 +16,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: -1647876090
+    m_lastTimePsrt1: -396982413
     m_lastTimePart2: -1999266766
     List:
     - Name: Play_End_Game
@@ -332,7 +332,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B240F05A-6D9D-4FF1-A258-C6EBE39DA2C7}'
-    m_lastTimePsrt1: 1646557742
+    m_lastTimePsrt1: -396957034
     m_lastTimePart2: -1999266766
     List:
     - Name: ST_Music
@@ -405,31 +405,6 @@ MonoBehaviour:
       - bytes: f6fda79cdc54c84f8ab27606a9f63872
       - bytes: ff4ff1a0274d644ba40f702051411f68
       - bytes: 69afd72db6eb2e46863da8eb42c56fd4
-    - Name: UI_Mute
-      Path: Default Work Unit\UI_Mute
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: UI_Mute
-        ObjectType: 9
-      ID: -1680083003
-      Guid: b247e4655997574c88e7342cdf0588fd
-      values:
-      - MUTE
-      - None
-      - UNMUTE
-      ValueIcons:
-      - ElementName: MUTE
-        ObjectType: 8
-      - ElementName: None
-        ObjectType: 8
-      - ElementName: UNMUTE
-        ObjectType: 8
-      valueIDs: d23845b1db3ba32c83978c80
-      ValueGuids:
-      - bytes: 59e16c56469acf42a665d78366a05994
-      - bytes: 8ee00e5ddbe69e44b8f101078dca0146
-      - bytes: 78e9c4e580a1544e98ee9600bd835be2
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
