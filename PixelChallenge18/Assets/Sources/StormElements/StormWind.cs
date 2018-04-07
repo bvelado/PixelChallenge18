@@ -22,7 +22,8 @@ public class StormWind : MonoBehaviour {
 
     public void BeginStormWind()
     {
-        Vector2 windForce = Vector2.zero;
+        Vector2 windForce = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+        windForce = windForce.normalized * _windPower;
 
         List<CharacterCrouch> players = new List<CharacterCrouch>();
         foreach(var player in _playersLookup.GetPlayers())
@@ -42,8 +43,12 @@ public class StormWind : MonoBehaviour {
             {
                 if (!player.IsCrouched)
                 {
-                    player.GetComponent<CharacterMotor>().SetAdditionalVelocity(windForce * 100);
+                    player.GetComponent<CharacterMotor>().SetAdditionalVelocity(3 * windForce);
                     player.GetComponent<CharacterHolder>().EndHold();
+                }
+                else
+                {
+                    player.GetComponent<CharacterMotor>().SetAdditionalVelocity(Vector2.zero);
                 }
             }
 

@@ -54,6 +54,6 @@ public class CharacterMotor : MonoBehaviour {
 
     public void SetAdditionalVelocity(Vector2 force)
     {
-        _additionalVelocity += force;
+        _additionalVelocity = force;
     }
 }
