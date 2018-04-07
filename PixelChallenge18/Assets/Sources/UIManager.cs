@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour {
     public Button playButton;
     public Button replayButton;
     public Button resumeButton;
+    public GameObject title;
 
     private int pScoreIdx = 0;
     private bool onCredits = false;
@@ -52,6 +53,7 @@ public class UIManager : MonoBehaviour {
 
     void Init ()
     {
+        title.SetActive(true);
         hasJoined.Clear();
         for (var i = 0; i < 4; i++)
         {
@@ -195,6 +197,7 @@ public class UIManager : MonoBehaviour {
         titleScreen.SetActive(false);
         selectionScreen.SetActive(true);
         onSelection = true;
+        title.SetActive(false);
         JoinPlayer(0);
     }
 

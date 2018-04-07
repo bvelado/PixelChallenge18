@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour {
     private Dictionary<int, int> playersScores = new Dictionary<int, int>();
     public int vpp = 2;
     public StormManager stormManager;
+    public Light flashes;
 
     private GameObject spawnedPlayer;
 
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour {
 
     public void InitGame ()
     {
+        StartFlashes();
         playersScores.Clear();
         vegePerPlayer.Clear();
         for (var i = 0; i < 4; i++)
@@ -65,6 +67,27 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void StartFlashes ()
+    {
+        var rndFlashes = Random.Range(5.0f, 14.0f);
+        StartCoroutine("Flash", rndFlashes);
+    }
+
+    IEnumerator Flash (float gap)
+    {
+        var rnd = Random.Range(0.05f, 0.11f);
+        yield return new WaitForSeconds(gap);
+        flashes.enabled = true;
+        yield return new WaitForSeconds(rnd);
+        flashes.enabled = false;
+        yield return new WaitForSeconds(rnd);
+        flashes.enabled = true;
+        yield return new WaitForSeconds(rnd);
+        flashes.enabled = false;
+        StartFlashes();
+    }
+
 
     public void SetupPause ()
     {
