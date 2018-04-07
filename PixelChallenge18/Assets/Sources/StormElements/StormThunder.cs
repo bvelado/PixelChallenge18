@@ -53,6 +53,8 @@ public class StormThunder : MonoBehaviour {
         foreach (var position in positions)
         {
             Destroy(Instantiate(_hintPrefab, position, Quaternion.identity, null), 10f);
+           
+            AkSoundEngine.PostEvent("Stop_SFX_Thunder_Hint_lp", _hintPrefab);
         }
     }
 }

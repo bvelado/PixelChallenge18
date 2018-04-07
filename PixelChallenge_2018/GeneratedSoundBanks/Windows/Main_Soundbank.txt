@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	247285626	Play_End_Game			\Default Work Unit\Play_End_Game	
 	552788742	Play_Ono_GrabVeggie			\Default Work Unit\Play_Ono_GrabVeggie	
 	647168308	Play_Ono_Ready			\Default Work Unit\Play_Ono_Ready	
+	967360661	Stop_SFX_Thunder_Hint_lp			\Default Work Unit\Stop_SFX_Thunder_Hint_lp	
 	1114964412	START_GAME			\Default Work Unit\START_GAME	
 	1421661965	Play_Ono_Kick			\Default Work Unit\Play_Ono_Kick	
 	1573413394	Play_SFX_Wind_Gust			\Default Work Unit\Play_SFX_Wind_Gust	

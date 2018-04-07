@@ -88,6 +88,7 @@
 				<Event Id="2844963020" Name="Set_Phase_2" ObjectPath="\Events\Default Work Unit\Set_Phase_2"/>
 				<Event Id="2844963021" Name="Set_Phase_3" ObjectPath="\Events\Default Work Unit\Set_Phase_3"/>
 				<Event Id="1114964412" Name="START_GAME" ObjectPath="\Events\Default Work Unit\START_GAME"/>
+				<Event Id="967360661" Name="Stop_SFX_Thunder_Hint_lp" ObjectPath="\Events\Default Work Unit\Stop_SFX_Thunder_Hint_lp"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="68904710"/>
