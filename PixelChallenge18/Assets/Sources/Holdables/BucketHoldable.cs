@@ -52,15 +52,20 @@ public class BucketHoldable : MonoBehaviour, IHoldable
 
     private void TryToExtinguishFire()
     {
+        bool extinguishedSomething = false;
         Debug.Log("Extinguish");
         foreach(var collider in Physics.OverlapSphere(transform.position, 5f))
         {
             var vegetableBurnable = collider.GetComponentInParent<VegetableBurnable>();
             if (vegetableBurnable != null && vegetableBurnable.IsBurning)
             {
-                vegetableBurnable.Extinguish();
+                vegetableBurnable.Extinguish(); extinguishedSomething = true;
             }
         }
-        Destroy(gameObject);
+        if (extinguishedSomething)
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }
