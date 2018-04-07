@@ -39,4 +39,12 @@ public class VegetableBurnable : MonoBehaviour {
         Destroy(gameObject);
     }
 
+    private void OnDestroy()
+    {
+        if (_isBurning)
+        {
+            GameManager.s_Singleton.DestroyedVegetable(GetComponent<Vegetable>().PlayerData.ID);
+        }
+    }
+
 }
