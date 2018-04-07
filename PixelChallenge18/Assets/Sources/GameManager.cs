@@ -66,6 +66,28 @@ public class GameManager : MonoBehaviour {
 		
 	}
 
+    public void SetupPause ()
+    {
+        for (var i = 0; i < 4; i++)
+        {
+            if (playersToDestroy[i] != null)
+            {
+                playersToDestroy[i].GetComponent<CharacterInputs>().enabled = false;
+            }
+        }
+    }
+
+    public void UnsetupPause()
+    {
+        for (var i = 0; i < 4; i++)
+        {
+            if (playersToDestroy[i] != null)
+            {
+                playersToDestroy[i].GetComponent<CharacterInputs>().enabled = true;
+            }
+        }
+    }
+
     public void SpawnPlayer (int idx)
     {
         spawnedPlayer = Instantiate(playerPrefab, spawnPoints[idx].position, spawnPoints[idx].rotation);

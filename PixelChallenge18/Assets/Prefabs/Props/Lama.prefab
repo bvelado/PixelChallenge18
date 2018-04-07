@@ -2155,7 +2155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1300073734231518}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 33.95, y: -3.6, z: -27.05}
+  m_LocalPosition: {x: 33.95, y: -2.34, z: -27.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4663153420472386}
@@ -2536,7 +2536,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1445960614419606}
   m_LocalRotation: {x: -0, y: 0.46530738, z: -0, w: -0.88514924}
-  m_LocalPosition: {x: -0.25999832, y: 0, z: 4.920002}
+  m_LocalPosition: {x: -0.25999832, y: -0.24, z: 4.920002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4942008162360374}
@@ -3028,7 +3028,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1883532905603814}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -27.05, y: -3.4, z: -27.05}
+  m_LocalPosition: {x: -27.05, y: -3.48, z: -27.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4725301407714116}
@@ -6869,7 +6869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 11400000, guid: 7e4aed08026f6ba4f815b30cdaca9a81, type: 2}
+  _playerData: {fileID: 11400000, guid: 04ffac56f93efa647b3835829afa6aec, type: 2}
   _dropRoot: {fileID: 4266247595250426}
 --- !u!114 &114500734174353890
 MonoBehaviour:
@@ -6915,7 +6915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 11400000, guid: 7e4aed08026f6ba4f815b30cdaca9a81, type: 2}
+  _playerData: {fileID: 11400000, guid: e55f65e9c64430444becb2cfa4cff65a, type: 2}
   _dropRoot: {fileID: 4536075194230272}
 --- !u!114 &114943200780479576
 MonoBehaviour:
@@ -6941,7 +6941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68167059ea9600149b9a57f0722c955d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 11400000, guid: 7e4aed08026f6ba4f815b30cdaca9a81, type: 2}
+  _playerData: {fileID: 11400000, guid: 5dc715870abb4014d9fce26823078f1e, type: 2}
   _dropRoot: {fileID: 4387058939927506}
 --- !u!135 &135110379198968174
 SphereCollider:
