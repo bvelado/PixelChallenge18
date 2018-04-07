@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3309,7 +3309,7 @@ Prefab:
     - target: {fileID: 224021041136188260, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -48.7693
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224021041136188260, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3319,7 +3319,7 @@ Prefab:
     - target: {fileID: 224021041136188260, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 69.5386
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3339,7 +3339,7 @@ Prefab:
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -134.7579
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3349,7 +3349,7 @@ Prefab:
     - target: {fileID: 224245243628248786, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 69.5386
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3369,7 +3369,7 @@ Prefab:
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -220.7465
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
@@ -3379,7 +3379,7 @@ Prefab:
     - target: {fileID: 224518155637650768, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 69.5386
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224782936598811540, guid: 90b25a4fcbed4a74c89eee386e6dee36,
         type: 2}

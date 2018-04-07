@@ -106,10 +106,6 @@
 					<ShortName>Ono_Crouch_Player02_01.wav</ShortName>
 					<Path>SFX\Ono_Crouch_Player02_01_77BAED63.wem</Path>
 				</File>
-				<File Id="16489025" Language="SFX">
-					<ShortName>SFX_Veggi_Success_01.wav</ShortName>
-					<Path>SFX\SFX_Veggi_Success_01_515932F0.wem</Path>
-				</File>
 				<File Id="19092422" Language="SFX">
 					<ShortName>Ono_Ready_Player03_02.wav</ShortName>
 					<Path>SFX\Ono_Ready_Player03_02_77BAED63.wem</Path>
@@ -121,6 +117,10 @@
 				<File Id="30951434" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_05.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_05_D39ECB56.wem</Path>
+				</File>
+				<File Id="36791960" Language="SFX">
+					<ShortName>SFX_Whoosh_Player_Crouch_01.wav</ShortName>
+					<Path>SFX\SFX_Whoosh_Player_Crouch_01_515932F0.wem</Path>
 				</File>
 				<File Id="42141674" Language="SFX">
 					<ShortName>Ono_Ready_Player04_02.wav</ShortName>
@@ -253,6 +253,10 @@
 				<File Id="303129802" Language="SFX">
 					<ShortName>Ono_Grab_VeggiP1_Player02_01.wav</ShortName>
 					<Path>SFX\Ono_Grab_VeggiP1_Player02_01_77BAED63.wem</Path>
+				</File>
+				<File Id="318428302" Language="SFX">
+					<ShortName>SFX_Whoosh_Player_Crouch_02.wav</ShortName>
+					<Path>SFX\SFX_Whoosh_Player_Crouch_02_515932F0.wem</Path>
 				</File>
 				<File Id="321987922" Language="SFX">
 					<ShortName>SFX_Thunder_Crack_04.wav</ShortName>
@@ -450,6 +454,10 @@
 					<ShortName>FS_Cat_Dirt_10.wav</ShortName>
 					<Path>SFX\FS_Cat_Dirt_10_4141B1A3.wem</Path>
 				</File>
+				<File Id="680508249" Language="SFX">
+					<ShortName>SFX_Whoosh_Player_Crouch_04.wav</ShortName>
+					<Path>SFX\SFX_Whoosh_Player_Crouch_04_515932F0.wem</Path>
+				</File>
 				<File Id="694835118" Language="SFX">
 					<ShortName>Ono_Is_Pushed_Player04_02.wav</ShortName>
 					<Path>SFX\Ono_Is_Pushed_Player04_02_77BAED63.wem</Path>
@@ -458,9 +466,17 @@
 					<ShortName>Ono_Ready_Player03_01.wav</ShortName>
 					<Path>SFX\Ono_Ready_Player03_01_77BAED63.wem</Path>
 				</File>
+				<File Id="708362370" Language="SFX">
+					<ShortName>SFX_Veggi_Success_01.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_01_515932F0.wem</Path>
+				</File>
 				<File Id="713264480" Language="SFX">
 					<ShortName>Ono_Grab_VeggiP2_Player02_02.wav</ShortName>
 					<Path>SFX\Ono_Grab_VeggiP2_Player02_02_77BAED63.wem</Path>
+				</File>
+				<File Id="722811602" Language="SFX">
+					<ShortName>SFX_Veggi_Success_02.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_02_515932F0.wem</Path>
 				</File>
 				<File Id="730304076" Language="SFX">
 					<ShortName>Ono_Kick_Player02_02.wav</ShortName>
@@ -497,6 +513,10 @@
 				<File Id="768744854" Language="SFX">
 					<ShortName>Ono_PushedByWind_Player01_02.wav</ShortName>
 					<Path>SFX\Ono_PushedByWind_Player01_02_77BAED63.wem</Path>
+				</File>
+				<File Id="772210335" Language="SFX">
+					<ShortName>SFX_Whoosh_Player_Crouch_03.wav</ShortName>
+					<Path>SFX\SFX_Whoosh_Player_Crouch_03_515932F0.wem</Path>
 				</File>
 				<File Id="773504479" Language="SFX">
 					<ShortName>SFX_Wind_Gust_01.wav</ShortName>
@@ -553,6 +573,10 @@
 				<File Id="894045098" Language="SFX">
 					<ShortName>Ono_Falling_Player_02_02.wav</ShortName>
 					<Path>SFX\Ono_Falling_Player_02_02_77BAED63.wem</Path>
+				</File>
+				<File Id="913659380" Language="SFX">
+					<ShortName>SFX_Veggi_Success_Llama.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_Llama_515932F0.wem</Path>
 				</File>
 				<File Id="924574119" Language="SFX">
 					<ShortName>SFX_Wind_Eagle_02.wav</ShortName>
@@ -614,6 +638,10 @@
 					<ShortName>Ono_Kick_Player02_01.wav</ShortName>
 					<Path>SFX\Ono_Kick_Player02_01_77BAED63.wem</Path>
 				</File>
+				<File Id="1029430312" Language="SFX">
+					<ShortName>SFX_Veggi_Success_04.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_04_515932F0.wem</Path>
+				</File>
 				<File Id="1040650842" Language="SFX">
 					<ShortName>Ono_Grab_VeggiP2_Player03_02.wav</ShortName>
 					<Path>SFX\Ono_Grab_VeggiP2_Player03_02_77BAED63.wem</Path>
@@ -625,6 +653,10 @@
 				<File Id="1053037012" Language="SFX">
 					<ShortName>Ono_Falling_Player_03_01.wav</ShortName>
 					<Path>SFX\Ono_Falling_Player_03_01_77BAED63.wem</Path>
+				</File>
+				<File Id="1068003987" Language="SFX">
+					<ShortName>SFX_Veggi_Success_03.wav</ShortName>
+					<Path>SFX\SFX_Veggi_Success_03_515932F0.wem</Path>
 				</File>
 				<File Id="1073573200" Language="SFX">
 					<ShortName>SFX_Hit_Player_03.wav</ShortName>
