@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4615076929580132}
   - component: {fileID: 198367369916614844}
   - component: {fileID: 199973462707105382}
+  - component: {fileID: 114615833066169398}
+  - component: {fileID: 114914586397252654}
   m_Layer: 0
   m_Name: Hint_Root
   m_TagString: Untagged
@@ -72,6 +74,48 @@ Transform:
   m_Father: {fileID: 4615076929580132}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114615833066169398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649076383670324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5077d6237136be74a9b90c1c5278b776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_listeners:
+    initialListenerList: []
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &114914586397252654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649076383670324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e955b2fc1473dc4c8c36bcd34d6ace2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 2d14975180b0b447ae84aa723181d714
+  eventID: -965955443
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
 --- !u!198 &198367369916614844
 ParticleSystem:
   m_ObjectHideFlags: 1

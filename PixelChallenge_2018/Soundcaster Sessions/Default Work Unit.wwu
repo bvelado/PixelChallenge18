@@ -101,12 +101,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_Storm_Phase_1" ID="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
-						<CurrentStateRef Name="MUS_End_Game" ID="{AD70BB20-F5D3-41CF-B27F-EA613BE89D85}"/>
+						<CurrentStateRef Name="ST_Storm_Phase_3" ID="{2DD7AF69-EBB6-462E-863D-A8EB42C56FD4}"/>
+						<CurrentStateRef Name="MUS_Phase_3" ID="{B91796E3-FDAA-4BD4-88D9-588442C70D61}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SW_Storm_Phase_2" ID="{CF0F3057-67B5-4619-9482-5E43CBF46D40}"/>
-						<CurrentSwitchRef Name="SW_Player_03" ID="{BDE8028B-9B22-4AC8-A2DE-80A46E44BD04}"/>
+						<CurrentSwitchRef Name="SW_Storm_Phase_3" ID="{5836F671-518B-484B-A395-70037BC42D7D}"/>
+						<CurrentSwitchRef Name="SW_Player_04" ID="{FF14469B-A846-4C98-BCB9-2FD050DD7984}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
