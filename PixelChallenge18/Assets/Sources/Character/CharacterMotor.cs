@@ -8,6 +8,7 @@ public class CharacterMotor : MonoBehaviour {
 
     private Rigidbody _rigidbody;
     private CharacterInputs _inputs;
+    private CharacterCrouch _crouch;
 
     private Vector2 _velocity;
     private bool _hasInputToProcess;
@@ -19,6 +20,7 @@ public class CharacterMotor : MonoBehaviour {
     {
         _rigidbody = GetComponent<Rigidbody>();
         _inputs = GetComponent<CharacterInputs>();
+        _crouch = GetComponent<CharacterCrouch>();
 
         _additionalVelocity = Vector2.zero;
 
@@ -28,7 +30,8 @@ public class CharacterMotor : MonoBehaviour {
     private void HandleLeftJoystickInput(Vector2 input)
     {
         Move(input * _moveSpeed * Time.deltaTime);
-        if(!Mathf.Approximately(input.magnitude, 0f)){
+        if(!Mathf.Approximately(input.magnitude, 0f) && !_crouch.IsCrouched)
+        {
             UpdateOrientation(input);
         }
     }
