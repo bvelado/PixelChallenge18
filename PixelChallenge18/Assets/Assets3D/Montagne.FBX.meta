@@ -12,7 +12,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Colline
     4300002: Montagne
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standardmaterial
+    second: {fileID: 2100000, guid: db1b5ea2b4a40cc49ac0492cda2d80de, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

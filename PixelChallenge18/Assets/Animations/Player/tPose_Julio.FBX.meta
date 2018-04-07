@@ -239,7 +239,17 @@ ModelImporter:
     9500000: //RootNode
     13700000: Cape
     13700002: Hooman_Mesh
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: c30f4bd09012cfb4492c9099e34e7732, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standardmaterial
+    second: {fileID: 2100000, guid: 726e5a786c6167742903737590827b96, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -273,9 +283,9 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -292,10 +302,10 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 4
     normalCalculationMode: 4
-  importAnimation: 1
-  copyAvatar: 0
+  importAnimation: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -310,9 +320,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 23830d139efc3e7459b24f83844f76cc,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

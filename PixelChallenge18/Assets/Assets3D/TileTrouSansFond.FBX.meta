@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6f962f5f1535b5a4fabbf74b9c8ab8e8
-timeCreated: 1523035090
+guid: be2887e0000e2ee42a279bbecdfeaa6d
+timeCreated: 1523118193
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -10,13 +10,14 @@ ModelImporter:
     2100000: Standardmaterial
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Radis
+    4300000: Tile_Trou
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Standardmaterial
-    second: {fileID: 2100000, guid: e3faa0b797e1cc242bf562ed983d7c44, type: 2}
+    second: {fileID: 2100000, guid: 1f466ce0af561c64285a39fa280801b6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -46,7 +47,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 75
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -90,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
