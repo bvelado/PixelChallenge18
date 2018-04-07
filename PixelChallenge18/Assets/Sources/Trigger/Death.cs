@@ -25,5 +25,9 @@ public class Death : MonoBehaviour {
         {
             Destroy(collider.gameObject);
         }
+        if (collider.CompareTag("Player"))
+        {
+            GameManager.s_Singleton.RespawnPlayer(collider.GetComponent<Player>().Data.ZeroBasedNumber);
+        }
     }
 }
