@@ -574,6 +574,10 @@
 					<ShortName>Ono_Falling_Player_02_02.wav</ShortName>
 					<Path>SFX\Ono_Falling_Player_02_02_77BAED63.wem</Path>
 				</File>
+				<File Id="907704721" Language="SFX">
+					<ShortName>SFX_Thunder_Hint.wav</ShortName>
+					<Path>SFX\SFX_Thunder_Hint_515932F0.wem</Path>
+				</File>
 				<File Id="913659380" Language="SFX">
 					<ShortName>SFX_Veggi_Success_Llama.wav</ShortName>
 					<Path>SFX\SFX_Veggi_Success_Llama_515932F0.wem</Path>

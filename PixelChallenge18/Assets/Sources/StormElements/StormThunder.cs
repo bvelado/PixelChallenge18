@@ -40,13 +40,17 @@ public class StormThunder : MonoBehaviour {
             {
                 Destroy(Instantiate(_lightningPrefab, target.transform.position, Quaternion.identity, null), 5f);
                 target.GetComponent<VegetableBurnable>().BeginBurning();
+                AkSoundEngine.PostEvent("Play_SFX_Thunder_Crack", _lightningPrefab);
+
             }
         }
     }
 
     private void DisplayThunderHints(Vector3[] positions)
     {
-        foreach(var position in positions)
+
+        AkSoundEngine.PostEvent("Play_SFX_Thunder_Loading", _hintPrefab);
+        foreach (var position in positions)
         {
             Destroy(Instantiate(_hintPrefab, position, Quaternion.identity, null), 10f);
         }

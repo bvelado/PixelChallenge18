@@ -211,6 +211,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{1E3556E4-2153-4C29-8CE2-4EAB8F1ECB98}" ShortID="945569756">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thunder_Hint_lp" ID="{076749D5-93E4-48DF-AD18-FD492829643D}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Thunder_Loading" ID="{5197142D-B080-47B4-AE84-AA723181D714}">
@@ -222,6 +233,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Thunder_Loading" ID="{7AD0C5A9-CED4-475F-AE14-912B30B04EDA}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F1359F38-4B6A-437F-844B-3342C71025A9}" ShortID="490821087">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Thunder_Hint_lp" ID="{076749D5-93E4-48DF-AD18-FD492829643D}" WorkUnitID="{9FF2D67F-B438-4134-858B-4547F985EDE6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
