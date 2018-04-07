@@ -51,6 +51,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224129070749527678}
+  - component: {fileID: 114373505364030654}
+  - component: {fileID: 114439357523131810}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -2090,6 +2092,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224082627073816264}
+  - component: {fileID: 114319360407757918}
+  - component: {fileID: 114176721015018184}
   m_Layer: 5
   m_Name: PressStart_Zone
   m_TagString: Untagged
@@ -2869,6 +2873,26 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114176721015018184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937341093747072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5077d6237136be74a9b90c1c5278b776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_listeners:
+    initialListenerList: []
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114178182419999428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3372,6 +3396,28 @@ MonoBehaviour:
   - {fileID: 114106658005441104}
   - {fileID: 114755670407038218}
   - {fileID: 114019713978550528}
+--- !u!114 &114319360407757918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937341093747072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e955b2fc1473dc4c8c36bcd34d6ace2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: d96bb42a
+  useOtherObject: 0
+  valueGuid: e9a6973084577c43ae8541d388531342
+  eventID: 1749424733
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
 --- !u!114 &114327157749930636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3592,6 +3638,28 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Kick !
+--- !u!114 &114373505364030654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1016529771998194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e955b2fc1473dc4c8c36bcd34d6ace2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: d96bb42a
+  useOtherObject: 0
+  valueGuid: e9a6973084577c43ae8541d388531342
+  eventID: 1749424733
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
 --- !u!114 &114375295354832366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4022,6 +4090,26 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Quit
+--- !u!114 &114439357523131810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1016529771998194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5077d6237136be74a9b90c1c5278b776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_listeners:
+    initialListenerList: []
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114464107324664950
 MonoBehaviour:
   m_ObjectHideFlags: 1

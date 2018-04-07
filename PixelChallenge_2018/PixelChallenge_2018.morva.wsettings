@@ -7,6 +7,7 @@
 				<Property Name="Event Action List\{13C60BDF-BBE6-4353-813A-B0977F06E08E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2BC8697C-FB73-4AC9-B4AF-C850FE442D38}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3097A6E9-5784-437C-AE85-41D388531342}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{32A37D6C-C90B-4569-8E97-4B03F1E75125}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3A6E24D8-7304-4089-8394-2E19A1D8896E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4038591B-1CC7-4F39-9B38-41DB0A819B11}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{442FA588-21B3-44E6-9BB6-B1D70453643D}\x64_Expand States" Type="string" Value=""/>
@@ -63,6 +64,7 @@
 				<Property Name="Interactive Music\x64_{EBDA2109-1407-498F-908D-CFE298455B09} - SegmentEditorZoomInfo" Type="string" Value="VVVVVVVV5T8AAAAAAADwP+zKyhBRvEBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
+				<Property Name="Mixing Desk\CurrentStates\{65E447B2-9759-4C57-88E7-342CDF0588FD}" Type="string" Value="{E5C4E978-A180-4E54-98EE-9600BD835BE2}"/>
 				<Property Name="Mixing Desk\CurrentStates\{BDD54190-11E0-4647-BB18-CA8DC9A9D3D2}" Type="string" Value="{9CA7FDF6-54DC-4FC8-8AB2-7606A9F63872}"/>
 				<Property Name="Mixing Desk\CurrentStates\{ED104012-A67F-4D59-BF4A-C7AF67DDAEAA}" Type="string" Value="{9971A420-D296-406E-971F-2070B88812DA}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>

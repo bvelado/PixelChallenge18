@@ -312,6 +312,27 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{DB78EF3B-8A9E-4E19-8985-C8B33A4CC4B1}" ShortID="31945794">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UNMUTE" ID="{E5C4E978-A180-4E54-98EE-9600BD835BE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{43DED865-5DC7-42FA-ACF3-E9E64C518837}" ShortID="778216176">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUTE" ID="{566CE159-9A46-42CF-A665-D78366A05994}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_End_Game" ID="{0A9ABA85-F450-4262-B0F2-4923B4C2C200}">
