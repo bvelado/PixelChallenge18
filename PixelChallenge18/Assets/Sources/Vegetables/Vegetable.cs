@@ -21,6 +21,7 @@ public class Vegetable : MonoBehaviour {
 
     private void OnDestroy()
     {
+        GameManager.s_Singleton.DestroyedVegetable(_playerData.ID);
         var lookup = FindObjectOfType<VegetablesLookup>();
         if(lookup != null)
         {

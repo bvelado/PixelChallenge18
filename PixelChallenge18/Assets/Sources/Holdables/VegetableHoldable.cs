@@ -5,8 +5,21 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
     public event System.Action<VegetableHoldable> BeganBeingHeld;
     public event System.Action<VegetableHoldable> EndedBeingHeld;
 
+    private CharacterHolder _holder;
+    public CharacterHolder Holder { get { return _holder; } }
+
+    private bool canBeHolded = true;
+
     public void OnBeginHold(CharacterHolder holder)
     {
+        if (!canBeHolded)
+        {
+            holder.EndHold();
+            return;
+        }
+
+        _holder = holder;
+
         transform.SetParent(holder.HoldRoot);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
@@ -43,6 +56,8 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
 
         TryToDropInBasket();
 
+        _holder = null;
+
         if (EndedBeingHeld != null)
         {
             EndedBeingHeld.Invoke(this);
@@ -60,5 +75,10 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
                 break;
             }
         }
+    }
+
+    public void SetHoldable(bool holdable)
+    {
+        canBeHolded = holdable;
     }
 }
