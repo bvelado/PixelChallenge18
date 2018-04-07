@@ -118,6 +118,7 @@ public sealed class CharacterInputs : MonoBehaviour {
             {
                 KickEventEmitted.Invoke();
             }
+            _model.SetKick();
         }
 
         // HOLD

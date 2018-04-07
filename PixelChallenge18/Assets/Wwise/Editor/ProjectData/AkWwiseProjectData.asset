@@ -335,8 +335,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E98DCFF4-602F-4283-9131-52037A65BD46}'
-    m_lastTimePsrt1: 187079438
-    m_lastTimePart2: -1999266696
+    m_lastTimePsrt1: 938074179
+    m_lastTimePart2: -1999266638
     List:
     - Name: Reverb_01
       Path: Default Work Unit\Master Audio Bus\REVERB\Reverb_01
@@ -351,19 +351,6 @@ MonoBehaviour:
         ObjectType: 1
       ID: 367239025
       Guid: 51d4d0b9d6c3f749acc3dd56b813f34f
-    - Name: Reverb_02
-      Path: Default Work Unit\Master Audio Bus\REVERB\Reverb_02
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: REVERB
-        ObjectType: 2
-      - ElementName: Reverb_02
-        ObjectType: 1
-      ID: 367239026
-      Guid: 7c5501140b56ae40b65ce22b14a665ce
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 

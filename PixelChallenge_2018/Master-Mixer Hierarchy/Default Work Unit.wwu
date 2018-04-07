@@ -101,8 +101,13 @@
 						</Bus>
 						<Bus Name="REVERB" ID="{7E8654D3-137E-4E01-B5B1-B153F03CD164}">
 							<ChildrenList>
-								<AuxBus Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}"/>
-								<AuxBus Name="Reverb_02" ID="{1401557C-560B-40AE-B65C-E22B14A665CE}"/>
+								<AuxBus Name="Reverb_01" ID="{B9D0D451-C3D6-49F7-ACC3-DD56B813F34F}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

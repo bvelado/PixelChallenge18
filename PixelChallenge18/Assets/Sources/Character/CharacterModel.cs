@@ -14,6 +14,7 @@ public class CharacterModel : MonoBehaviour {
     [SerializeField] private string _pickAnimatorParameter;
     [SerializeField] private string _holdAnimatorParameter;
     [SerializeField] private string _victoryAnimatorParameter;
+    [SerializeField] private string _kickAnimatorParameter;
 
     public void SetCrouched()
     {
@@ -29,12 +30,14 @@ public class CharacterModel : MonoBehaviour {
     {
         _animator.SetBool(_idleAnimatorParameter, true);
         _animator.SetBool(_runAnimatorParameter, false);
+        _animator.SetBool(_kickAnimatorParameter, false);
     }
 
     public void SetRun()
     {
         _animator.SetBool(_idleAnimatorParameter, false);
         _animator.SetBool(_runAnimatorParameter, true);
+        _animator.SetBool(_kickAnimatorParameter, false);
     }
 
     public void SetPick()
@@ -52,5 +55,10 @@ public class CharacterModel : MonoBehaviour {
     public void SetVictory()
     {
         _animator.SetTrigger(_victoryAnimatorParameter);
+    }
+
+    public void SetKick()
+    {
+        _animator.SetBool(_kickAnimatorParameter, true);
     }
 }

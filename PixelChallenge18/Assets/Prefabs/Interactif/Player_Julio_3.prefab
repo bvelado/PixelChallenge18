@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 114011575913653280}
   m_Layer: 0
   m_Name: Player_Julio_3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3559,6 +3559,7 @@ MonoBehaviour:
   _pickAnimatorParameter: Pick
   _holdAnimatorParameter: Carry
   _victoryAnimatorParameter: Victory
+  _kickAnimatorParameter: Kick
 --- !u!114 &114870911087143738
 MonoBehaviour:
   m_ObjectHideFlags: 1
