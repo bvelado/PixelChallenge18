@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public GameObject playerPrefab;
     public List<Transform> spawnPoints;
     public Map mapGenerated;
+    public VegetablesLookup vegeLu;
     private List<GameObject> playersToDestroy = new List<GameObject>();
     public List<PlayerData> playersData;
     public GameObject lightningPrefab;
@@ -198,8 +199,7 @@ public class GameManager : MonoBehaviour {
                 playersToDestroy[i].SetActive(true);
             }
         }
-        mapGenerated.ClearMap();
-        mapGenerated.GenerateMap();
+        ResetMap();
         InitGame();
         TriggerStormStepOne();
     }
@@ -212,6 +212,16 @@ public class GameManager : MonoBehaviour {
             {
                 Destroy(playersToDestroy[i]);
             }
+        }
+        ResetMap();
+    }
+
+    void ResetMap ()
+    {
+        var veges = vegeLu.GetVegetables();
+        for (var j = 0; j < veges.Length; j++)
+        {
+            Destroy(veges[j].gameObject);
         }
         mapGenerated.ClearMap();
         mapGenerated.GenerateMap();

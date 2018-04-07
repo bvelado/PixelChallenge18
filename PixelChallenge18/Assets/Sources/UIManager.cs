@@ -147,10 +147,10 @@ public class UIManager : MonoBehaviour {
 
     void JoinPlayer (int idx)
     {
+        hasJoined[idx] = true;
         pZones[idx].GetChild(0).gameObject.SetActive(false);
         pZones[idx].GetChild(1).gameObject.SetActive(true);
         GameManager.s_Singleton.SpawnPlayer(idx);
-        hasJoined[idx] = true;
     }
 
     void RemovePlayer(int idx)

@@ -6,13 +6,6 @@ public class Player : MonoBehaviour {
 
     public PlayerData Data { get { return _playerData; } }
 
-#if UNITY_EDITOR
-    private void Awake()
-    {
-        Initialize(_playerData);
-    }
-#endif
-
     public void Initialize (PlayerData playerData)
     {
         _playerData = playerData;
