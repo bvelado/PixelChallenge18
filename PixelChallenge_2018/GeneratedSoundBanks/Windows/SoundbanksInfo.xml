@@ -166,10 +166,6 @@
 					<ShortName>Ono_Grab_VeggiP3_Player03_02.wav</ShortName>
 					<Path>SFX\Ono_Grab_VeggiP3_Player03_02_77BAED63.wem</Path>
 				</File>
-				<File Id="192743789" Language="SFX">
-					<ShortName>Ono_Kick_Player01_03.wav</ShortName>
-					<Path>SFX\Ono_Kick_Player01_03_77BAED63.wem</Path>
-				</File>
 				<File Id="196649018" Language="SFX">
 					<ShortName>Amb_Thunder_Roar_02.wav</ShortName>
 					<Path>SFX\Amb_Thunder_Roar_02_D8FE7447.wem</Path>
