@@ -15,6 +15,9 @@ public class CharacterModel : MonoBehaviour {
     [SerializeField] private string _holdAnimatorParameter;
     [SerializeField] private string _victoryAnimatorParameter;
     [SerializeField] private string _kickAnimatorParameter;
+    [SerializeField] private string _chuteAnimatorParameter;
+    [SerializeField] private string _stunAnimatorParameter;
+    [SerializeField] private string _windAnimatorParameter;
 
     public void SetCrouched()
     {
@@ -31,6 +34,8 @@ public class CharacterModel : MonoBehaviour {
         _animator.SetBool(_idleAnimatorParameter, true);
         _animator.SetBool(_runAnimatorParameter, false);
         _animator.SetBool(_kickAnimatorParameter, false);
+        _animator.SetBool(_chuteAnimatorParameter, false);
+        _animator.SetBool(_stunAnimatorParameter, false);
     }
 
     public void SetRun()
@@ -57,8 +62,28 @@ public class CharacterModel : MonoBehaviour {
         _animator.SetTrigger(_victoryAnimatorParameter);
     }
 
+    public void SetChute()
+    {
+        _animator.SetBool(_chuteAnimatorParameter, true);
+    }
+
     public void SetKick()
     {
         _animator.SetBool(_kickAnimatorParameter, true);
+    }
+
+    public void SetStun()
+    {
+        _animator.SetBool(_stunAnimatorParameter, true);
+    }
+
+    public void SetWind()
+    {
+        _animator.SetBool(_windAnimatorParameter, true);
+    }
+
+    public void SetWindFalse()
+    {
+        _animator.SetBool(_windAnimatorParameter, false);
     }
 }
