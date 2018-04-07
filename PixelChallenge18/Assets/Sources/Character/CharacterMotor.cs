@@ -84,6 +84,11 @@ public class CharacterMotor : MonoBehaviour
 
     public void SetMovable(bool movable)
     {
+        if (_falling)
+        {
+            return;
+        }
+
         _movable = movable;
 
         if (!_movable)
@@ -98,7 +103,8 @@ public class CharacterMotor : MonoBehaviour
 
         if (falling)
         {
-
+            _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, Vector3.zero, 0.9f);
+            _rigidbody.AddForce(Physics.gravity);
         }
     }
 }
