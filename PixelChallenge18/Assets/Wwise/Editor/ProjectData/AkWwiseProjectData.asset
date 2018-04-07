@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4BBAA461-E23D-4C72-9656-0E1186F84853}'
-    m_lastTimePsrt1: 2094306489
-    m_lastTimePart2: -1999266615
+    m_lastTimePsrt1: 750919071
+    m_lastTimePart2: -1999266612
     List:
     - Name: Pause_Menu_Enter
       Path: Default Work Unit\Pause_Menu_Enter
@@ -208,6 +208,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2050814853
       Guid: 790d7e497ac7034b832aea2bc8efdb80
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Thunder_Crack_Random
+      Path: Default Work Unit\Play_SFX_Thunder_Crack_Random
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Thunder_Crack_Random
+        ObjectType: 3
+      ID: 998084343
+      Guid: 8521fb95f2158f45a9f1b113dbdeee93
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
