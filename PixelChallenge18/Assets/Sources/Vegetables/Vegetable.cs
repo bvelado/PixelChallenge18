@@ -34,7 +34,7 @@ public class Vegetable : MonoBehaviour {
         SetRooted(true);
     }
 
-    private void SetRooted(bool rooted)
+    public void SetRooted(bool rooted)
     {
         _isRooted = rooted;
 
