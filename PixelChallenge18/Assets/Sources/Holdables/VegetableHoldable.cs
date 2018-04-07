@@ -18,6 +18,7 @@ public class VegetableHoldable : MonoBehaviour, IHoldable
             return;
         }
 
+        GetComponent<Vegetable>().SetRooted(false);
         _holder = holder;
 
         transform.SetParent(holder.HoldRoot);

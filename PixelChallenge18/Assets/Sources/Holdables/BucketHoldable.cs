@@ -61,5 +61,6 @@ public class BucketHoldable : MonoBehaviour, IHoldable
                 vegetableBurnable.Extinguish();
             }
         }
+        Destroy(gameObject);
     }
 }
